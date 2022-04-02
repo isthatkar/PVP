@@ -23,4 +23,13 @@
         android:layout_marginTop="273dp"
         android:text="Kontaktai" />
 
+    <Button
+        android:id="@+id/myPointsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:text="Taskai" />
+
 </RelativeLayout>

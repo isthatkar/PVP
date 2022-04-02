@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button mapsButton;
     private Button contactButton;
+    private Button myPointsButton;
 
 
     @Override
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         mapsButton    = (Button) findViewById(R.id.mapsButton);
         contactButton = (Button) findViewById(R.id.contactButton);
+        myPointsButton = (Button) findViewById(R.id.myPointsButton);
 
 
         mapsButton.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +39,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        myPointsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCounter();//open allObjectsList
+           }
+       });
+
 
     }
 
@@ -47,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void openContacts(){
         Intent intent = new Intent(this, ContactActivity.class);
+        startActivity(intent);
+    }
+    public void openCounter(){
+        Intent intent = new Intent(this, VisitedCounterActivity.class);
         startActivity(intent);
     }
 
