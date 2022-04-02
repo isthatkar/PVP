@@ -3,14 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/drawable-anydpi/ic_magnify.xml" value="0.242" />
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/drawable/white_border.xml" value="0.1575" />
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/layout-sw320dp/activity_contact.xml" value="0.25" />
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/layout-sw480dp/activity_contact.xml" value="0.19106699751861042" />
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/layout-sw720dp/activity_contact.xml" value="0.4873417721518987" />
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/layout/activity_contact.xml" value="0.2" />
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.176" />
-        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.176" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout-sw320dp/activity_contact.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_contact.xml" value="0.662828947368421" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_jachklubasinfo.xml" value="0.2" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.182518115942029" />
       </map>
     </option>
   </component>
