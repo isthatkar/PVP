@@ -16,6 +16,7 @@
             android:name=".MainActivity"
             android:exported="true">
 
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +37,6 @@
         <activity
             android:name=".ContactActivity"
             android:exported="true">
-
         </activity>
     </application>
 
