@@ -8,25 +8,46 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button;
+    private Button mapsButton;
+    private Button contactButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        getSupportActionBar().hide();
+
+        mapsButton    = (Button) findViewById(R.id.mapsButton);
+        contactButton = (Button) findViewById(R.id.contactButton);
+
+
+        mapsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openMaps();
-
             }
         });
+
+        contactButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openContacts();
+            }
+        });
+
+
     }
 
     public void openMaps(){
         Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
+
+    public void openContacts(){
+        Intent intent = new Intent(this, ContactActivity.class);
+        startActivity(intent);
+    }
+
 }
