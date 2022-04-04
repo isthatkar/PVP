@@ -113,10 +113,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(@NonNull Marker marker) {
-                if (marker.getTitle().equals("Jachtklubas")) // if marker source is clicked
-                {
-                    Intent intent = new Intent(MapsActivity.this, JachklubasActivity.class);
-                    startActivity(intent);
+                Intent intent;
+                switch (marker.getTitle()){
+                    case "Jachtklubas":
+                        intent = new Intent(MapsActivity.this, JachklubasActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Pažaislio vienuolynas":
+                        intent = new Intent(MapsActivity.this, PazaislioActivity.class);
+                        startActivity(intent);
+                        break;
                 }
                 return false;
             }
