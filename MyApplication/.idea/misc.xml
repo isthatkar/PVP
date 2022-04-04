@@ -5,10 +5,18 @@
       <map>
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout-sw320dp/activity_contact.xml" value="0.15260416666666668" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_contact.xml" value="0.662828947368421" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_gastilioniu.xml" value="0.12411347517730496" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_jachklubasinfo.xml" value="0.2" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_lakstingalu.xml" value="0.12411347517730496" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.182518115942029" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.182518115942029" />
-        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_pazaislis.xml" value="0.13451086956521738" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_meiles.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_pazaislis.xml" value="0.1" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_regioninis.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_rumsiskiu_muziejus.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_rumsiskiu_prieplauka.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_stovykla.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_suneliskiu.xml" value="0.11651469098277609" />
       </map>
     </option>
   </component>

@@ -11,7 +11,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PazaislioActivity">
+        tools:context=".RumsiskiuMuziejusActivity">
 
         <TextView
             android:id="@+id/textView6"
@@ -21,7 +21,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:text="PAŽAISLIO VIENUOLYNAS" />
+            android:text="LIAUDIES IR BUITIES MUZIEJUS" />
 
         <TextView
             android:id="@+id/textView7"
@@ -29,9 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/textView6"
-            android:text="Ansamblis laikomas vienu geriausių brandžiojo baroko pavyzdžių Šiaurės ir Rytų Europoje. Tai vienas iš dviejų Lietuvoje išlikusių vienuolynų ir bažnyčių ansamblių (kitas Tytuvėnuose). Pagrindiniai pastatai sugrupuoti simetriškai pagal išilginę kompozicinę vakarų-rytų krypties ašį, prie kurios išdėstyti pastatai (foresterija, oficinos, vienuolynas, eremo nameliai).
-Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžiaus plano, turi šešiabriaunį 53 m aukščio kupolą (su žibintu ir kryžiumi). Pietų fasade įrengtas saulės laikrodis. Vienuolyno korpusai (kartu su galerijomis) 1-2 aukštų. Jų sienos tinkuotos, langų ir durų apvadai pilko smiltainio. Pagrindinę ansamblio teritoriją juosia 2,5 m aukščio vientisa mūro tvora, dengta čerpėmis. Komplekso planas primena vienuolių kamaldulių herbą – du balandžius, geriančius iš vienos taurės.
-" />
+            android:text="Lietuvos liaudies buities muziejus – vienas didžiausių pagal užimamą plotą (195 ha) bei nekilnojamų eksponatų skaičių muziejų po atviru dangumi Europoje. Tai vienintelis etnografijos rūšies muziejus Lietuvoje, pristatantis sumažintą visų etnografinių Lietuvos regionų ir miestelio atspindį. Atskiras sektorius skirtas Lietuvos gyventojų tremties ir pasipriešinimo atminimui: pastatyta jurta (žeminukė), tremties vagonas, partizanų slėptuvė (bunkeris), paminklai. Jame lankytojus pasitinka edukatorė – buvusi tremtinė, kurios įtaigus pasakojimas leidžia tarsi juste pajusti visą ištremtų žmonių tragediją. Muziejuje stovintys unikalūs Aristavėlės dvaro rūmai – vertingas baroko laikotarpio medinės architektūros pavyzdys. Lietuvos liaudies buities muziejaus išskirtinumas europiniame kontekste – demonstruojamos žemės įdirbimo sistemos ir gyvenviečių vystymosi raida." />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -40,7 +38,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
-            app:srcCompat="@drawable/pazaislis" />
+            app:srcCompat="@drawable/rumsiskiumuziejus" />
 
         <TextView
             android:id="@+id/textView9"
@@ -56,7 +54,10 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView9"
-            android:text="Pažaislio bažnyčios ir vienuolyno ansamblis pastatytas XVII–XVIII a. funduojant Lietuvos Didžiosios Kunigaikštystės Didžiajam kancleriui Kristupui Zigmantui Pacui. 1660 m. jis kreipėsi į Kamaldulių ordino vyresnybę Romoje, raštu pasižadėdamas finansuoti vienuolyno ir bažnyčios statybą Lietuvoje. Netrukus, gavęs aukščiausiosios bažnytinės vadovybės palaiminimą, kartu su architektu ir keliais Krokuvos Bielianų kamaldulių vienuoliais netoli Kauno surado planuojamam statyti vienuolynui tinkamą vietą – Pažaislį. Šią gražią miškingą vietovę fundatorius nupirko iš Kauno žemės teisėjo Samuelio Oborskio ir pavadino Ramybės (Taikos) kalnu (Mons Pacis)." />
+            android:text="Muziejaus įkūrimo idėją puoselėjo menotyrininkai Vacys Milius ir Klemensas Čerbulėnas, etnografas Izidorius Butkevičius, architektai Vytautas Landsbergis-Žemkalnis, Juozas Baršauskas. 1965 m. LSSR vyriausybė priėmė nutarimą dėl muziejaus steigimo. Muziejus įkurtas 1966 m. Pievelių kaimo vietoje. Tuomet čia gyveno 18 šeimų. 1966 m. parengtas detalusis planas.
+Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastatų. Lygiagrečiai buvo renkama ir aprašomoji bei ikonografinė medžiaga. Pirmosios ekspedicijos vyko dviračiais, vėliau įsigytas sunkvežimis. Statybos darbus vykdė tuometės Kauno restauracinės dirbtuvės.
+1969 m. jau stovėjo žemaičių XVIII a. svirnas, numas ir t. t., iš viso 8 pastatai. Po metų beveik sukomplektuota dzūkų sodyba, pastatyta Josvainių karčema ir daug kitų. Perkėlus daugiau pastatų reikėjo sustiprinti priešgaisrinę sistemą, todėl buvo įsigyta gaisrinė mašina, o dirbti su ja buvo rengiamos priešgaisrinės pratybos, kuriose dalyvaudavo visi jaunesni muziejaus darbuotojai. Turint savo priešgaisrinę apsaugą, pavyko išvengti didesnių gaisrų, skirtingai nei Estijos ar Latvijos liaudies buities muziejuose.
+" />
 
         <TextView
             android:id="@+id/textView10"
@@ -71,7 +72,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vienuolyne vyksta edukacinės programos, ekspozicijos, vedamos ekskursijos."
+            android:text="Ekskursijos, edukacijos, pabėgimo kambarys, orientacinio žaidimas, pasivažinėjimas ir jodinėjimas, patalpų nuoma."
             android:layout_below="@id/textView10"/>
 
         <TextView
@@ -87,7 +88,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pažaislio muzikos festivais, koncertai."
+            android:text="Užgavėnių šventės, muzikos festivalis “Granatos”, Velykos, žolinės šventės, muziejų naktis, adventinis miestelis, Oninės ir rugiapjūtė, Joninės"
             android:layout_below="@id/textView12"/>
 
     </RelativeLayout>

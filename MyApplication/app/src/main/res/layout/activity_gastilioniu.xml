@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GastilioniuActivity">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            android:text="GASTILIONIŲ ATODANGA" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_below="@id/textView6"
+            android:text="800 metrų ilgio ir 30 m aukščio atodanga, kurią sudaro Gastilionių pusiasalio smaigalys ir į abi puses nusitęsę aukšti šlaitai. Atodangoje galima įžiūrėti moreninės dangos pjūvį, kuriame dviejų ledynų suguldyti du moreninio priemolio sluoksniai, perkirsti tarpledynmetyje tyvuliavusio ežero smėlio." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView7"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilioniu" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:text="ISTORIJA"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView9"
+            android:text="Gastilionių atodanga – geologinis gamtos paveldo objektas, paskelbtas saugomu 2008 m. Atodanga yra Kaišiadorių rajone, Rumšiškių seniūnijoje, Kaišiadorių miškų urėdijos Rumšiškių girininkijos teritorijoje, Rumšiškių miške, Kauno marių dešiniajame krante. Atodanga patenka į Kauno marių regioninio parko teritoriją. Atodanga dešiniąja Kauno marių pakrante tęsiasi apie 600 m su beveik stačia iki 20 m aukščio siena, kurioje aiškiai matomi dviejų ledynmečių sukloti moreninio priemolio sluoksniai, perskirti tarpledynmečio metu sukloto smėlio sluoksniais." />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRAMOGOS"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView8"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netoliese yra Gastilijonų gūbrys, Rumšiškių miško pušis."
+            android:layout_below="@id/textView10"/>
+
+    </RelativeLayout>
+</ScrollView>

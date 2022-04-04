@@ -11,7 +11,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PazaislioActivity">
+        tools:context=".RumsiskiuPrieplaukaActivity">
 
         <TextView
             android:id="@+id/textView6"
@@ -21,26 +21,16 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:text="PAŽAISLIO VIENUOLYNAS" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
-            android:text="Ansamblis laikomas vienu geriausių brandžiojo baroko pavyzdžių Šiaurės ir Rytų Europoje. Tai vienas iš dviejų Lietuvoje išlikusių vienuolynų ir bažnyčių ansamblių (kitas Tytuvėnuose). Pagrindiniai pastatai sugrupuoti simetriškai pagal išilginę kompozicinę vakarų-rytų krypties ašį, prie kurios išdėstyti pastatai (foresterija, oficinos, vienuolynas, eremo nameliai).
-Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžiaus plano, turi šešiabriaunį 53 m aukščio kupolą (su žibintu ir kryžiumi). Pietų fasade įrengtas saulės laikrodis. Vienuolyno korpusai (kartu su galerijomis) 1-2 aukštų. Jų sienos tinkuotos, langų ir durų apvadai pilko smiltainio. Pagrindinę ansamblio teritoriją juosia 2,5 m aukščio vientisa mūro tvora, dengta čerpėmis. Komplekso planas primena vienuolių kamaldulių herbą – du balandžius, geriančius iš vienos taurės.
-" />
+            android:text="RUMŠIŠKIŲ PRIEPLAUKA" />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="600px"
-            android:layout_below="@id/textView7"
+            android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
-            app:srcCompat="@drawable/pazaislis" />
+            app:srcCompat="@drawable/rumsiskiuprieplauka" />
 
         <TextView
             android:id="@+id/textView9"
@@ -56,7 +46,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView9"
-            android:text="Pažaislio bažnyčios ir vienuolyno ansamblis pastatytas XVII–XVIII a. funduojant Lietuvos Didžiosios Kunigaikštystės Didžiajam kancleriui Kristupui Zigmantui Pacui. 1660 m. jis kreipėsi į Kamaldulių ordino vyresnybę Romoje, raštu pasižadėdamas finansuoti vienuolyno ir bažnyčios statybą Lietuvoje. Netrukus, gavęs aukščiausiosios bažnytinės vadovybės palaiminimą, kartu su architektu ir keliais Krokuvos Bielianų kamaldulių vienuoliais netoli Kauno surado planuojamam statyti vienuolynui tinkamą vietą – Pažaislį. Šią gražią miškingą vietovę fundatorius nupirko iš Kauno žemės teisėjo Samuelio Oborskio ir pavadino Ramybės (Taikos) kalnu (Mons Pacis)." />
+            android:text="2017 metais buvo patvirtintas Lietuvos Respublikos planas įrengti Rumšiškių prieplauką." />
 
         <TextView
             android:id="@+id/textView10"
@@ -71,7 +61,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vienuolyne vyksta edukacinės programos, ekspozicijos, vedamos ekskursijos."
+            android:text="Yra medinis takelis, kuris nuveda prie Rumšiškių prieplaukos/poilsiavietės. Yra medinis lieptas, nuo kurio galima maudytis, poilsiauti, pažvejoti. Galimas priplaukimas laivu."
             android:layout_below="@id/textView10"/>
 
         <TextView
@@ -87,7 +77,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pažaislio muzikos festivais, koncertai."
+            android:text="Renginių nevyksta šiuo metu, bet žmonės atvyksta darytis vestuvių, krikštynų ar kitų progų fotosesijas."
             android:layout_below="@id/textView12"/>
 
     </RelativeLayout>

@@ -11,7 +11,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".PazaislioActivity">
+        tools:context=".LakstingaluActivity">
 
         <TextView
             android:id="@+id/textView6"
@@ -21,7 +21,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:text="PAŽAISLIO VIENUOLYNAS" />
+            android:text="LAKŠTINGALŲ SLĖNIS" />
 
         <TextView
             android:id="@+id/textView7"
@@ -29,9 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/textView6"
-            android:text="Ansamblis laikomas vienu geriausių brandžiojo baroko pavyzdžių Šiaurės ir Rytų Europoje. Tai vienas iš dviejų Lietuvoje išlikusių vienuolynų ir bažnyčių ansamblių (kitas Tytuvėnuose). Pagrindiniai pastatai sugrupuoti simetriškai pagal išilginę kompozicinę vakarų-rytų krypties ašį, prie kurios išdėstyti pastatai (foresterija, oficinos, vienuolynas, eremo nameliai).
-Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžiaus plano, turi šešiabriaunį 53 m aukščio kupolą (su žibintu ir kryžiumi). Pietų fasade įrengtas saulės laikrodis. Vienuolyno korpusai (kartu su galerijomis) 1-2 aukštų. Jų sienos tinkuotos, langų ir durų apvadai pilko smiltainio. Pagrindinę ansamblio teritoriją juosia 2,5 m aukščio vientisa mūro tvora, dengta čerpėmis. Komplekso planas primena vienuolių kamaldulių herbą – du balandžius, geriančius iš vienos taurės.
-" />
+            android:text="Lakštingalų slėnį ne vienerius metus bandė gaivinti Palemono bendruomenė. Čia vykdavo moksleivių rengiamos šventės „Poezijos pavasarėliai“. 2012 metų vasarą vietoje senų suolų buvo įrengtos spalvotos kėdutės, tačiau dėl pasilinksminti susirenkančio jaunimo, dauguma jų jau nebėra." />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -40,7 +38,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
-            app:srcCompat="@drawable/pazaislis" />
+            app:srcCompat="@drawable/lakstingalu" />
 
         <TextView
             android:id="@+id/textView9"
@@ -56,7 +54,10 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView9"
-            android:text="Pažaislio bažnyčios ir vienuolyno ansamblis pastatytas XVII–XVIII a. funduojant Lietuvos Didžiosios Kunigaikštystės Didžiajam kancleriui Kristupui Zigmantui Pacui. 1660 m. jis kreipėsi į Kamaldulių ordino vyresnybę Romoje, raštu pasižadėdamas finansuoti vienuolyno ir bažnyčios statybą Lietuvoje. Netrukus, gavęs aukščiausiosios bažnytinės vadovybės palaiminimą, kartu su architektu ir keliais Krokuvos Bielianų kamaldulių vienuoliais netoli Kauno surado planuojamam statyti vienuolynui tinkamą vietą – Pažaislį. Šią gražią miškingą vietovę fundatorius nupirko iš Kauno žemės teisėjo Samuelio Oborskio ir pavadino Ramybės (Taikos) kalnu (Mons Pacis)." />
+            android:text="Lakštingalų slėnis – tai unikalus gamtos užkaboris Kauno marių regioniniame parke, šalia kurio Palemone 1937 m. įsikūrė viena žymiausių praėjusio amžiaus lietuvių poečių Salomėja Nėris. Jos name jau daugiau nei pusę amžiau veikia memorialinis muziejus.
+O šalia plytintis slėnis, šiuo metu nusidažęs nuostabiomis rudens spalvomis, 1965 m. tapo „Poezijos pavasario“ festivalio įsčiomis. Literatūros šventė kasmet čia vyko net tris dešimtmečius, o jos laurus skynė tokie poezijos korifėjai kaip Paulius Širvys, Antanas Miškinis, Justinas Marcinkevičius, Algimantas Baltakis, Bernardas Brazdžionis ir daug kitų.
+Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliepsnodavo kūrybos laisvės ugnis, pasodintas ąžuoliukas, dabar – jau platus išsikerojęs ąžuolas. Visgi poezijos aukuras nedega jau daugiau kaip 20 metų – 1995 m. šventė perkelta į Maironio lietuvių literatūros muziejų Kauno Senamiestyje, mat publika pabrangus kurui tiesiog nebegalėjo sau leisti atvažiuoti į Palemoną.
+"/>
 
         <TextView
             android:id="@+id/textView10"
@@ -71,7 +72,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vienuolyne vyksta edukacinės programos, ekspozicijos, vedamos ekskursijos."
+            android:text="Salomėjos Nėries Memorialinis Muziejus"
             android:layout_below="@id/textView10"/>
 
         <TextView
@@ -87,7 +88,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pažaislio muzikos festivais, koncertai."
+            android:text="Anksčiau vykdavo poezijos vakarai, bet pastaruoju metu renginių nebevyksta."
             android:layout_below="@id/textView12"/>
 
     </RelativeLayout>

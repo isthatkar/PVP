@@ -4,11 +4,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PazaislioActivity extends AppCompatActivity {
+public class SuneliskiuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pazaislis);
+        setContentView(R.layout.activity_suneliskiu);
 
         getSupportActionBar().hide();
     }
