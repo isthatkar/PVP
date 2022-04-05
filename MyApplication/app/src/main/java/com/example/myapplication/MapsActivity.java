@@ -22,7 +22,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
     private boolean mLocationPermissionsGranted = false;
     LocationPermissions enableLocationPermissions = new LocationPermissions();
-    AllObjectsList allObjectsList = new AllObjectsList();
 
 
     @Override
@@ -106,8 +105,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žigos įlanka"));
         mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų parkas"));
         mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas"));
-        mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumenų parkas"));
-        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumenų pažintinis takas"));
+        mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumėnų parkas"));
+        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas"));
         mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas"));
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {

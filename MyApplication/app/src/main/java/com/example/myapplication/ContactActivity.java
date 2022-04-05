@@ -1,5 +1,7 @@
 package com.example.myapplication;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
 public class ContactActivity extends AppCompatActivity {
@@ -10,6 +12,5 @@ public class ContactActivity extends AppCompatActivity {
         setContentView(R.layout.activity_contact);
 
         getSupportActionBar().hide();
-
     }
 }
