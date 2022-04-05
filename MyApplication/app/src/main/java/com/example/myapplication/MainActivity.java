@@ -2,10 +2,12 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        mapsButton    = (Button) findViewById(R.id.mapsButton);
-        contactButton = (Button) findViewById(R.id.contactButton);
+        mapsButton     = (Button) findViewById(R.id.mapsButton);
+        contactButton  = (Button) findViewById(R.id.contactButton);
         myPointsButton = (Button) findViewById(R.id.myPointsButton);
 
 
@@ -63,5 +65,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, VisitedCounterActivity.class);
         startActivity(intent);
     }
+
+
 
 }
