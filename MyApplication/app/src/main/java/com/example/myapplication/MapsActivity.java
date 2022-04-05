@@ -154,6 +154,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         intent = new Intent(MapsActivity.this, RumsiskiuPrieplaukaActivity.class);
                         startActivity(intent);
                         break;
+                    case "Kapitoniškių pažintinis takas":
+                        intent = new Intent(MapsActivity.this, KapitoniskiuActivity.class);
+                        startActivity(intent);
+                        break;
 
                 }
                 return false;
