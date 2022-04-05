@@ -1,15 +1,14 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class ContactActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
+public class StovyklaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact);
+        setContentView(R.layout.activity_stovykla);
 
         getSupportActionBar().hide();
     }

@@ -3,22 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/drawable-anydpi/ic_magnify.xml" value="0.3475" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3475" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3475" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/drawable/white_border.xml" value="0.3475" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/layout-sw320dp/activity_contact.xml" value="0.447463768115942" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/layout-sw480dp/activity_contact.xml" value="0.9801587301587301" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/layout-sw720dp/activity_contact.xml" value="0.337431693989071" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/layout/activity_contact.xml" value="1.625" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/layout/activity_jachklubasinfo.xml" value="0.447463768115942" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.447463768115942" />
-        <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/PVP/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.447463768115942" />
+        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/PVP/MyApplication/app/src/main/res/layout/activity_contact.xml" value="0.25" />
+        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/PVP/MyApplication/app/src/main/res/layout/activity_loading.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/PVP/MyApplication/app/src/main/res/layout/activity_meiles.xml" value="0.4233576642335766" />
+        <entry key="..\:/Users/User/Desktop/Universitetas/ProduktoVystymoProjektas/PVP/PVP/MyApplication/app/src/main/res/layout/activity_pazaislis.xml" value="0.21654501216545013" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout-sw320dp/activity_contact.xml" value="0.15260416666666668" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_contact.xml" value="0.662828947368421" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_gastilioniu.xml" value="0.12411347517730496" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_jachklubasinfo.xml" value="0.2" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_lakstingalu.xml" value="0.12411347517730496" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.182518115942029" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_meiles.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_pazaislis.xml" value="0.1" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_regioninis.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_rumsiskiu_muziejus.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_rumsiskiu_prieplauka.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_stovykla.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_suneliskiu.xml" value="0.11651469098277609" />
       </map>
     </option>
   </component>

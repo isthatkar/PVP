@@ -17,6 +17,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoadingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +42,34 @@
         <activity
             android:name=".JachklubasActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".PazaislioActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SuneliskiuActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".LakstingaluActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RegioninisActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".GastilioniuActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MeilesActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".StovyklaActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RumsiskiuMuziejusActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".RumsiskiuPrieplaukaActivity"
+            android:exported="true"></activity>
     </application>
+
 
 </manifest>

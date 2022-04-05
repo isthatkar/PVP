@@ -22,7 +22,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
     private boolean mLocationPermissionsGranted = false;
     LocationPermissions enableLocationPermissions = new LocationPermissions();
-    AllObjectsList allObjectsList = new AllObjectsList();
 
 
     @Override
@@ -75,7 +74,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng suneliskiuKalnas = new LatLng(54.899165, 24.050468);
         LatLng lakstingaluSlenis = new LatLng(54.909123, 24.064016);
         LatLng kaunoMariuRegioninisParkas = new LatLng(54.916187, 24.088728);
-        LatLng meilesIlanka = new LatLng(54.89165, 24.126413);
+        LatLng meilesIlanka = new LatLng(54.897875, 24.126895);
         LatLng apleistaStovykla = new LatLng(54.879261, 24.153153);
         LatLng gastilioniuAtodanga = new LatLng(54.871606, 24.150136);
         LatLng rumsiskiuMuziejus = new LatLng(54.866331, 24.200702);
@@ -106,17 +105,56 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žigos įlanka"));
         mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų parkas"));
         mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas"));
-        mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumenų parkas"));
-        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumenų pažintinis takas"));
+        mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumėnų parkas"));
+        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas"));
         mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas"));
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(@NonNull Marker marker) {
-                if (marker.getTitle().equals("Jachtklubas")) // if marker source is clicked
-                {
-                    Intent intent = new Intent(MapsActivity.this, JachklubasActivity.class);
-                    startActivity(intent);
+                Intent intent;
+                switch (marker.getTitle()){
+                    case "Jachtklubas":
+                        intent = new Intent(MapsActivity.this, JachklubasActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Pažaislio vienuolynas":
+                        intent = new Intent(MapsActivity.this, PazaislioActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Šuneliškių kalnas":
+                        intent = new Intent(MapsActivity.this, SuneliskiuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Lakštingalų slėnis":
+                        intent = new Intent(MapsActivity.this, LakstingaluActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Kauno marių regioninis parkas":
+                        intent = new Intent(MapsActivity.this, RegioninisActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Gastilionių atodanga":
+                        intent = new Intent(MapsActivity.this, GastilioniuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Meilės įlanka":
+                        intent = new Intent(MapsActivity.this, MeilesActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Kauno marių apleista stovyklą":
+                        intent = new Intent(MapsActivity.this, StovyklaActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Rumšiškių liaudies buities muziejus":
+                        intent = new Intent(MapsActivity.this, RumsiskiuMuziejusActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Rumšiškių prieplauka":
+                        intent = new Intent(MapsActivity.this, RumsiskiuPrieplaukaActivity.class);
+                        startActivity(intent);
+                        break;
+
                 }
                 return false;
             }
