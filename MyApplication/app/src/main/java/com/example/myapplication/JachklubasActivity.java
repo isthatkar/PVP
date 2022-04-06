@@ -76,17 +76,8 @@ public class JachklubasActivity extends AppCompatActivity{
                 public void onClick(View v) {
                     //when "visit" is clicked hide button
 
-                    playButton.setVisibility(View.GONE);
 
-
-                    playButton.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v)
-                        {
-                            checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
-
-                        }
-                    });
+                    checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
 
                 }
             });
@@ -233,6 +224,8 @@ public class JachklubasActivity extends AppCompatActivity{
         else {
             Toast.makeText(this, "Permission already granted", Toast.LENGTH_SHORT).show();
             loadToArray(objectNr,1);
+            Button playButton = (Button) findViewById(R.id.button_addPoint0);
+            playButton.setVisibility(View.GONE);
         }
     }
 
