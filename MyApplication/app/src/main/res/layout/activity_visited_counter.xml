@@ -10,7 +10,7 @@
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="60dp" />
 
     <Button
         android:id="@+id/button_MyFunction"
@@ -20,17 +20,19 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:text="MyFunction"
-        android:onClick="MyFunction"/>
+        android:onClick="MyFunction"
+        android:visibility="gone"
+        />
 
     <Button
         android:id="@+id/button_load"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button_save"
-        android:layout_below="@+id/button_save"
-        android:layout_marginTop="17dp"
-        android:text="load"
-        android:onClick="load"/>
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_text"
+        android:layout_marginTop="18dp"
+        android:text="load backen code"
+        android:onClick="load" />
 
     <Button
         android:id="@+id/button_save"
@@ -38,9 +40,12 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/edit_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="18dp"
         android:text="save"
-        android:onClick="save"/>
+        android:onClick="save"
+        android:visibility="gone"/>
+
+
     <Button
         android:id="@+id/button_reset"
         android:layout_width="wrap_content"
@@ -48,7 +53,27 @@
         android:layout_below="@+id/button_MyFunction"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="reset"
+        android:text="reset visited objects"
         android:onClick="reset"/>
+
+    <TextView
+        android:id="@+id/textView_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textStyle="normal|bold"
+        android:text="My points:" />
+    <TextView
+        android:id="@+id/textView_objects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_points"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:textStyle="normal|bold"
+        android:text="My visited objects:\n\n" />
+
 
 </RelativeLayout>

@@ -1,11 +1,16 @@
 package com.example.myapplication;
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,10 +22,6 @@ import java.io.InputStreamReader;
 
 
 public class JachklubasActivity extends AppCompatActivity{
-    private Button btn;
-    private static final String FILE_NAME = "example.txt";
-    EditText mEditText;
-    int[] intArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,23 +30,67 @@ public class JachklubasActivity extends AppCompatActivity{
         getSupportActionBar().hide();
 
 
-        btn = (Button) findViewById(R.id.button_addPoint0);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //l
-                setText("naujasTekstas");
-            }
-        });
+
+        showIfUnvisited();
+        setObjectData();
 
     }
-    public void setText(String text) {
-        btn.setText(text);
+    private static final int STORAGE_PERMISSION_CODE = 101;
+    private static final String FILE_NAME = "example.txt";
+    EditText mEditText;
+    int[] intArray;
+    Object[] objectArray= new Object[19];
+    int objectNr=0;    //###############################################################   0 tik jacht klubui
+
+    public void setObjectData(){
+        objectArray[0]=new Object("Jachtklubas",54.885412,24.024804);
+        objectArray[1]=new Object("Pažaislio vienuolynas",54.876222,24.021416);
+        objectArray[2]=new Object("Šuneliškių kalnas",54.899165,24.050468);
+        objectArray[3]=new Object("Lakštingalų slėnis",54.909123,24.064016);
+        objectArray[4]=new Object("Kauno marių regioninis parkas",54.916187,24.088728);
+        objectArray[5]=new Object("Meilės įlanka",54.897875,24.126895);
+        objectArray[6]=new Object("Kauno marių apleista stovyklą",54.879261,24.153153);
+        objectArray[7]=new Object("Gastilionių atodanga",54.871606,24.150136);
+        objectArray[8]=new Object("Rumšiškių liaudies buities muziejus",54.866331,24.200702);
+        objectArray[9]=new Object("Rumšiškių prieplauka",54.860661,24.196769);
+        objectArray[10]=new Object("Kapitoniškių pažintinis takas",54.859187,24.213946);
+        objectArray[11]=new Object("Mergakalnio apžvalgos aikštelė",54.824597,24.243838);
+        objectArray[12]=new Object("Kruonio HAE",54.799203,24.247184);
+        objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
+        objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
+        objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
+        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
+        objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
+        objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
+
     }
+    public void showIfUnvisited()
+    {
+        Button playButton = (Button) findViewById(R.id.button_addPoint0);  //##########################################################     cia pakeisti
+
+        if(getFlag(objectNr)==0)//&&objectArray[objectNr].getLengtitude()-
+        {
+            playButton.setVisibility(View.VISIBLE);
+            playButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //when "visit" is clicked hide button
+
+                    playButton.setVisibility(View.GONE);
 
 
-    public void PointAdd(int object) {
-        //VisitedCounterActivity.getFlag()
+                    playButton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v)
+                        {
+                            checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
+
+                        }
+                    });
+
+                }
+            });
+        }
 
     }
     public int getFlag(int object) {
@@ -175,6 +220,41 @@ public class JachklubasActivity extends AppCompatActivity{
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
+        }
+    }
+    public void checkPermission(String permission, int requestCode)
+    {
+        if (ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_DENIED) {
+
+            // Requesting the permission
+            ActivityCompat.requestPermissions(this, new String[] { permission }, requestCode);
+        }
+        else {
+            Toast.makeText(this, "Permission already granted", Toast.LENGTH_SHORT).show();
+            loadToArray(objectNr,1);
+        }
+    }
+
+
+    // This function is called when the user accepts or decline the permission.
+    // Request Code is used to check which permission called this function.
+    // This request code is provided when the user is prompt for permission.
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
+    {
+        super.onRequestPermissionsResult(requestCode,
+                permissions,
+                grantResults);
+
+        if (requestCode == STORAGE_PERMISSION_CODE) {
+            if (grantResults.length > 0
+                    && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "Storage Permission Granted", Toast.LENGTH_SHORT).show();
+
+            } else {
+                Toast.makeText(this, "Storage Permission Denied", Toast.LENGTH_SHORT).show();
             }
         }
     }
