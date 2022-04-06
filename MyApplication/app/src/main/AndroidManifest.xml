@@ -72,6 +72,27 @@
         <activity
             android:name=".KapitoniskiuActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".MergakalnioActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".KruonioActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".LaumenuTakasActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".PakalniskiuActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".SkulpturuActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ZiegzdriuActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ZiglosActivity"
+            android:exported="true"></activity>
     </application>
 
 
