@@ -41,7 +41,7 @@ public class PazaislioActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=0;    //###############################################################   0 tik jacht klubui
+    int objectNr=1;    //###############################################################   0 tik jacht klubui
 
     public void setObjectData(){
         objectArray[0]=new Object("Jachtklubas",54.885412,24.024804);
@@ -67,7 +67,7 @@ public class PazaislioActivity extends AppCompatActivity {
     }
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint1);   //##########################################################cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint1);  //##########################################################     cia pakeisti
 
         if(getFlag(objectNr)==0)//&&objectArray[objectNr].getLengtitude()-
         {
@@ -77,17 +77,8 @@ public class PazaislioActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     //when "visit" is clicked hide button
 
-                    playButton.setVisibility(View.GONE);
 
-
-                    playButton.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v)
-                        {
-                            checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
-
-                        }
-                    });
+                    checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
 
                 }
             });
@@ -234,6 +225,8 @@ public class PazaislioActivity extends AppCompatActivity {
         else {
             Toast.makeText(this, "Permission already granted", Toast.LENGTH_SHORT).show();
             loadToArray(objectNr,1);
+            Button playButton = (Button) findViewById(R.id.button_addPoint0);
+            playButton.setVisibility(View.GONE);
         }
     }
 
