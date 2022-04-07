@@ -90,5 +90,16 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:text="Pažaislio muzikos festivais, koncertai."
             android:layout_below="@id/textView12"/>
 
+        <Button
+            android:id="@+id/button_addPoint1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="I am at this object !"
+            android:visibility="gone" />
+        <!--android:onClick="addPointTo0"-->
+
     </RelativeLayout>
 </ScrollView>
