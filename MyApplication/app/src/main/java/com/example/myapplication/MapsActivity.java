@@ -187,7 +187,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng zigosIlanka = new LatLng(54.841290, 24.194681);
         LatLng skulpturuParkas = new LatLng(54.858654, 24.114648);
         LatLng ziegzdzriuTakas = new LatLng(54.889264, 24.076552);
-        LatLng laumenuParkas = new LatLng(54.874337, 24.049471);
         LatLng laumenuPazintinisTakas = new LatLng(54.863047, 24.043927);
         LatLng pakalniskiuPazintinisTakas = new LatLng(54.855207, 24.017669);
 
@@ -204,10 +203,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(kapitoniskiuPazintinisTakas).title("Kapitoniškių pažintinis takas"));
         mMap.addMarker(new MarkerOptions().position(mergakalnis).title("Mergakalnio apžvalgos aikštelė"));
         mMap.addMarker(new MarkerOptions().position(kruonioHAE).title("Kruonio HAE"));
-        mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žigos įlanka"));
+        mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žiglos įlanka"));
         mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų parkas"));
         mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas"));
-        mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumėnų parkas"));
         mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas"));
         mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas"));
 
@@ -258,6 +256,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         break;
                     case "Kapitoniškių pažintinis takas":
                         intent = new Intent(MapsActivity.this, KapitoniskiuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Kruonio HAE":
+                        intent = new Intent(MapsActivity.this, KruonioActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Žiglos įlanka":
+                        intent = new Intent(MapsActivity.this, ZiglosActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Skulptūrų parkas":
+                        intent = new Intent(MapsActivity.this, SkulpturuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Žiegždrių takas":
+                        intent = new Intent(MapsActivity.this, ZiegzdriuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Laumėnų pažintinis takas":
+                        intent = new Intent(MapsActivity.this, LaumenuTakasActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Pakalniškių pažintinis takas":
+                        intent = new Intent(MapsActivity.this, PakalniskiuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case "Mergakalnio apžvalgos aikštelė":
+                        intent = new Intent(MapsActivity.this, MergakalnioActivity.class);
                         startActivity(intent);
                         break;
 
