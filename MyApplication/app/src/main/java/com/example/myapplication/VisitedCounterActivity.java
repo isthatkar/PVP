@@ -1,12 +1,7 @@
 package com.example.myapplication;
 
-import static com.google.gson.internal.$Gson$Types.arrayOf;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -19,16 +14,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.file.Paths;
-import java.nio.file.Path;
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.os.Bundle;
-import android.widget.Button;
-import android.widget.Toast;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
 
 public class VisitedCounterActivity extends AppCompatActivity {
@@ -81,7 +66,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
         {
         }
         else {
-            intArray=new int[19];//HARDCODAS, Toks skaicius kiek mes objektu turim
+            intArray=new int[19];
             for(int i=0;i<intArray.length;i++)
             {
                 intArray[i]=0;
@@ -124,9 +109,9 @@ public class VisitedCounterActivity extends AppCompatActivity {
             File file = new File(getApplicationContext().getFilesDir(),FILE_NAME);
             if(file.exists())
             {
-                fis = openFileInput(FILE_NAME);//skaitome is failo
+                fis = openFileInput(FILE_NAME);
                 InputStreamReader isr = new InputStreamReader(fis);
-                BufferedReader br = new BufferedReader(isr);//jei failas egzistuoja, vadinasi nuskaitysim duomenis, sudesim i masyva ir pakeisim ta vieta kuria reikia ir vel sudesim i txt faila.
+                BufferedReader br = new BufferedReader(isr);
 
                 String text;
 
@@ -134,7 +119,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
                 {
                     sb.append(text).append("\n");
                 }
-                String text2=sb.toString();//parsiname ir dedame i masyva
+                String text2=sb.toString();
                 text2 = text2.replaceAll("\n", "");
                 String[]arrOfStr = text2.split(";", 0);
                 intArray=new int[arrOfStr.length];
@@ -144,7 +129,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
                 }
             }
             else {
-                intArray=new int[19];//HARDCODAS, Toks skaicius kiek mes objektu turim
+                intArray=new int[19];
                 for(int i=0;i<intArray.length;i++)
                 {
                     intArray[i]=0;
@@ -192,7 +177,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
             File file = new File(getApplicationContext().getFilesDir(),FILE_NAME);
             if(file.exists())
             {
-                fis = openFileInput(FILE_NAME);//skaitome is failo
+                fis = openFileInput(FILE_NAME);
                 InputStreamReader isr = new InputStreamReader(fis);
                 BufferedReader br = new BufferedReader(isr);
 
@@ -202,7 +187,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
                 {
                     sb.append(text).append("\n");
                 }
-                String text2=sb.toString();//parsiname ir dedame i masyva
+                String text2=sb.toString();
                 text2 = text2.replaceAll("\n", "");
                 String[]arrOfStr = text2.split(";", 0);
                 intArray=new int[arrOfStr.length];
@@ -212,7 +197,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
                 }
             }
             else {
-                intArray = new int[19];//HARDCODAS, Toks skaicius kiek mes objektu turim
+                intArray = new int[19];
                 for (int i = 0; i < intArray.length; i++) {
                     intArray[i] = 0;
                 }
@@ -244,9 +229,9 @@ public class VisitedCounterActivity extends AppCompatActivity {
                 File file = new File(getApplicationContext().getFilesDir(),FILE_NAME);
                 if(file.exists())
                 {
-                    fis = openFileInput(FILE_NAME);//skaitome is failo
+                    fis = openFileInput(FILE_NAME);
                     InputStreamReader isr = new InputStreamReader(fis);
-                    BufferedReader br = new BufferedReader(isr);//jei failas egzistuoja, vadinasi nuskaitysim duomenis, sudesim i masyva ir pakeisim ta vieta kuria reikia ir vel sudesim i txt faila.
+                    BufferedReader br = new BufferedReader(isr);
 
                     String text;
 
@@ -254,7 +239,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
                     {
                         sb.append(text).append("\n");
                     }
-                    String text2=sb.toString();//parsiname ir dedame i masyva
+                    String text2=sb.toString();
                     text2 = text2.replaceAll("\n", "");
                     String[]arrOfStr = text2.split(";", 0);
                     intArray=new int[arrOfStr.length];
@@ -265,7 +250,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
                     intArray[object]=flag;
                 }
                 else {
-                    intArray=new int[19];//HARDCODAS, Toks skaicius kiek mes objektu turim
+                    intArray=new int[19];
                     for(int i=0;i<intArray.length;i++)
                     {
                         intArray[i]=0;
@@ -292,7 +277,6 @@ public class VisitedCounterActivity extends AppCompatActivity {
                 }
             }
         }
-        //loadinimas atgal i faila
         FileOutputStream fos = null;
         try {
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
@@ -373,7 +357,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
         }
     }
     public void reset(View v) {
-        String text = "0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0";//Hardcodinta tiek nuliu kiek pas mus objektu
+        String text = "0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0";
         FileOutputStream fos = null;
 
         try {

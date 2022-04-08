@@ -60,12 +60,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 LatLng jachtklubas = new LatLng(54.885412, 24.024804);
                                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(jachtklubas, 15));
                                 return true;
+                            case R.id.pazaislis:
+                                LatLng pazaislis = new LatLng(54.876222, 24.021416);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(pazaislis, 15));
+                                return true;
                             case R.id.suneliskiuKalnas:
-                                LatLng suneliskiuKalnas = new LatLng(54.876222, 24.021416);
+                                LatLng suneliskiuKalnas = new LatLng(54.899165, 24.050468);
                                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(suneliskiuKalnas, 15));
                                 return true;
                             case R.id.lakstingaluSlenis:
-                                LatLng lakstingaluSlenis = new LatLng(54.899165, 24.050468);
+                                LatLng lakstingaluSlenis = new LatLng(54.909123, 24.064016);
                                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(lakstingaluSlenis, 15));
                                 return true;
                             case R.id.kaunoMariuRegioninisParkas:
@@ -187,6 +191,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng zigosIlanka = new LatLng(54.841290, 24.194681);
         LatLng skulpturuParkas = new LatLng(54.858654, 24.114648);
         LatLng ziegzdzriuTakas = new LatLng(54.889264, 24.076552);
+        LatLng laumenuParkas = new LatLng(54.874337, 24.049471);
         LatLng laumenuPazintinisTakas = new LatLng(54.863047, 24.043927);
         LatLng pakalniskiuPazintinisTakas = new LatLng(54.855207, 24.017669);
 
@@ -196,7 +201,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(lakstingaluSlenis).title("Lakštingalų slėnis"));
         mMap.addMarker(new MarkerOptions().position(kaunoMariuRegioninisParkas).title("Kauno marių regioninis parkas"));
         mMap.addMarker(new MarkerOptions().position(meilesIlanka).title("Meilės įlanka"));
-        mMap.addMarker(new MarkerOptions().position(apleistaStovykla).title("Kauno marių apleista stovyklą"));
+        mMap.addMarker(new MarkerOptions().position(apleistaStovykla).title("Kauno marių apleista stovykla"));
         mMap.addMarker(new MarkerOptions().position(gastilioniuAtodanga).title("Gastilionių atodanga"));
         mMap.addMarker(new MarkerOptions().position(rumsiskiuMuziejus).title("Rumšiškių liaudies buities muziejus"));
         mMap.addMarker(new MarkerOptions().position(rumsiskiuPrieplauka).title("Rumšiškių prieplauka"));
@@ -206,6 +211,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žiglos įlanka"));
         mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų parkas"));
         mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas"));
+        mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumėnų parkas"));
         mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas"));
         mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas"));
 

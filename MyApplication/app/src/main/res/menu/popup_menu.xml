@@ -21,7 +21,7 @@
         android:title="Meilės įlanka" />
     <item
         android:id="@+id/apleistaStovykla"
-        android:title="Kauno marių apleista stovyklą" />
+        android:title="Kauno marių apleista stovykla" />
     <item
         android:id="@+id/gastilioniuAtodanga"
         android:title="Gastilionių atodanga" />
