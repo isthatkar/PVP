@@ -53,8 +53,8 @@
         android:layout_below="@+id/button_MyFunction"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="reset visited objects"
-        android:onClick="reset"/>
+        android:onClick="reset"
+        android:text="reset visited objects" />
 
     <TextView
         android:id="@+id/textView_points"
