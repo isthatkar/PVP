@@ -6,12 +6,20 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.PopupMenu;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.example.myapplication.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -19,6 +27,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private ActivityMapsBinding binding;
     private GoogleMap map;
+    Button searchButton;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
     private boolean mLocationPermissionsGranted = false;
     LocationPermissions enableLocationPermissions = new LocationPermissions();
@@ -35,6 +44,99 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+        searchButton = (Button) findViewById(R.id.searchButton);
+
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(MapsActivity.this, v);
+                popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()){
+                            case R.id.jachtklubas:
+                                LatLng jachtklubas = new LatLng(54.885412, 24.024804);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(jachtklubas, 15));
+                                return true;
+                            case R.id.suneliskiuKalnas:
+                                LatLng suneliskiuKalnas = new LatLng(54.876222, 24.021416);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(suneliskiuKalnas, 15));
+                                return true;
+                            case R.id.lakstingaluSlenis:
+                                LatLng lakstingaluSlenis = new LatLng(54.899165, 24.050468);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(lakstingaluSlenis, 15));
+                                return true;
+                            case R.id.kaunoMariuRegioninisParkas:
+                                LatLng kaunoMariuRegioninisParkas = new LatLng(54.916187, 24.088728);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(kaunoMariuRegioninisParkas, 15));
+                                return true;
+                            case R.id.meilesIlanka:
+                                LatLng meilesIlanka = new LatLng(54.897875, 24.126895);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(meilesIlanka, 15));
+                                return true;
+                            case R.id.apleistaStovykla:
+                                LatLng apleistaStovykla = new LatLng(54.879261, 24.1531535);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(apleistaStovykla, 15));
+                                return true;
+                            case R.id.gastilioniuAtodanga:
+                                LatLng gastilioniuAtodanga = new LatLng(54.871606, 24.150136);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(gastilioniuAtodanga, 15));
+                                return true;
+                            case R.id.rumsiskiuMuziejus:
+                                LatLng rumsiskiuMuziejus = new LatLng(54.866331, 24.200702);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(rumsiskiuMuziejus, 15));
+                                return true;
+                            case R.id.rumsiskiuPrieplauka:
+                                LatLng rumsiskiuPrieplauka = new LatLng(54.860661, 24.196769);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(rumsiskiuPrieplauka, 15));
+                                return true;
+                            case R.id.kapitoniskiuPazintinisTakas:
+                                LatLng kapitoniskiuPazintinisTakas = new LatLng(54.859187, 24.213946);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(kapitoniskiuPazintinisTakas, 15));
+                                return true;
+                            case R.id.mergakalnis:
+                                LatLng mergakalnis = new LatLng(54.824597, 24.243838);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(mergakalnis, 15));
+                                return true;
+                            case R.id.kruonioHAE:
+                                LatLng kruonioHAE = new LatLng(54.799203, 24.247184);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(kruonioHAE, 15));
+                                return true;
+                            case R.id.zigosIlanka:
+                                LatLng zigosIlanka = new LatLng(54.841290, 24.194681);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(zigosIlanka, 15));
+                                return true;
+                            case R.id.skulpturuParkas:
+                                LatLng skulpturuParkas = new LatLng(54.858654, 24.114648);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(skulpturuParkas, 15));
+                                return true;
+                            case R.id.ziegzdzriuTakas:
+                                LatLng ziegzdzriuTakas = new LatLng(54.889264, 24.076552);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(ziegzdzriuTakas, 15));
+                                return true;
+                            case R.id.laumenuParkas:
+                                LatLng laumenuParkas = new LatLng(54.874337, 24.049471);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(laumenuParkas, 15));
+                                return true;
+                            case R.id.laumenuPazintinisTakas:
+                                LatLng laumenuPazintinisTakas = new LatLng(54.863047, 24.043927);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(laumenuPazintinisTakas, 15));
+                                return true;
+                            case R.id.pakalniskiuPazintinisTakas:
+                                LatLng pakalniskiuPazintinisTakas = new LatLng(54.855207, 24.017669);
+                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(pakalniskiuPazintinisTakas, 15));
+                                return true;
+                            default:
+                                return false;
+                        }
+                    }
+                });
+                popupMenu.show();
+            }
+        });
+
 
         enableLocationPermissions.getLocationPermission(this);
     }

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jachtklubas"
+        android:title="Jachtklubas" />
+    <item
+        android:id="@+id/pazaislis"
+        android:title="Pažaislio vienuolynas" />
+    <item
+        android:id="@+id/suneliskiuKalnas"
+        android:title="Šuneliškių kalnas" />
+    <item
+        android:id="@+id/lakstingaluSlenis"
+        android:title="Lakštingalų slėnis" />
+    <item
+        android:id="@+id/kaunoMariuRegioninisParkas"
+        android:title="Kauno marių regioninis parkas" />
+    <item
+        android:id="@+id/meilesIlanka"
+        android:title="Meilės įlanka" />
+    <item
+        android:id="@+id/apleistaStovykla"
+        android:title="Kauno marių apleista stovyklą" />
+    <item
+        android:id="@+id/gastilioniuAtodanga"
+        android:title="Gastilionių atodanga" />
+    <item
+        android:id="@+id/rumsiskiuMuziejus"
+        android:title="Rumšiškių liaudies buities muziejus" />
+    <item
+        android:id="@+id/rumsiskiuPrieplauka"
+        android:title="Rumšiškių prieplauka" />
+    <item
+        android:id="@+id/kapitoniskiuPazintinisTakas"
+        android:title="Kapitoniškių pažintinis takas" />
+    <item
+        android:id="@+id/mergakalnis"
+        android:title="Mergakalnio apžvalgos aikštelė" />
+    <item
+        android:id="@+id/kruonioHAE"
+        android:title="Kruonio HAE" />
+    <item
+        android:id="@+id/zigosIlanka"
+        android:title="Žigos įlanka" />
+    <item
+        android:id="@+id/skulpturuParkas"
+        android:title="Skulptūrų parkas" />
+    <item
+        android:id="@+id/ziegzdzriuTakas"
+        android:title="Žiegždrių takas" />
+    <item
+        android:id="@+id/laumenuParkas"
+        android:title="Laumėnų parkas" />
+    <item
+        android:id="@+id/laumenuPazintinisTakas"
+        android:title="Laumėnų pažintinis takas" />
+    <item
+        android:id="@+id/pakalniskiuPazintinisTakas"
+        android:title="Pakalniškių pažintinis takas" />
+
+
+</menu>

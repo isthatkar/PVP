@@ -7,29 +7,29 @@
 
     <Button
         android:id="@+id/mapsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="344dp"
+        android:layout_marginTop="350dp"
         android:text="Žemėlapis" />
 
     <Button
         android:id="@+id/contactButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="273dp"
+        android:layout_marginTop="280dp"
         android:text="Kontaktai" />
 
     <Button
         android:id="@+id/myPointsButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="210dp"
         android:text="Taskai" />
 
 </RelativeLayout>
