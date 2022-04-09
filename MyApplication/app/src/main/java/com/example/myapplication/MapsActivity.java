@@ -1,25 +1,26 @@
 package com.example.myapplication;
 
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
-
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.Uri;
+import android.content.res.Resources;
+import android.media.Image;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.PopupMenu;
-
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.example.myapplication.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -28,9 +29,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private ActivityMapsBinding binding;
     private GoogleMap map;
     Button searchButton;
+    ImageView typeMapsButton;
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
     private boolean mLocationPermissionsGranted = false;
     LocationPermissions enableLocationPermissions = new LocationPermissions();
+
 
 
     @Override
@@ -45,14 +48,47 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        typeMapsButton = (ImageView) findViewById(R.id.typeImage);
+
+        typeMapsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu difftype = new PopupMenu(MapsActivity.this, v);
+                difftype.getMenuInflater().inflate(R.menu.difftype_menu, difftype.getMenu());
+                difftype.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()){
+                            case R.id.standart:
+                                map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                                return true;
+                            case R.id.satellite:
+                                map.setMapType((GoogleMap.MAP_TYPE_SATELLITE));
+                                return true;
+                            case R.id.terrain:
+                                map.setMapType((GoogleMap.MAP_TYPE_TERRAIN));
+                                return true;
+                            case R.id.hybrid:
+                                map.setMapType((GoogleMap.MAP_TYPE_HYBRID));
+                                return true;
+
+                            default:
+                                return false;
+                        }
+                    }
+                });
+                difftype.show();
+            }
+        });
+
         searchButton = (Button) findViewById(R.id.searchButton);
 
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupMenu popupMenu = new PopupMenu(MapsActivity.this, v);
-                popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
-                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                PopupMenu objectMenu = new PopupMenu(MapsActivity.this, v);
+                objectMenu.getMenuInflater().inflate(R.menu.popup_menu, objectMenu.getMenu());
+                objectMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         switch (item.getItemId()){
@@ -137,7 +173,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         }
                     }
                 });
-                popupMenu.show();
+                objectMenu.show();
             }
         });
 
@@ -150,7 +186,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         map = googleMap;
         addMarkers(map);
         enableLocationPermissions.enableLocation(map,this);
-
     }
 
     @Override
@@ -298,4 +333,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
     }
+
+
+
+
 }
