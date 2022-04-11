@@ -11,7 +11,7 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="210dp"
         android:text="Žemėlapis" />
 
     <Button
@@ -20,7 +20,7 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="280dp"
+        android:layout_marginTop="420dp"
         android:text="Kontaktai" />
 
     <Button
@@ -29,7 +29,16 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="210dp"
-        android:text="Taskai" />
+        android:layout_marginTop="350dp"
+        android:text="Taškai" />
+
+    <Button
+        android:id="@+id/allObjectsButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:text="Objektai" />
 
 </RelativeLayout>
