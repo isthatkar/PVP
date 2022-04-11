@@ -96,5 +96,8 @@
         <activity
             android:name=".ZiglosActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".AllObjectsListActivity"
+            android:exported="true"></activity>
     </application>
 </manifest>

@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mapsButton;
     private Button contactButton;
     private Button myPointsButton;
+    private Button allObjectsButton;
 
 
     @Override
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         mapsButton     = (Button) findViewById(R.id.mapsButton);
         contactButton  = (Button) findViewById(R.id.contactButton);
         myPointsButton = (Button) findViewById(R.id.myPointsButton);
+        allObjectsButton = (Button) findViewById(R.id.allObjectsButton);
 
 
         mapsButton.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
            }
        });
 
+        allObjectsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openListOfAllObjects();//open allObjectsList
+            }
+        });
+
 
     }
 
@@ -66,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void openListOfAllObjects(){
+        Intent intent = new Intent(this, AllObjectsListActivity.class);
+        startActivity(intent);
+    }
 
 }
