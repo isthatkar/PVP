@@ -1,13 +1,21 @@
 package com.example.myapplication;
 import android.Manifest;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -31,18 +39,122 @@ public class PazaislioActivity extends AppCompatActivity {
 
 
 
-
         showIfUnvisited();
         setObjectData();
 
+        ActivityCompat.requestPermissions(this,new String[]
+                {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
+
+        locationManager=(LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
+        {
+            OnGPS();
+        }
+        else
+        {
+            getLocation();
+        }
+
     }
+    private static  final int REQUEST_LOCATION=1;
+    LocationManager locationManager;
+    String latitude,longitude;
+
     private static final int STORAGE_PERMISSION_CODE = 101;
     private static final String FILE_NAME = "example.txt";
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
     int objectNr=1;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=50000; // Distance to object (if this is more than actual distance, button wont show)
+    public void showIfUnvisited()
+    {
+        Button playButton = (Button) findViewById(R.id.button_addPoint1);  //##########################################################     cia pakeisti
+        if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
+        {
+            playButton.setVisibility(View.VISIBLE);
+            playButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //when "visit" is clicked hide button
 
+
+                    checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
+
+                }
+            });
+        }
+
+    }
+    private void getLocation() {
+
+        //Check Permissions again
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
+                ActivityCompat.checkSelfPermission(this,
+
+                        Manifest.permission.ACCESS_COARSE_LOCATION) !=PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(this,new String[]
+                    {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
+        }
+        else
+        {
+            Location LocationGps= locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            Location LocationNetwork=locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+            Location LocationPassive=locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
+
+            if (LocationGps !=null)
+            {
+                double lat=LocationGps.getLatitude();
+                double longi=LocationGps.getLongitude();
+
+                latitude=String.valueOf(lat);
+                longitude=String.valueOf(longi);
+            }
+            else if (LocationNetwork !=null)
+            {
+                double lat=LocationNetwork.getLatitude();
+                double longi=LocationNetwork.getLongitude();
+
+                latitude=String.valueOf(lat);
+                longitude=String.valueOf(longi);
+            }
+            else if (LocationPassive !=null)
+            {
+                double lat=LocationPassive.getLatitude();
+                double longi=LocationPassive.getLongitude();
+
+                latitude=String.valueOf(lat);
+                longitude=String.valueOf(longi);
+            }
+            else
+            {
+                Toast.makeText(this, "Can't Get Your Location", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+    }
+
+    private void OnGPS() {
+
+        final AlertDialog.Builder builder= new AlertDialog.Builder(this);
+
+        builder.setMessage("Enable GPS").setCancelable(false).setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+            }
+        }).setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                dialog.cancel();
+            }
+        });
+        final AlertDialog alertDialog=builder.create();
+        alertDialog.show();
+    }
     public void setObjectData(){
         objectArray[0]=new Object("Jachtklubas",54.885412,24.024804);
         objectArray[1]=new Object("Pažaislio vienuolynas",54.876222,24.021416);
@@ -65,26 +177,21 @@ public class PazaislioActivity extends AppCompatActivity {
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
     }
-    public void showIfUnvisited()
+    //returns distance in meters between object koordinates and given point
+    public double distance(double lat2, double lon2)
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint1);  //##########################################################     cia pakeisti
-
-        if(getFlag(objectNr)==0)//&&objectArray[objectNr].getLengtitude()-
-        {
-            playButton.setVisibility(View.VISIBLE);
-            playButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    //when "visit" is clicked hide button
-
-
-                    checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE, STORAGE_PERMISSION_CODE);
-
-                }
-            });
-        }
-
+        double lon1 = Math.toRadians(objectArray[objectNr].getPlattitude());
+        lon2 = Math.toRadians(lon2);
+        double lat1 = Math.toRadians(objectArray[objectNr].getLengtitude());
+        lat2 = Math.toRadians(lat2);
+        double dlon = lon2 - lon1;
+        double dlat = lat2 - lat1;
+        double a = Math.pow(Math.sin(dlat / 2), 2) + Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin(dlon / 2),2);
+        double c = 2 * Math.asin(Math.sqrt(a));
+        double r = 6371;
+        return((c * r)*1000);
     }
+
     public int getFlag(int object) {
         FileInputStream fis = null;
         StringBuilder sb = new StringBuilder();
@@ -144,9 +251,9 @@ public class PazaislioActivity extends AppCompatActivity {
             File file = new File(getApplicationContext().getFilesDir(),FILE_NAME);
             if(file.exists())
             {
-                fis = openFileInput(FILE_NAME);//skaitome is failo
+                fis = openFileInput(FILE_NAME);
                 InputStreamReader isr = new InputStreamReader(fis);
-                BufferedReader br = new BufferedReader(isr);//jei failas egzistuoja, vadinasi nuskaitysim duomenis, sudesim i masyva ir pakeisim ta vieta kuria reikia ir vel sudesim i txt faila.
+                BufferedReader br = new BufferedReader(isr);
 
                 String text;
 
@@ -154,7 +261,7 @@ public class PazaislioActivity extends AppCompatActivity {
                 {
                     sb.append(text).append("\n");
                 }
-                String text2=sb.toString();//parsiname ir dedame i masyva
+                String text2=sb.toString();
                 text2 = text2.replaceAll("\n", "");
                 String[]arrOfStr = text2.split(";", 0);
                 intArray=new int[arrOfStr.length];
@@ -165,7 +272,7 @@ public class PazaislioActivity extends AppCompatActivity {
                 intArray[object]=flag;
             }
             else {
-                intArray=new int[19];//HARDCODAS, Toks skaicius kiek mes objektu turim
+                intArray=new int[19];//HARDCODED, ammount of objects, we currently have
                 for(int i=0;i<intArray.length;i++)
                 {
                     intArray[i]=0;
@@ -192,7 +299,6 @@ public class PazaislioActivity extends AppCompatActivity {
                 }
             }
         }
-        //loadinimas atgal i faila
         FileOutputStream fos = null;
         try {
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
@@ -218,23 +324,20 @@ public class PazaislioActivity extends AppCompatActivity {
     public void checkPermission(String permission, int requestCode)
     {
         if (ContextCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_DENIED) {
-
-            // Requesting the permission
             ActivityCompat.requestPermissions(this, new String[] { permission }, requestCode);
         }
         else {
-            Toast.makeText(this, "Permission already granted", Toast.LENGTH_SHORT).show();
-            loadToArray(objectNr,1);
-            Button playButton = (Button) findViewById(R.id.button_addPoint0);
-            playButton.setVisibility(View.GONE);
+            try {
+                Toast.makeText(this, "Permission already granted", Toast.LENGTH_SHORT).show();
+                loadToArray(objectNr,1);
+                Button playButton = (Button) findViewById(R.id.button_addPoint0);
+                playButton.setVisibility(View.GONE);
+            }
+            catch (Exception e) {
+
+            }
         }
     }
-
-
-    // This function is called when the user accepts or decline the permission.
-    // Request Code is used to check which permission called this function.
-    // This request code is provided when the user is prompt for permission.
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
     {
@@ -253,3 +356,4 @@ public class PazaislioActivity extends AppCompatActivity {
         }
     }
 }
+
