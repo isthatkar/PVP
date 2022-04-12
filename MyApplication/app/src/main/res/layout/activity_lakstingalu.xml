@@ -90,6 +90,15 @@ Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliep
             android:layout_height="wrap_content"
             android:text="Anksčiau vykdavo poezijos vakarai, bet pastaruoju metu renginių nebevyksta."
             android:layout_below="@id/textView12"/>
+        <Button
+            android:id="@+id/button_addPoint3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="I am at this object !"
+            android:visibility="gone" />
 
     </RelativeLayout>
 </ScrollView>

@@ -74,6 +74,14 @@ Vieškūnų piliakalnis datuojamas XIV a. antrąja puse. Piliakalnis buvo įreng
             android:layout_height="wrap_content"
             android:text="Netoli yra geležinkelio (Palemono) fortas."
             android:layout_below="@id/textView10"/>
-
+        <Button
+            android:id="@+id/button_addPoint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="I am at this object !"
+            android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

@@ -99,7 +99,6 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_marginTop="18dp"
             android:text="I am at this object !"
             android:visibility="gone" />
-        <!--android:onClick="addPointTo0"-->
 
     </RelativeLayout>
 </ScrollView>

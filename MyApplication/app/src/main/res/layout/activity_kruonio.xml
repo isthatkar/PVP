@@ -88,6 +88,14 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
             android:layout_height="wrap_content"
             android:text="Ekskursijos po Kruonio HAE  įprastai vedamos penktadieniais nuo 12:30, tik šiuo metu jos nėra organizuojamos, tikimasi, kad ekskursijos bus atnaujintos nuo rudenio, jei leis epidemiologinė situacija."
             android:layout_below="@id/textView12"/>
-
+        <Button
+            android:id="@+id/button_addPoint12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="I am at this object !"
+            android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

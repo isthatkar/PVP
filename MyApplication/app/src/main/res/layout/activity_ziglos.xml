@@ -89,6 +89,14 @@ Netoliese yra žirgynas, kur galėsite išmėginti pasijodinėjimą, ar ramų pa
             android:layout_height="wrap_content"
             android:text="Netoliese yra žirgynas, kur galėsite išmėginti pasijodinėjimą, ar ramų pasivaikščiojimą su žirgais Arlaviškių- Viršužiglio apylinkėse."
             android:layout_below="@id/textView12"/>
-
+        <Button
+            android:id="@+id/button_addPoint13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="I am at this object !"
+            android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>
