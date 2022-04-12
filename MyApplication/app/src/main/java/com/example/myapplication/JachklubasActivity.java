@@ -39,8 +39,6 @@ public class JachklubasActivity extends AppCompatActivity{
 
 
         setObjectData();
-        showIfUnvisited();
-        
 
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
@@ -54,7 +52,7 @@ public class JachklubasActivity extends AppCompatActivity{
         {
             getLocation();
         }
-
+        showIfUnvisited();
     }
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
@@ -66,7 +64,7 @@ public class JachklubasActivity extends AppCompatActivity{
     int[] intArray;
     Object[] objectArray= new Object[19];
     int objectNr=0;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=500; // Distance to object (if this is more than actual distance, button wont show)
+    int ToObjectDistance=500000000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
         Button playButton = (Button) findViewById(R.id.button_addPoint0);  //##########################################################     cia pakeisti
@@ -328,15 +326,21 @@ public class JachklubasActivity extends AppCompatActivity{
         }
         else {
             try {
-                Toast.makeText(this, "Permission already granted", Toast.LENGTH_SHORT).show();
-                loadToArray(objectNr,1);
+                Toast.makeText(this, "Objektas Pridėtas prie aplankytų", Toast.LENGTH_SHORT).show();
                 Button playButton = (Button) findViewById(R.id.button_addPoint0);
                 playButton.setVisibility(View.GONE);
+                loadToArray(objectNr,1);
+
+                openCounter();
             }
             catch (Exception e) {
 
             }
         }
+    }
+    public void openCounter(){
+        Intent intent = new Intent(this, VisitedCounterActivity.class);
+        startActivity(intent);
     }
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
