@@ -38,9 +38,9 @@ public class JachklubasActivity extends AppCompatActivity{
         getSupportActionBar().hide();
 
 
-
-        showIfUnvisited();
         setObjectData();
+        showIfUnvisited();
+        
 
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
