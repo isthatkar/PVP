@@ -324,7 +324,7 @@ public class LakstingaluActivity extends AppCompatActivity {
         }
         else {
             try {
-                Toast.makeText(this, "Objektas Pridėtas prie aplankytų", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
                 Button playButton = (Button) findViewById(R.id.button_addPoint3);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);

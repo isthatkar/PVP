@@ -17,10 +17,12 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            android:layout_marginTop="30px"
             android:layout_centerHorizontal="true"
-            android:text="GASTILIONIŲ ATODANGA" />
+            android:layout_marginTop="30px"
+            android:text="GASTILIONIŲ ATODANGA"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            />
 
         <TextView
             android:id="@+id/textView7"
@@ -78,7 +80,7 @@
             android:layout_below="@+id/textView11"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="I am at this object !"
+            android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

@@ -33,10 +33,9 @@ public class GastilioniuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gastilioniu);
-
         getSupportActionBar().hide();
-        setObjectData();
 
+        setObjectData();
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -323,7 +322,7 @@ public class GastilioniuActivity extends AppCompatActivity {
         }
         else {
             try {
-                Toast.makeText(this, "Objektas Pridėtas prie aplankytų", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
                 Button playButton = (Button) findViewById(R.id.button_addPoint7);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);

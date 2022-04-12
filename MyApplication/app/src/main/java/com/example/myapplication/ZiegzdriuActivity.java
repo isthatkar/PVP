@@ -35,6 +35,7 @@ public class ZiegzdriuActivity  extends AppCompatActivity {
         setContentView(R.layout.activity_ziegzdriu);
 
         getSupportActionBar().hide();
+        setObjectData();
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -321,7 +322,7 @@ public class ZiegzdriuActivity  extends AppCompatActivity {
         }
         else {
             try {
-                Toast.makeText(this, "Objektas Pridėtas prie aplankytų", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
                 Button playButton = (Button) findViewById(R.id.button_addPoint15);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);

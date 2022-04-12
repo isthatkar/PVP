@@ -96,7 +96,7 @@ Netoliese yra žirgynas, kur galėsite išmėginti pasijodinėjimą, ar ramų pa
             android:layout_below="@+id/textView13"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="I am at this object !"
+            android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

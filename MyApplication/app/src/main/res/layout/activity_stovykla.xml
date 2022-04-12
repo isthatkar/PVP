@@ -79,7 +79,7 @@ Stovykloje savininkai mainėsi ne kartą, įsivelta į teismų maratonus, kur su
             android:layout_below="@+id/textView11"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="I am at this object !"
+            android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>
