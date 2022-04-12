@@ -55,6 +55,14 @@
             android:layout_height="wrap_content"
             android:text="Keliaudami Kapitoniškių pažintiniu taku apsilankysite ir Mergakalnio apžvalgos aikštelėje"
             android:layout_below="@id/textView10"/>
-
+        <Button
+            android:id="@+id/button_addPoint10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

@@ -75,6 +75,14 @@ Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta pui
             android:layout_height="wrap_content"
             android:text="Galima išsinuomuoti laivelį arba katerį."
             android:layout_below="@id/textView10"/>
-
+        <Button
+            android:id="@+id/button_addPoint5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

@@ -2,8 +2,11 @@ package com.example.myapplication;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,9 +25,6 @@ public class VisitedCounterActivity extends AppCompatActivity {
     int[] intArray;
     Object[] objectArray= new Object[19];
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +38,9 @@ public class VisitedCounterActivity extends AppCompatActivity {
         printObjects();
 
 
-
-
     }
+
+
 
 
     public void printObjects(){
@@ -57,7 +57,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
         {
             objects.setVisibility(View.GONE);
         }
-        objects.setText("My visited objects:\n"+ text);
+        objects.setText("Mano aplankyti objektai:\n"+ text);
 
     }
     public void makeSureNotZero() {
@@ -97,7 +97,7 @@ public class VisitedCounterActivity extends AppCompatActivity {
     }
     public void setPoints(){
         TextView points = (TextView)  findViewById(R.id.textView_points);
-        points.setText("My points: "+ Integer.toString(countPoints()));
+        points.setText("Mano taškai: "+ Integer.toString(countPoints()));
     }
 
     public int countPoints(){
@@ -365,8 +365,10 @@ public class VisitedCounterActivity extends AppCompatActivity {
             fos.write(text.getBytes());
 
             mEditText.getText().clear();
-            Toast.makeText(this, "Saved to " + getFilesDir() + "/" + FILE_NAME,
+            Toast.makeText(this, "Sąrašas ištrintas!",
                     Toast.LENGTH_LONG).show();
+            finish();
+            startActivity(getIntent());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

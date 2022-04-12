@@ -101,9 +101,9 @@ Festivalis Jachtklubas OPEN AIR 2022, R. Kalantos gatvė, Kaunas, Lietuva, 2022-
         android:layout_below="@+id/textView13"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:text="I am at this object !"
+        android:text="Esu objekto teritorijoje!"
         android:visibility="gone" />
-        <!--android:onClick="addPointTo0"-->
+
 
 
 </RelativeLayout>

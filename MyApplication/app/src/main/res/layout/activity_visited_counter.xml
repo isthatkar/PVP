@@ -45,7 +45,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:onClick="reset"
-        android:text="reset visited objects" />
+        android:text="Ištrinkite sąrašą" />
 
     <TextView
         android:id="@+id/textView_points"
@@ -55,7 +55,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:textStyle="normal|bold"
-        android:text="My points:" />
+        android:text="Mano taškai:" />
     <TextView
         android:id="@+id/textView_objects"
         android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
         android:textStyle="normal|bold"
-        android:text="My visited objects:\n\n" />
+        android:text="Mano aplankyti objektai:\n\n" />
 
 
 </RelativeLayout>

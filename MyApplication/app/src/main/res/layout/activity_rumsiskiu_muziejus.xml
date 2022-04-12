@@ -90,6 +90,14 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:layout_height="wrap_content"
             android:text="Užgavėnių šventės, muzikos festivalis “Granatos”, Velykos, žolinės šventės, muziejų naktis, adventinis miestelis, Oninės ir rugiapjūtė, Joninės"
             android:layout_below="@id/textView12"/>
-
+        <Button
+            android:id="@+id/button_addPoint8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

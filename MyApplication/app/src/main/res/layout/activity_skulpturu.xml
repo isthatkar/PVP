@@ -89,6 +89,14 @@ iš vandens išnyra šienpjoviai, bažnyčios varpinė, įvairūs gyvūnai, auga
             android:layout_height="wrap_content"
             android:text="2020 metais vyko renginys „lipantys iš vandens“. Panašūs renginiai gali būti organizuojami ir ateityje."
             android:layout_below="@id/textView12"/>
-
+        <Button
+            android:id="@+id/button_addPoint14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

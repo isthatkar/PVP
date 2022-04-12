@@ -72,7 +72,15 @@
             android:text="Aplink pakalniškių pažintinį taką yra nemaža dalis lankytinų objektų: Žiegždrių atodanga, pelkės, Pažaislio vienuolynas, Kruonio HAE, Laumėnų parkas ir pažintinis takas.
 Pačiame pakalniškių pažintiniame take, pramogas teks susigalvoti pačiam, bet jei esate žvejybos mėgėjas, nusileidę prie vandens, tikrai sutiksite žvejų besidžiaugiančiu savo laimikiu."
             android:layout_below="@id/textView10"/>
-
+        <Button
+            android:id="@+id/button_addPoint18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
 
     </RelativeLayout>
 </ScrollView>

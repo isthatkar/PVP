@@ -37,10 +37,7 @@ public class PazaislioActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pazaislis);
         getSupportActionBar().hide();
 
-
-
         setObjectData();
-
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -65,7 +62,7 @@ public class PazaislioActivity extends AppCompatActivity {
     int[] intArray;
     Object[] objectArray= new Object[19];
     int objectNr=1;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=500000000; // Distance to object (if this is more than actual distance, button wont show)
+    int ToObjectDistance=500; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
         Button playButton = (Button) findViewById(R.id.button_addPoint1);  //##########################################################     cia pakeisti
@@ -129,7 +126,7 @@ public class PazaislioActivity extends AppCompatActivity {
             }
             else
             {
-                Toast.makeText(this, "Can't Get Your Location", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Nepavyksta nustatyti vietovės", Toast.LENGTH_SHORT).show();
             }
         }
 
@@ -198,7 +195,7 @@ public class PazaislioActivity extends AppCompatActivity {
             File file = new File(getApplicationContext().getFilesDir(),FILE_NAME);
             if(file.exists())
             {
-                fis = openFileInput(FILE_NAME);//skaitome is failo
+                fis = openFileInput(FILE_NAME);
                 InputStreamReader isr = new InputStreamReader(fis);
                 BufferedReader br = new BufferedReader(isr);
 
@@ -208,7 +205,7 @@ public class PazaislioActivity extends AppCompatActivity {
                 {
                     sb.append(text).append("\n");
                 }
-                String text2=sb.toString();//parsiname ir dedame i masyva
+                String text2=sb.toString();
                 text2 = text2.replaceAll("\n", "");
                 String[]arrOfStr = text2.split(";", 0);
                 intArray=new int[arrOfStr.length];
@@ -327,22 +324,17 @@ public class PazaislioActivity extends AppCompatActivity {
         }
         else {
             try {
-                Toast.makeText(this, "Objektas Pridėtas prie aplankytų", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint0);
+                Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
+                Button playButton = (Button) findViewById(R.id.button_addPoint1);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
-
-                openCounter();
             }
             catch (Exception e) {
 
             }
         }
     }
-    public void openCounter(){
-        Intent intent = new Intent(this, VisitedCounterActivity.class);
-        startActivity(intent);
-    }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
     {
@@ -353,12 +345,11 @@ public class PazaislioActivity extends AppCompatActivity {
         if (requestCode == STORAGE_PERMISSION_CODE) {
             if (grantResults.length > 0
                     && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "Storage Permission Granted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Prieiga prie telefono duomenų suteikta", Toast.LENGTH_SHORT).show();
 
             } else {
-                Toast.makeText(this, "Storage Permission Denied", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Prieiga prie telefono duomenų atmesta", Toast.LENGTH_SHORT).show();
             }
         }
     }
 }
-
