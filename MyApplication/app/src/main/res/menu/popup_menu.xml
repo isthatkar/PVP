@@ -42,7 +42,7 @@
         android:title="Kruonio HAE" />
     <item
         android:id="@+id/zigosIlanka"
-        android:title="Žigos įlanka" />
+        android:title="Žiglos įlanka" />
     <item
         android:id="@+id/skulpturuParkas"
         android:title="Skulptūrų parkas" />
