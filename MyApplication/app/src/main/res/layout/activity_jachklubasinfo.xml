@@ -22,12 +22,56 @@
         android:layout_centerHorizontal="true"
         android:text="JACHTKLUBAS" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/audioFormat"
+        android:padding="7dp"
+        android:layout_below="@id/textView6"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/play_button"
+            android:src="@drawable/playbuttonmedia"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/pause_button"
+            android:src="@drawable/ic_baseline_pause_24"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_position"
+            android:text="00:00"
+            android:textColor="@color/black"/>
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/seekbar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/player_duration"
+            android:text="00:00"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30px"
-        android:layout_below="@id/textView6"
+        android:layout_below="@id/audioFormat"
         android:text="Statant jacht klubą valstybės skirtų pinigų užteko tik dviems iš trijų etapų. Pritrūko pinigų pagrindiniam jachtklubo korpusui. Tuomet jau buvo įrengta krantinė, molas, bet nebuvo, kur laikyti laivus. Nors ir buvo prašyta skirti pinigų korpuso įrengimui, tačiau visi tikino, kad tam pinigų nėra. Tuomet pagrindinis iniciatorius Viktoras Badganovas sužinojo jog Trakuose norima statyti irklavimo bazę. Viktoras prisipažįsta, kad Maskvoje teko papirkti žmones tam, jog vietoj tos bazės Trakuose, iškiltų jachtklubo korpusas Kaune." />
 
     <ImageView
@@ -48,6 +92,7 @@
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
         />
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"

@@ -1,16 +1,22 @@
 package com.example.myapplication;
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,9 +33,19 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
 
 
 public class JachklubasActivity extends AppCompatActivity{
+
+    TextView playerPosition, playerDuration;
+    SeekBar seekBar;
+    ImageView btPlay, btPause;
+
+    MediaPlayer mediaPlayer;
+    Handler handler = new Handler();
+    Runnable runnable;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +67,95 @@ public class JachklubasActivity extends AppCompatActivity{
             getLocation();
         }
         showIfUnvisited();
+
+
+        playerPosition = findViewById(R.id.player_position);
+        playerDuration = findViewById(R.id.player_duration);
+        seekBar        = findViewById(R.id.seekbar);
+        btPlay         = findViewById(R.id.play_button);
+        btPause        = findViewById(R.id.pause_button);
+
+        mediaPlayer = MediaPlayer.create(this, R.raw.ltjachtklubasistorija);
+
+        runnable = new Runnable() {
+            @Override
+            public void run() {
+                seekBar.setProgress(mediaPlayer.getCurrentPosition());
+                handler.postDelayed(this, 500);
+            }
+        };
+
+        int duration = mediaPlayer.getDuration();
+        String sDuration = convertFormat(duration);
+        playerDuration.setText(sDuration);
+
+        btPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlay.setVisibility(View.GONE);
+                mediaPlayer.start();
+                seekBar.setMax(mediaPlayer.getDuration());
+                handler.postDelayed(runnable, 0);
+                btPause.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btPause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlay.setVisibility(View.VISIBLE);
+                mediaPlayer.pause();
+                handler.removeCallbacks(runnable);
+                handler.postDelayed(runnable, 0);
+                btPause.setVisibility(View.GONE);
+            }
+        });
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    mediaPlayer.seekTo(progress);
+                }
+                playerPosition.setText(convertFormat(mediaPlayer.getCurrentPosition()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                btPlay.setVisibility(View.VISIBLE);
+                mediaPlayer.seekTo(0);
+            }
+        });
     }
+
+    @Override
+    public void onBackPressed(){
+        if(mediaPlayer.isPlaying()){
+            mediaPlayer.stop();
+        }
+        super.onBackPressed();
+    }
+
+    @SuppressLint("DefaultLocale")
+    private String convertFormat(int duration) {
+        return String.format("%02d:%02d",
+                TimeUnit.MILLISECONDS.toMinutes(duration),
+                TimeUnit.MILLISECONDS.toSeconds(duration) -
+                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
+    }
+
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
     String latitude,longitude;
@@ -82,6 +186,7 @@ public class JachklubasActivity extends AppCompatActivity{
         }
 
     }
+
     private void getLocation() {
 
         //Check Permissions again
@@ -325,7 +430,7 @@ public class JachklubasActivity extends AppCompatActivity{
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint0);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                Button playButton = (Button) findViewById(R.id.button_addPoint0);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }
