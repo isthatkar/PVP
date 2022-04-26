@@ -169,7 +169,8 @@ public class JachklubasActivity extends AppCompatActivity{
     int ToObjectDistance=700; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint0);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint0);
+        playButton.setVisibility(View.VISIBLE);//##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
