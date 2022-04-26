@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Kauno marių gidas</string>
     <string name="title_activity_maps">Kauno marių gidas</string>
+
+    <string-array name="pasirinkimai">
+        <item>Visi objektai</item>
+        <item>Neaplankyti objektai</item>
+        <item>Aplankyti objektai</item>
+    </string-array>
 </resources>
