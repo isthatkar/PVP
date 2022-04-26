@@ -62,11 +62,8 @@ public class JachklubasActivity extends AppCompatActivity{
     int[] intArray;
     Object[] objectArray= new Object[19];
     int objectNr=0;    //###############################################################   0 tik jacht klubui
-<<<<<<< HEAD
-    int ToObjectDistance=0; // Distance to object (if this is more than actual distance, button wont show)
-=======
+
     int ToObjectDistance=700; // Distance to object (if this is more than actual distance, button wont show)
->>>>>>> 9344e57778a8c373ef80544c8fc6214453bbea5b
     public void showIfUnvisited()
     {
         Button playButton = (Button) findViewById(R.id.button_addPoint0);
