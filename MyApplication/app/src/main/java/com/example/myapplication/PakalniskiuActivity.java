@@ -61,7 +61,7 @@ public class PakalniskiuActivity  extends AppCompatActivity {
     int[] intArray;
     Object[] objectArray= new Object[19];
     int objectNr=18;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=500; // Distance to object (if this is more than actual distance, button wont show)
+    int ToObjectDistance=3500; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
         Button playButton = (Button) findViewById(R.id.button_addPoint18);  //##########################################################     cia pakeisti

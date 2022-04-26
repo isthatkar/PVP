@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -6,10 +7,28 @@
     android:background="@drawable/green"
     android:padding="10dp"
     android:fillViewport="true">
+=======
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Spinner
+        android:id="@+id/spinner_ObjectOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+>>>>>>> 9344e57778a8c373ef80544c8fc6214453bbea5b
 
     <ListView
         android:id="@+id/mobile_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
-    </ScrollView>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_ObjectOptions"
+        android:layout_marginTop="18dp"
+        />
+
+
+    </RelativeLayout>
