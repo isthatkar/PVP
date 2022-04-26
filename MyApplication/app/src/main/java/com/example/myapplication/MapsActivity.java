@@ -238,18 +238,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(kaunoMariuRegioninisParkas).title("Kauno marių regioninis parkas").icon(BitmapDescriptorFactory.fromResource(R.drawable.regioninisicon)));
         mMap.addMarker(new MarkerOptions().position(meilesIlanka).title("Meilės įlanka").icon(BitmapDescriptorFactory.fromResource(R.drawable.loveicon)));
         mMap.addMarker(new MarkerOptions().position(apleistaStovykla).title("Kauno marių apleista stovykla").icon(BitmapDescriptorFactory.fromResource(R.drawable.apleistaicon)));
-        mMap.addMarker(new MarkerOptions().position(gastilioniuAtodanga).title("Gastilionių atodanga").icon(BitmapDescriptorFactory.fromResource(R.drawable.gastilijonuicon)));
+        mMap.addMarker(new MarkerOptions().position(gastilioniuAtodanga).title("Gastilionių atodanga").icon(BitmapDescriptorFactory.fromResource(R.drawable.suneliskiuicon)));
         mMap.addMarker(new MarkerOptions().position(rumsiskiuMuziejus).title("Rumšiškių liaudies buities muziejus").icon(BitmapDescriptorFactory.fromResource(R.drawable.liaudiesicon)));
         mMap.addMarker(new MarkerOptions().position(rumsiskiuPrieplauka).title("Rumšiškių prieplauka").icon(BitmapDescriptorFactory.fromResource(R.drawable.rumsiskiuicon)));
-        mMap.addMarker(new MarkerOptions().position(kapitoniskiuPazintinisTakas).title("Kapitoniškių pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.takelisicon)));
+        mMap.addMarker(new MarkerOptions().position(kapitoniskiuPazintinisTakas).title("Kapitoniškių pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
         mMap.addMarker(new MarkerOptions().position(mergakalnis).title("Mergakalnio apžvalgos aikštelė").icon(BitmapDescriptorFactory.fromResource(R.drawable.mergakalnioicon)));
         mMap.addMarker(new MarkerOptions().position(kruonioHAE).title("Kruonio HAE").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
         mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žiglos įlanka").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
         mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų parkas").icon(BitmapDescriptorFactory.fromResource(R.drawable.skulpturuicon)));
-        mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.takelisicon)));
+        mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
         mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumėnų parkas").icon(BitmapDescriptorFactory.fromResource(R.drawable.laumenuicon)));
-        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.takelisicon)));
-        mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.takelisicon)));
+        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
+        mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
