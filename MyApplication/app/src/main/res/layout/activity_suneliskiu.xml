@@ -23,12 +23,57 @@
             android:layout_centerHorizontal="true"
             android:text="ŠUNELIŠKIŲ KALNAS" />
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/suneliskiuFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/textView6"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/suneliskiuFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/suneliskiuFaktai"
             android:text="Žmonės pasakoja, kad kadais ant piliakalnio nusižudė vietos dvarininko duktė. Nuo tada čia ėmę vaidentis. Eini naktį, tai čiulba, tai staugia. Bet dažniausia tai vaidenasi visokie šunys, nuo jų toks ir kalno vardas. Už piliakalnio prasideda Lakštingalų slėnis." />
 
         <ImageView
@@ -49,11 +94,57 @@
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/suneliskiuIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/suneliskiuIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView9"
+            android:layout_below="@id/suneliskiuIstorija"
             android:text="Vieškūnų piliakalnis dar vadinamas Šuneliškių kalnu, įrengtas aukštumos kyšulyje į Nemuno slėnį, dabar iš pietų juosiamame Kauno marių, o iš vakarų – Šuneliškių Ravo upelio. Tai – vienas geriausiai išlikusių Lietuvos piliakalnių, nes ilgą laiką buvo nežinomas ir atrastas tik 1992 metais.
 Vieškūnų piliakalnis datuojamas XIV a. antrąja puse. Piliakalnis buvo įrengtas kaip mūrinę Kauno pilį iš pietryčių pusės dengianti medinė pilaitė. Pilaitė buvo mažiausiai vieną kartą pulta.
 Šalia pilaitės buvo įkurta papėdės gyvenvietė, įrengta ankstesnės akmens amžiaus gyvenvietės vietoje ir gyvavusi tiek pat, kiek ir pats piliakalnis. Medinei pilaitei Vieškūnų piliakalnyje sunykus, gyvenimas vėl persikėlė į Nemuno slėnį. Jame turėjo būti ir to meto kapinynas.

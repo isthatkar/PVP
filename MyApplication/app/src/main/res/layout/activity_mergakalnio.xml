@@ -23,12 +23,56 @@
             android:layout_centerHorizontal="true"
             android:text="MERGAKALNIO APŽVALGOS AIKŠTELĖ" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/mergakalnioFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/textView6"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/mergakalnioFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/mergakalnioFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mergakalnioFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/mergakalnioFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mergakalnioFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/mergakalnioFaktai"
             android:text="2005 m. ši vietovė paskelbta saugomu Valstybiniu geologiniu gamtos paveldo objektu. Atodangos uolienos – moreniniai stulpai, priemolio ir smiltainio klodai - atsirado vėlyvojo ledynmečio laikotarpiu. Geologiniu požiūriu šlaitas itin vertingas, nes susidarė dėl reto reiškinio - ledyno  atslinkimo ir pasitraukimo. Visa atodanga užima 2,38 ha plotą." />
 
         <ImageView
@@ -49,11 +93,56 @@
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/mergakalnioIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/mergakalnioIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/mergakalnioIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mergakalnioIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/mergakalnioIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mergakalnioIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView9"
+            android:layout_below="@id/mergakalnioIstorija"
             android:text="Apie Mergakalnį sklando trys istorijos. Vieni tvirtina, kad Mergakalniu šlaitas pavadintas, nes kadaise nuo jo nustumdavo nedoras merginas. Kita legenda byloja apie gražuolę vietinio pono dukrą, įsimylėjusią arklininką. Turtuolis supyko, tad arklininkas buvo išsiųstas į rekrūtus, o dukra - užrakinta. Tačiau vieną naktį  baltai apsirengusi mergina, pasikinkiusi arklius, nulėkė tiesiai nuo skardžio. Nuo to laiko, kai per pilnatį Nemune atsiranda Mėnulio takas, ją galima išvysti šukuojančią plaukus ir dainuojančią. Trečioji legenda pasakoja apie karieta nuo priešų bėgusią karalienę, vardu Katerina. Ji pasirinko nulėkti su karieta nuo skardžio, užuot pasidavusi persekiotojams." />
 
         <TextView

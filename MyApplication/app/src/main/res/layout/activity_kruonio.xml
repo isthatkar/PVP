@@ -22,12 +22,57 @@
             android:layout_centerHorizontal="true"
             android:text="KRUONIO HAE" />
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/kruonioFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/textView6"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/kruonioFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/kruonioFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kruonioFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/kruonioFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kruonioFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/kruonioFaktai"
             android:text="Šio tipo elektrinės priskiriamos naujos kartos energetiniams objektams. KHAE skirta subalansuoti elektros gamybą ir suvartojimą, taip pat avarijų energetikos sistemoje prevencijai bei jų likvidavimui. Šiuo metu KHAE užtikrina 94 proc. viso būtino avarinio Lietuvos elektros energetikos sistemos rezervo.
 Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas, pradėjo veikti 1998 metais.
 " />
@@ -50,11 +95,57 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/kruonioIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/kruonioIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/kruonioIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kruonioIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/kruonioIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/kruonioIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView9"
+            android:layout_below="@id/kruonioIstorija"
             android:text="Vienintelė hidroakumuliacinė elektrinė Baltijos šalyse, veikianti Lietuvos energetinėje sistemoje. Išsidėsčiusi Kaišiadorių rajone, į šiaurę nuo Kruonio miestelio, prie Maisiejūnų kaimo. Vandens vaga iš elektrinės įteka į marias ties Strėvos žiotimis." />
 
         <TextView

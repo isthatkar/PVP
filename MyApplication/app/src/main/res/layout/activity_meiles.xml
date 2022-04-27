@@ -23,12 +23,57 @@
             android:layout_centerHorizontal="true"
             android:text="MEILĖS ĮLANKA" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/meilesFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/textView6"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/meilesFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/meilesFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meilesFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/meilesFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meilesFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/meilesFaktai"
             android:text="Šioje vietovėje dažnai lankosi Didieji pilkieji garniai, užsuka ir vienas kitas Baltasis, atokių vietų mėgėjai garniai čia, pasak gamtininko, mėgsta pažvejoti. Idilišką ramybę Kauno marių regioninio parko gamtos apsuptyje karts nuo karto sudrumsčia rėksmingas paukštis tulžys.
 Įlanka gan gili, tinkama priplaukti prie kranto nedidelėmis jachtomis, burlaiviais, laivais ir valtimis. Atkeliauti galima ir pėsčiomis, tą ypač mėgsta žygeiviai. Vanduo Meilės įlankoje gan švarus, tinkamas maudynėms, tačiau rekėtų pasisaugoti gylio, kuris vietomis siekia ir apie 11 metrų.
 " />
@@ -51,11 +96,56 @@
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/meilesIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/meilesIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/meilesIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meilesIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/meilesIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meilesIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView9"
+            android:layout_below="@id/meilesIstorija"
             android:text="Pasak Kauno marių regioninio parko vyriausiojo specialisto (kraštotvarkininko – reindžerio) Evaldo Makricko, Meilės pavadinimą įlanka gavo dar sovietmečiu, kai porelės pamėgo į šią atokią vietą atplaukti laiveliais ir pasibūti vienudu, atokiau nuo miesto šurmulio, akių, pasigėrėti atodanga, gražia panorama, pailsėti, pasivaišinti užkandžiais ir pakopinėti meilės medų.
 Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta puikiai tinka nedideliems piknikams.
 " />

@@ -1,17 +1,23 @@
 package com.example.myapplication;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,8 +33,36 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
 
 public class RegioninisActivity extends AppCompatActivity {
+
+    TextView playerPositionIstorija,
+            playerPositionFaktai1,
+            playerDurationIstorija,
+            playerDurationFaktai1,
+            playerPositionFaktai2,
+            playerDurationFaktai2;
+    SeekBar seekBarIstorija,
+            seekBarFaktai1,
+            seekBarFaktai2;
+    ImageView btPlayIstorija,
+            btPlayFaktai1,
+            btPlayFaktai2,
+            btPauseIstorija,
+            btPauseFaktai1,
+            btPauseFaktai2;
+
+    MediaPlayer mediaPlayerIstorija,
+            mediaPlayerFaktai1,
+            mediaPlayerFaktai2;
+    Handler handlerIstorija = new Handler();
+    Handler handlerFaktai1 = new Handler();
+    Handler handlerFaktai2 = new Handler();
+    Runnable runnableIstorija,
+            runnableFaktai1,
+            runnableFaktai2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +83,261 @@ public class RegioninisActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
+        methodForHistory();
+        methodForFacts1();
+        methodForFacts2();
     }
+
+
+    public void methodForHistory()
+    {
+        playerPositionIstorija = findViewById(R.id.regioninisIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.regioninisIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.regioninisIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.regioninisIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.regioninisIstorijaPause);
+
+
+
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasistorija);
+
+        runnableIstorija = new Runnable() {
+            @Override
+            public void run() {
+                seekBarIstorija.setProgress(mediaPlayerIstorija.getCurrentPosition());
+                handlerIstorija.postDelayed(this, 500);
+            }
+        };
+
+        int duration = mediaPlayerIstorija.getDuration();
+        String sDuration = convertFormat(duration);
+        playerDurationIstorija.setText(sDuration);
+
+        btPlayIstorija.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayIstorija.setVisibility(View.GONE);
+                mediaPlayerIstorija.start();
+                seekBarIstorija.setMax(mediaPlayerIstorija.getDuration());
+                handlerIstorija.postDelayed(runnableIstorija, 0);
+                btPauseIstorija.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btPauseIstorija.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayIstorija.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija.pause();
+                handlerIstorija.removeCallbacks(runnableIstorija);
+                handlerIstorija.postDelayed(runnableIstorija, 0);
+                btPauseIstorija.setVisibility(View.GONE);
+            }
+        });
+
+        seekBarIstorija.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    mediaPlayerIstorija.seekTo(progress);
+                }
+                playerPositionIstorija.setText(convertFormat(mediaPlayerIstorija.getCurrentPosition()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mediaPlayerIstorija.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                btPlayIstorija.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija.seekTo(0);
+                btPauseIstorija.setVisibility(View.GONE);
+
+            }
+        });
+    }
+
+    public void methodForFacts1()
+    {
+        playerPositionFaktai1 = findViewById(R.id.regioninisFaktai1PlayerPosition);
+        playerDurationFaktai1 = findViewById(R.id.regioninisFaktai1PlayerDuration);
+        seekBarFaktai1        = findViewById(R.id.regioninisFaktai1SeekBar);
+        btPlayFaktai1         = findViewById(R.id.regioninisFaktai1Play);
+        btPauseFaktai1        = findViewById(R.id.regioninisFaktai1Pause);
+
+        mediaPlayerFaktai1 = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasfaktai);
+
+        runnableFaktai1 = new Runnable() {
+            @Override
+            public void run() {
+                seekBarFaktai1.setProgress(mediaPlayerFaktai1.getCurrentPosition());
+                handlerFaktai1.postDelayed(this, 500);
+            }
+        };
+
+        int duration = mediaPlayerFaktai1.getDuration();
+        String sDuration = convertFormat(duration);
+        playerDurationFaktai1.setText(sDuration);
+
+        btPlayFaktai1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayFaktai1.setVisibility(View.GONE);
+                mediaPlayerFaktai1.start();
+                seekBarFaktai1.setMax(mediaPlayerFaktai1.getDuration());
+                handlerFaktai1.postDelayed(runnableFaktai1, 0);
+                btPauseFaktai1.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btPauseFaktai1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayFaktai1.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai1.pause();
+                handlerFaktai1.removeCallbacks(runnableFaktai1);
+                handlerFaktai1.postDelayed(runnableFaktai1, 0);
+                btPauseFaktai1.setVisibility(View.GONE);
+            }
+        });
+
+        seekBarFaktai1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    mediaPlayerFaktai1.seekTo(progress);
+                }
+                playerPositionFaktai1.setText(convertFormat(mediaPlayerFaktai1.getCurrentPosition()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mediaPlayerFaktai1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                btPlayFaktai1.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai1.seekTo(0);
+                btPauseFaktai1.setVisibility(View.GONE);
+            }
+        });
+
+    }
+
+    public void methodForFacts2()
+    {
+        playerPositionFaktai2 = findViewById(R.id.regioninisFaktai2PlayerPosition);
+        playerDurationFaktai2 = findViewById(R.id.regioninisFaktai2PlayerDuration);
+        seekBarFaktai2        = findViewById(R.id.regioninisFaktai2SeekBar);
+        btPlayFaktai2        = findViewById(R.id.regioninisFaktai2Play);
+        btPauseFaktai2        = findViewById(R.id.regioninisFaktai2Pause);
+
+        mediaPlayerFaktai2 = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasfaktai2);
+
+        runnableFaktai2 = new Runnable() {
+            @Override
+            public void run() {
+                seekBarFaktai2.setProgress(mediaPlayerFaktai2.getCurrentPosition());
+                handlerFaktai2.postDelayed(this, 500);
+            }
+        };
+
+        int duration = mediaPlayerFaktai2.getDuration();
+        String sDuration = convertFormat(duration);
+        playerDurationFaktai2.setText(sDuration);
+
+        btPlayFaktai2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayFaktai2.setVisibility(View.GONE);
+                mediaPlayerFaktai2.start();
+                seekBarFaktai2.setMax(mediaPlayerFaktai2.getDuration());
+                handlerFaktai2.postDelayed(runnableFaktai2, 0);
+                btPauseFaktai2.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btPauseFaktai2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayFaktai2.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai2.pause();
+                handlerFaktai2.removeCallbacks(runnableFaktai2);
+                handlerFaktai2.postDelayed(runnableFaktai2, 0);
+                btPauseFaktai2.setVisibility(View.GONE);
+            }
+        });
+
+        seekBarFaktai2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    mediaPlayerFaktai2.seekTo(progress);
+                }
+                playerPositionFaktai2.setText(convertFormat(mediaPlayerFaktai2.getCurrentPosition()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mediaPlayerFaktai2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                btPlayFaktai2.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai2.seekTo(0);
+                btPauseFaktai2.setVisibility(View.GONE);
+            }
+        });
+
+    }
+
+    @Override
+    public void onBackPressed(){
+        if(mediaPlayerFaktai1.isPlaying()){
+            mediaPlayerFaktai1.stop();
+        }
+        else if(mediaPlayerFaktai2.isPlaying()){
+            mediaPlayerFaktai2.stop();
+        }
+        else
+            mediaPlayerIstorija.stop();
+        super.onBackPressed();
+    }
+
+    @SuppressLint("DefaultLocale")
+    private String convertFormat(int duration) {
+        return String.format("%02d:%02d",
+                TimeUnit.MILLISECONDS.toMinutes(duration),
+                TimeUnit.MILLISECONDS.toSeconds(duration) -
+                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
+    }
+
+
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
     String latitude,longitude;

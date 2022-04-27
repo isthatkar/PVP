@@ -1,17 +1,23 @@
 package com.example.myapplication;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -27,8 +33,20 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
 
 public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
+
+    TextView playerPositionIstorija,
+            playerDurationIstorija;
+    SeekBar seekBarIstorija;
+    ImageView btPlayIstorija,
+            btPauseIstorija;
+
+    MediaPlayer mediaPlayerIstorija;
+    Handler handlerIstorija = new Handler();
+    Runnable runnableIstorija;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +67,102 @@ public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
+        methodForHistory();
     }
+
+    public void methodForHistory()
+    {
+        playerPositionIstorija = findViewById(R.id.prieplaukaIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.prieplaukaIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.prieplaukaIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.prieplaukaIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.prieplaukaIstorijaPause);
+
+
+
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltrumsiskiuprieplaukaistorija);
+
+        runnableIstorija = new Runnable() {
+            @Override
+            public void run() {
+                seekBarIstorija.setProgress(mediaPlayerIstorija.getCurrentPosition());
+                handlerIstorija.postDelayed(this, 500);
+            }
+        };
+
+        int duration = mediaPlayerIstorija.getDuration();
+        String sDuration = convertFormat(duration);
+        playerDurationIstorija.setText(sDuration);
+
+        btPlayIstorija.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayIstorija.setVisibility(View.GONE);
+                mediaPlayerIstorija.start();
+                seekBarIstorija.setMax(mediaPlayerIstorija.getDuration());
+                handlerIstorija.postDelayed(runnableIstorija, 0);
+                btPauseIstorija.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btPauseIstorija.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayIstorija.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija.pause();
+                handlerIstorija.removeCallbacks(runnableIstorija);
+                handlerIstorija.postDelayed(runnableIstorija, 0);
+                btPauseIstorija.setVisibility(View.GONE);
+            }
+        });
+
+        seekBarIstorija.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    mediaPlayerIstorija.seekTo(progress);
+                }
+                playerPositionIstorija.setText(convertFormat(mediaPlayerIstorija.getCurrentPosition()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mediaPlayerIstorija.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                btPlayIstorija.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija.seekTo(0);
+                btPauseIstorija.setVisibility(View.GONE);
+
+            }
+        });
+    }
+
+    @Override
+    public void onBackPressed(){
+        if(mediaPlayerIstorija.isPlaying()){
+            mediaPlayerIstorija.stop();
+        }
+        super.onBackPressed();
+    }
+
+    @SuppressLint("DefaultLocale")
+    private String convertFormat(int duration) {
+        return String.format("%02d:%02d",
+                TimeUnit.MILLISECONDS.toMinutes(duration),
+                TimeUnit.MILLISECONDS.toSeconds(duration) -
+                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
+    }
+
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
     String latitude,longitude;
