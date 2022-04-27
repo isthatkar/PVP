@@ -23,12 +23,57 @@
             android:layout_centerHorizontal="true"
             android:text="ŽIEGŽDRIŲ PAŽINTINIS TAKAS" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/ziegzdriuFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/textView6"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ziegzdriuFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ziegzdriuFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ziegzdriuFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/ziegzdriuFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ziegzdriuFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/ziegzdriuFaktai"
             android:text="Tai vienintelė vieta Lietuvoje, kur galima rasti varvančio vandens suformuotų uolienų varveklių ir piršto storumo stalaktitų. Atodangos ilgis siekia net 400 m., o aukštis - 22 m. Žiegždrių pažintiniame take pastebėsite ir storiausią Kauno marių apylinkėse šimtametę liepą, jos storis 4,3m." />
 
         <ImageView
@@ -49,11 +94,56 @@
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/ziegzdriuIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ziegzdriuIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/ziegzdriuIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ziegzdriuIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/ziegzdriuIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ziegzdriuIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView9"
+            android:layout_below="@id/ziegzdriuIstorija"
             android:text="Takas apjungia du valstybės saugomus gamtos paveldo objektus – Kalniškių konglomerato ir Žiegždrių atodangas. Tako ilgis į vieną pusę – 1,6 km. Takas nėra žiedinis, tad teks keliauti pirmyn atgal. Nenorėdami grįžti tuo pačiu maršrutu, galite keliauti keliu per gyvenvietę arba, kai palankios oro ir hidrologinės sąlygos – bristi pamariu." />
 
         <TextView

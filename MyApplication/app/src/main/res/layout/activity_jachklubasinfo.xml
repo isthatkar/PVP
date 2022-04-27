@@ -22,13 +22,57 @@
         android:layout_centerHorizontal="true"
         android:text="JACHTKLUBAS" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/jachtklubasFaktai"
+        android:padding="7dp"
+        android:layout_below="@id/textView6"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/jachtklubasFaktaiPlay"
+            android:src="@drawable/playbuttonmedia"
+            />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/jachtklubasFaktaiPause"
+            android:src="@drawable/ic_baseline_pause_24"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jachtklubasFaktaiPlayerPosition"
+            android:text="00:00"
+            android:textColor="@color/black"/>
+
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/jachtklubasFaktaiSeekBar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jachtklubasFaktaiPlayerDuration"
+            android:text="00:00"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30px"
-        android:layout_below="@id/textView6"
+        android:layout_below="@id/jachtklubasFaktai"
         android:text="Statant jacht klubą valstybės skirtų pinigų užteko tik dviems iš trijų etapų. Pritrūko pinigų pagrindiniam jachtklubo korpusui. Tuomet jau buvo įrengta krantinė, molas, bet nebuvo, kur laikyti laivus. Nors ir buvo prašyta skirti pinigų korpuso įrengimui, tačiau visi tikino, kad tam pinigų nėra. Tuomet pagrindinis iniciatorius Viktoras Badganovas sužinojo jog Trakuose norima statyti irklavimo bazę. Viktoras prisipažįsta, kad Maskvoje teko papirkti žmones tam, jog vietoj tos bazės Trakuose, iškiltų jachtklubo korpusas Kaune." />
 
     <ImageView
@@ -54,20 +98,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:id="@+id/audioFormat"
+        android:id="@+id/jachtklubasIstorija"
         android:padding="7dp"
         android:layout_below="@id/textView9"
         >
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/play_button"
+            android:id="@+id/jachtklubasIstorijaPlay"
             android:src="@drawable/playbuttonmedia"
             />
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/pause_button"
+            android:id="@+id/jachtklubasIstorijaPause"
             android:src="@drawable/ic_baseline_pause_24"
             android:visibility="gone"
             />
@@ -75,7 +119,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/player_position"
+            android:id="@+id/jachtklubasIstorijaPlayerPosition"
             android:text="00:00"
             android:textColor="@color/black"/>
 
@@ -83,12 +127,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/seekbar"/>
+            android:id="@+id/jachtklubasIstorijaSeekBar"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/player_duration"
+            android:id="@+id/jachtklubasIstorijaPlayerDuration"
             android:text="00:00"
             android:textColor="@color/black"/>
 
@@ -98,7 +142,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/audioFormat"
+        android:layout_below="@id/jachtklubasIstorija"
         android:text="Burių ir vėjo mėgėjai Nemune plaukioti negalėjo, nes jis buvo labai seklus. Tačiau pradėjus sklisti kalboms, jog norima statyti hidroelektrinę, V. Bagdanovas sukluso – juk tai puiki galimybė išplaukti į platesnius vandenis, o kartu ir turėti savo uostą jachtoms.
 Būdami studentai, buriavimo entuziastai pradėjo judinti įvairias sporto organizacijas dėl to, jog Kaunui reikalingas jachtklubas. Jaunuoliai susirado generolo dukrą – architektę, kuri suprojektavo, kaip galėtų atrodyti pats jachtklubas. Viską reikėjo daryti labai greitai, nes projektas turėjo būti įgyvendintas iki tol, kol bus užtvenktas Nemunas. Kitu atveju, kai jau vanduo būtų išsiliejęs, būtų gerokai brangiau kainavę įrengti tokį objektą.
 " />

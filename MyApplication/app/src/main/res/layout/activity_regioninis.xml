@@ -23,12 +23,100 @@
             android:layout_centerHorizontal="true"
             android:text="KAUNO MARIŲ REGIONINIS PARKAS" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/regioninisFaktai1"
+            android:padding="7dp"
+            android:layout_below="@id/textView6"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/regioninisFaktai1Play"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/regioninisFaktai1Pause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regioninisFaktai1PlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/regioninisFaktai1SeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regioninisFaktai1PlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/regioninisFaktai2"
+            android:padding="7dp"
+            android:layout_below="@id/regioninisFaktai1"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/regioninisFaktai2Play"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/regioninisFaktai2Pause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regioninisFaktai2PlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/regioninisFaktai2SeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regioninisFaktai2PlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/regioninisFaktai2"
             android:text="Kauno marių regioninis parkas pasižymi didele biologine įvairove. Čia yra vienintelė mūsų krašto vieta, kur trijose augavietėse dar aptinkama griežtai saugoma rūšis – gauruotasis gvazdikas. Rumšiškių miško pušis ir Žiglos maumedis yra storiausi tos rūšies medžiai Lietuvoje. Čia galima išvysti retų rūšių gyvūnų, paukščių, augalų, grybų: didžiųjų miegapelių, tulžių, krokinių minkštenių, niūraspalvių auksavabalių, kūdrinių pelėausių. Apsilankius šioje vaizdingoje Lietuvos dalelėje, norėsis grįžti dar ne kartą. Kauno marių regioninis parkas unikalus savo istorine patirtimi ir išraiškingu kraštovaizdžiu, kurį formuoja marių vandenys su pusamžiais miškais virtusiomis apsauginių želdinių juostomis ir išlikusiais sengirių ploteliais, neįsivaizduojamas be mariose baltuojančių jachtų, puošnių Pažaislio bažnyčios bokštų bei aukštų stačiašlaičių pakrančių. Kauno marių vanduo virš jūros lygio pakilęs 44 metrus, o aukščiausia parko vieta Pastrėvio miške – 93 m virš jūros lygio. Plačiausioje vietoje marios siekia 3,3 km, o siauriausioje – 0,3 km. Giliausia Kauno marių vieta siekia 22 metrus, o bendras pakrančių ilgis (iki Balbieriškio) – 200 km." />
 
         <ImageView
@@ -49,11 +137,57 @@
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/regioninisIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/regioninisIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/regioninisIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regioninisIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/regioninisIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regioninisIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView9"
+            android:layout_below="@id/regioninisIstorija"
             android:text="Kauno marių regioninis parkas įsteigtas Lietuvos Respublikos Aukščiausiosios Tarybos 1992 m. rugsėjo 24 d. nutarimu, siekiant išsaugoti unikalų Kauno marių tvenkinio kraštovaizdžio kompleksą, didžiąsias atodangas, užlietas Nemuno intakų žiotis, unikalų Pažaislio vienuolyno architektūrinį kompleksą, Kauno marių gamtinės ekosistemos stabilumą, biotos komponentus, ypač vertingą Gastilionių mišką su miegapelių populiacija bei kultūros paveldo vertybes, jas tvarkyti ir racionaliai naudoti. Regioninio parko paskirtis nustatyta Lietuvos Respublikos Vyriausybės 1999 m. balandžio 29 d. nutarimu Nr. 490 „Dėl regioninių parkų nuostatų patvirtinimo“.
 Daugiau nei prieš 50 metų atsiradusios Kauno marios – didžiuliu tvenkiniu virtusi Nemuno dalis, unikalus gamtos ir žmogaus kūrinys, gausus atodangų ir užtvindytų upelių slėnių – fiordų. Marios tarsi į vieną virtinę suvėrė daugybę įspūdingų gamtos bei kultūros paveldo objektų – šie traukia lankytojų akį ir žadina smalsumą.
 " />
