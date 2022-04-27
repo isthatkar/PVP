@@ -22,13 +22,41 @@
         android:layout_centerHorizontal="true"
         android:text="JACHTKLUBAS" />
 
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:layout_below="@id/textView6"
+        android:text="Statant jacht klubą valstybės skirtų pinigų užteko tik dviems iš trijų etapų. Pritrūko pinigų pagrindiniam jachtklubo korpusui. Tuomet jau buvo įrengta krantinė, molas, bet nebuvo, kur laikyti laivus. Nors ir buvo prašyta skirti pinigų korpuso įrengimui, tačiau visi tikino, kad tam pinigų nėra. Tuomet pagrindinis iniciatorius Viktoras Badganovas sužinojo jog Trakuose norima statyti irklavimo bazę. Viktoras prisipažįsta, kad Maskvoje teko papirkti žmones tam, jog vietoj tos bazės Trakuose, iškiltų jachtklubo korpusas Kaune." />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="600px"
+        android:layout_below="@id/textView7"
+        android:padding="0px"
+        android:paddingBottom="0px"
+        app:srcCompat="@drawable/jachtklubas" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:text="ISTORIJA"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         android:id="@+id/audioFormat"
         android:padding="7dp"
-        android:layout_below="@id/textView6"
+        android:layout_below="@id/textView9"
         >
         <ImageView
             android:layout_width="20dp"
@@ -67,37 +95,10 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30px"
-        android:layout_below="@id/audioFormat"
-        android:text="Statant jacht klubą valstybės skirtų pinigų užteko tik dviems iš trijų etapų. Pritrūko pinigų pagrindiniam jachtklubo korpusui. Tuomet jau buvo įrengta krantinė, molas, bet nebuvo, kur laikyti laivus. Nors ir buvo prašyta skirti pinigų korpuso įrengimui, tačiau visi tikino, kad tam pinigų nėra. Tuomet pagrindinis iniciatorius Viktoras Badganovas sužinojo jog Trakuose norima statyti irklavimo bazę. Viktoras prisipažįsta, kad Maskvoje teko papirkti žmones tam, jog vietoj tos bazės Trakuose, iškiltų jachtklubo korpusas Kaune." />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="600px"
-        android:layout_below="@id/textView7"
-        android:padding="0px"
-        android:paddingBottom="0px"
-        app:srcCompat="@drawable/jachtklubas" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView2"
-        android:text="ISTORIJA"
-        android:textSize="20dp"
-        android:layout_centerHorizontal="true"
-        />
-
-    <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView9"
+        android:layout_below="@id/audioFormat"
         android:text="Burių ir vėjo mėgėjai Nemune plaukioti negalėjo, nes jis buvo labai seklus. Tačiau pradėjus sklisti kalboms, jog norima statyti hidroelektrinę, V. Bagdanovas sukluso – juk tai puiki galimybė išplaukti į platesnius vandenis, o kartu ir turėti savo uostą jachtoms.
 Būdami studentai, buriavimo entuziastai pradėjo judinti įvairias sporto organizacijas dėl to, jog Kaunui reikalingas jachtklubas. Jaunuoliai susirado generolo dukrą – architektę, kuri suprojektavo, kaip galėtų atrodyti pats jachtklubas. Viską reikėjo daryti labai greitai, nes projektas turėjo būti įgyvendintas iki tol, kol bus užtvenktas Nemunas. Kitu atveju, kai jau vanduo būtų išsiliejęs, būtų gerokai brangiau kainavę įrengti tokį objektą.
 " />
