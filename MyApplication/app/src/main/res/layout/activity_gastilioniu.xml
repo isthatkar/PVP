@@ -24,13 +24,22 @@
             android:textAlignment="center"
             />
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilijonuatodangaa" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:id="@+id/gastilionuFaktai"
             android:padding="7dp"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/imageView5"
             >
             <ImageView
                 android:layout_width="20dp"
@@ -148,6 +157,15 @@
             android:layout_below="@id/gastilionuIstorija"
             android:text="Gastilionių atodanga – geologinis gamtos paveldo objektas, paskelbtas saugomu 2008 m. Atodanga yra Kaišiadorių rajone, Rumšiškių seniūnijoje, Kaišiadorių miškų urėdijos Rumšiškių girininkijos teritorijoje, Rumšiškių miške, Kauno marių dešiniajame krante. Atodanga patenka į Kauno marių regioninio parko teritoriją. Atodanga dešiniąja Kauno marių pakrante tęsiasi apie 600 m su beveik stačia iki 20 m aukščio siena, kurioje aiškiai matomi dviejų ledynmečių sukloti moreninio priemolio sluoksniai, perskirti tarpledynmečio metu sukloto smėlio sluoksniais." />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilijonuatodangac" />
+
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -155,7 +173,7 @@
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:layout_below="@id/imageView3"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -164,11 +182,20 @@
             android:text="Netoliese yra Gastilijonų gūbrys, Rumšiškių miško pušis."
             android:layout_below="@id/textView10"/>
 
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView10"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilijonuatodangab" />
+
         <Button
             android:id="@+id/button_addPoint7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView11"
+            android:layout_below="@+id/imageView6"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"

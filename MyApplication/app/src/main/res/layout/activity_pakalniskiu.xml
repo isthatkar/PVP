@@ -23,13 +23,22 @@
             android:layout_centerHorizontal="true"
             android:text="PAKALNIŠKIŲ PAŽINTINIS TAKAS" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/pakalniskiupazintinistakas2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:id="@+id/pakalniskiuFaktai"
             android:padding="7dp"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/imageView3"
             >
             <ImageView
                 android:layout_width="20dp"
@@ -145,6 +154,15 @@
             android:layout_below="@id/pakalniskiuIstorija"
             android:text="Pakalniškių pažintinio tako ilgis siekia 3 kilometrus, nuo kurio atsiveria vaizdas i Kauno marias, Pažaislio panorama ir Kauno hidroelektrinė." />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/pakalniskiupazintinistakas4" />
+
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -152,7 +170,7 @@
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -161,11 +179,21 @@
             android:text="Aplink pakalniškių pažintinį taką yra nemaža dalis lankytinų objektų: Žiegždrių atodanga, pelkės, Pažaislio vienuolynas, Kruonio HAE, Laumėnų parkas ir pažintinis takas.
 Pačiame pakalniškių pažintiniame take, pramogas teks susigalvoti pačiam, bet jei esate žvejybos mėgėjas, nusileidę prie vandens, tikrai sutiksite žvejų besidžiaugiančiu savo laimikiu."
             android:layout_below="@id/textView10"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView11"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/pakalniskiupazintinistakas6" />
+
         <Button
             android:id="@+id/button_addPoint18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView11"
+            android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"

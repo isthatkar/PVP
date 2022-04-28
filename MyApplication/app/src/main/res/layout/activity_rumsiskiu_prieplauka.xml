@@ -24,10 +24,19 @@
             android:text="RUMŠIŠKIŲ PRIEPLAUKA" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="600px"
             android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/rumsiskiuprieplauka2" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/imageView3"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/rumsiskiuprieplauka" />
@@ -93,6 +102,15 @@
             android:layout_below="@id/prieplaukaIstorija"
             android:text="2017 metais buvo patvirtintas Lietuvos Respublikos planas įrengti Rumšiškių prieplauką." />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/rumsiskiuprieplauka3" />
+
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -100,7 +118,7 @@
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -124,11 +142,21 @@
             android:layout_height="wrap_content"
             android:text="Renginių nevyksta šiuo metu, bet žmonės atvyksta darytis vestuvių, krikštynų ar kitų progų fotosesijas."
             android:layout_below="@id/textView12"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView13"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/rumsiskiuprieplauka4" />
+
         <Button
             android:id="@+id/button_addPoint9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView13"
+            android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"

@@ -23,12 +23,21 @@
             android:layout_centerHorizontal="true"
             android:text="APLEISTA STOVYKLA" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/apleistastovyklab" />
+
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/imageView3"
             android:text="Pats tinkamiausias metų laikas čia apsilankyti būtų žiemą. Vasara visur žaluma, sunku rasti kelią į namelių vidų, o mažesnius namelius iš vis sunku pastebėti. Viskas yra apsupta medžių, krūmynų. Kaip bebūtų, vasaros metu aplankyta stovykla žalumos apsuptyje po gero vasariško lietaus atrodo lyg mažas, likimo valiai paliktas miestelis." />
 
         <ImageView
@@ -72,11 +81,21 @@ Stovykloje savininkai mainėsi ne kartą, įsivelta į teismų maratonus, kur su
             android:layout_height="wrap_content"
             android:text="Netoliese yra Kauno marių paplūdimys"
             android:layout_below="@id/textView10"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView11"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/apleistastovyklac" />
+
         <Button
             android:id="@+id/button_addPoint6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView11"
+            android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"

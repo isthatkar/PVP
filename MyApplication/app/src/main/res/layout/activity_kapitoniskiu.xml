@@ -100,11 +100,21 @@
             android:layout_height="wrap_content"
             android:text="Keliaudami Kapitoniškių pažintiniu taku apsilankysite ir Mergakalnio apžvalgos aikštelėje"
             android:layout_below="@id/textView10"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView11"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/kapitoniskiupazintinistakas2" />
+
         <Button
             android:id="@+id/button_addPoint10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView11"
+            android:layout_below="@+id/imageView3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"

@@ -23,13 +23,22 @@
             android:layout_centerHorizontal="true"
             android:text="PAŽAISLIO VIENUOLYNAS" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/pazaisliovienuolynas2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:id="@+id/pazaislioFaktai"
             android:padding="7dp"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/imageView3"
             >
             <ImageView
                 android:layout_width="20dp"
@@ -147,6 +156,15 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_below="@id/pazaislioIstorija"
             android:text="Pažaislio bažnyčios ir vienuolyno ansamblis pastatytas XVII–XVIII a. funduojant Lietuvos Didžiosios Kunigaikštystės Didžiajam kancleriui Kristupui Zigmantui Pacui. 1660 m. jis kreipėsi į Kamaldulių ordino vyresnybę Romoje, raštu pasižadėdamas finansuoti vienuolyno ir bažnyčios statybą Lietuvoje. Netrukus, gavęs aukščiausiosios bažnytinės vadovybės palaiminimą, kartu su architektu ir keliais Krokuvos Bielianų kamaldulių vienuoliais netoli Kauno surado planuojamam statyti vienuolynui tinkamą vietą – Pažaislį. Šią gražią miškingą vietovę fundatorius nupirko iš Kauno žemės teisėjo Samuelio Oborskio ir pavadino Ramybės (Taikos) kalnu (Mons Pacis)." />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/pazaisliovienuolynas4" />
+
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -154,7 +172,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -179,11 +197,20 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:text="Pažaislio muzikos festivais, koncertai."
             android:layout_below="@id/textView12"/>
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView13"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/pazaisliovienuolynas6" />
+
         <Button
             android:id="@+id/button_addPoint1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView13"
+            android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"

@@ -23,13 +23,22 @@
             android:layout_centerHorizontal="true"
             android:text="MEILĖS ĮLANKA" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/meilesilanka2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:id="@+id/meilesFaktai"
             android:padding="7dp"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/imageView3"
             >
             <ImageView
                 android:layout_width="20dp"
@@ -150,6 +159,7 @@
 Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta puikiai tinka nedideliems piknikams.
 " />
 
+
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -165,11 +175,21 @@ Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta pui
             android:layout_height="wrap_content"
             android:text="Galima išsinuomuoti laivelį arba katerį."
             android:layout_below="@id/textView10"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView11"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/meilesilanka4" />
+
         <Button
             android:id="@+id/button_addPoint5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView11"
+            android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"

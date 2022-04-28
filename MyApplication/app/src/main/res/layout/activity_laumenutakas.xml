@@ -23,6 +23,15 @@
             android:layout_centerHorizontal="true"
             android:text="LAUMĖNŲ PAŽINTINIS TAKAS" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/laumenupazintinistakas2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -149,6 +158,15 @@ Keliaudami trasa, taip pat prieisite ir “Laumėnų parką”, nuo kurio atsive
 Trasa patogiausia pradėti keliauti nuo Girionių poilsiavietės, o jos pabaigoje prieisite Žiegždrių geologinį taką. Trasos ilgis į vieną pusę sudaro 4,3km.
 " />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/laumenupazintinistakas3" />
+
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -156,7 +174,7 @@ Trasa patogiausia pradėti keliauti nuo Girionių poilsiavietės, o jos pabaigoj
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"

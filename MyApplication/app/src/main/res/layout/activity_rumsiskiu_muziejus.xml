@@ -23,13 +23,22 @@
             android:layout_centerHorizontal="true"
             android:text="LIAUDIES IR BUITIES MUZIEJUS" />
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/rumsiskiumuziejus2" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:id="@+id/rumsiskesFaktai"
             android:padding="7dp"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/imageView3"
             >
             <ImageView
                 android:layout_width="20dp"
@@ -192,6 +201,15 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
 1969 m. jau stovėjo žemaičių XVIII a. svirnas, numas ir t. t., iš viso 8 pastatai. Po metų beveik sukomplektuota dzūkų sodyba, pastatyta Josvainių karčema ir daug kitų. Perkėlus daugiau pastatų reikėjo sustiprinti priešgaisrinę sistemą, todėl buvo įsigyta gaisrinė mašina, o dirbti su ja buvo rengiamos priešgaisrinės pratybos, kuriose dalyvaudavo visi jaunesni muziejaus darbuotojai. Turint savo priešgaisrinę apsaugą, pavyko išvengti didesnių gaisrų, skirtingai nei Estijos ar Latvijos liaudies buities muziejuose.
 " />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/rumsiskiumuziejus4" />
+
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
@@ -199,7 +217,7 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -223,11 +241,21 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:layout_height="wrap_content"
             android:text="Užgavėnių šventės, muzikos festivalis “Granatos”, Velykos, žolinės šventės, muziejų naktis, adventinis miestelis, Oninės ir rugiapjūtė, Joninės"
             android:layout_below="@id/textView12"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView13"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/rumsiskiumuziejus5" />
+
         <Button
             android:id="@+id/button_addPoint8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textView13"
+            android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
             android:text="Esu objekto teritorijoje!"
