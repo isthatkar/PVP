@@ -156,7 +156,7 @@ public class StovyklaActivity extends AppCompatActivity {
         objectArray[3]=new Object("Lakštingalų slėnis",54.909123,24.064016);
         objectArray[4]=new Object("Kauno marių regioninis parkas",54.916187,24.088728);
         objectArray[5]=new Object("Meilės įlanka",54.897875,24.126895);
-        objectArray[6]=new Object("Kauno marių apleista stovyklą",54.879261,24.153153);
+        objectArray[6]=new Object("Kauno marių apleista stovykla",54.879261,24.153153);
         objectArray[7]=new Object("Gastilionių atodanga",54.871606,24.150136);
         objectArray[8]=new Object("Rumšiškių liaudies buities muziejus",54.866331,24.200702);
         objectArray[9]=new Object("Rumšiškių prieplauka",54.860661,24.196769);
