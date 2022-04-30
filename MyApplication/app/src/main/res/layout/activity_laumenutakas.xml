@@ -25,8 +25,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -38,7 +38,7 @@
             android:orientation="horizontal"
             android:id="@+id/laumenuPazintinisFaktai"
             android:padding="7dp"
-            android:layout_below="@id/textView6"
+            android:layout_below="@id/imageView3"
             >
             <ImageView
                 android:layout_width="20dp"
@@ -86,8 +86,8 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -160,8 +160,8 @@ Trasa patogiausia pradėti keliauti nuo Girionių poilsiavietės, o jos pabaigoj
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"

@@ -50,9 +50,6 @@
         android:id="@+id/ziegzdzriuTakas"
         android:title="Žiegždrių takas" />
     <item
-        android:id="@+id/laumenuParkas"
-        android:title="Laumėnų parkas" />
-    <item
         android:id="@+id/laumenuPazintinisTakas"
         android:title="Laumėnų pažintinis takas" />
     <item

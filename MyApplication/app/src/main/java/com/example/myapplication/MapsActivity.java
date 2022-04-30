@@ -167,10 +167,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 LatLng ziegzdzriuTakas = new LatLng(54.889264, 24.076552);
                                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(ziegzdzriuTakas, 15));
                                 return true;
-                            case R.id.laumenuParkas:
-                                LatLng laumenuParkas = new LatLng(54.874337, 24.049471);
-                                map.moveCamera(CameraUpdateFactory.newLatLngZoom(laumenuParkas, 15));
-                                return true;
                             case R.id.laumenuPazintinisTakas:
                                 LatLng laumenuPazintinisTakas = new LatLng(54.863047, 24.043927);
                                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(laumenuPazintinisTakas, 15));
@@ -239,7 +235,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng zigosIlanka = new LatLng(54.841290, 24.194681);
         LatLng skulpturuParkas = new LatLng(54.858654, 24.114648);
         LatLng ziegzdzriuTakas = new LatLng(54.889264, 24.076552);
-        LatLng laumenuParkas = new LatLng(54.874337, 24.049471);
         LatLng laumenuPazintinisTakas = new LatLng(54.863047, 24.043927);
         LatLng pakalniskiuPazintinisTakas = new LatLng(54.855207, 24.017669);
 
@@ -259,7 +254,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žiglos įlanka").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
         mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų parkas").icon(BitmapDescriptorFactory.fromResource(R.drawable.skulpturuicon)));
         mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(laumenuParkas).title("Laumėnų parkas").icon(BitmapDescriptorFactory.fromResource(R.drawable.laumenuicon)));
         mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
         mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
 
@@ -296,7 +290,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                         intent = new Intent(MapsActivity.this, MeilesActivity.class);
                         startActivity(intent);
                         break;
-                    case "Kauno marių apleista stovyklą":
+                    case "Kauno marių apleista stovykla":
                         intent = new Intent(MapsActivity.this, StovyklaActivity.class);
                         startActivity(intent);
                         break;
