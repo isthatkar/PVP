@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="600px"
             android:layout_below="@id/textView6"
-            android:padding="0px"
+            android:padding="5px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/rumsiskiuprieplauka2" />
 
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="600px"
             android:layout_below="@id/imageView3"
-            android:padding="0px"
+            android:padding="5px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/rumsiskiuprieplauka" />
 
