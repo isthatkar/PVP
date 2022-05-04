@@ -35,7 +35,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class ZiglosActivity extends AppCompatActivity {
+public class LithuanianGastilioniuActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
             playerPositionFaktai,
@@ -55,12 +55,14 @@ public class ZiglosActivity extends AppCompatActivity {
     Runnable runnableIstorija,
             runnableFaktai;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ziglos);
-
+        setContentView(R.layout.activity_gastilioniu);
         getSupportActionBar().hide();
+
         setObjectData();
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
@@ -75,21 +77,23 @@ public class ZiglosActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
-        methodForFacts();
+
         methodForHistory();
+        methodForFacts();
     }
+
 
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.ziglosIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.ziglosIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.ziglosIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.ziglosIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.ziglosIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.gastilionuIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.gastilionuIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.gastilionuIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.gastilionuIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.gastilionuIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltziglosilankaisotrija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltgastilioniuatodangaistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -151,20 +155,19 @@ public class ZiglosActivity extends AppCompatActivity {
                 btPlayIstorija.setVisibility(View.VISIBLE);
                 mediaPlayerIstorija.seekTo(0);
                 btPauseIstorija.setVisibility(View.GONE);
-
             }
         });
     }
 
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.ziglosFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.ziglosFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.ziglosFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.ziglosFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.ziglosFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.gastilionuFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.gastilionuFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.gastilionuFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.gastilionuFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.gastilionuFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltziglosilankafaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltgastilioniuatodangafaktai);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -231,6 +234,15 @@ public class ZiglosActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("DefaultLocale")
+    private String convertFormat(int duration) {
+        return String.format("%02d:%02d",
+                TimeUnit.MILLISECONDS.toMinutes(duration),
+                TimeUnit.MILLISECONDS.toSeconds(duration) -
+                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
+    }
+
+
     @Override
     public void onBackPressed(){
         if(mediaPlayerFaktai.isPlaying()){
@@ -241,13 +253,7 @@ public class ZiglosActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    @SuppressLint("DefaultLocale")
-    private String convertFormat(int duration) {
-        return String.format("%02d:%02d",
-                TimeUnit.MILLISECONDS.toMinutes(duration),
-                TimeUnit.MILLISECONDS.toSeconds(duration) -
-                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
-    }
+
 
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
@@ -258,11 +264,11 @@ public class ZiglosActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=13;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=3000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=7;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=1000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint13);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint7);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -365,7 +371,6 @@ public class ZiglosActivity extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -522,7 +527,7 @@ public class ZiglosActivity extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint13);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                Button playButton = (Button) findViewById(R.id.button_addPoint7);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

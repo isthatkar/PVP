@@ -35,7 +35,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class LaumenuTakasActivity  extends AppCompatActivity {
+public class LithuanianMeilesActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
             playerPositionFaktai,
@@ -58,7 +58,7 @@ public class LaumenuTakasActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_laumenutakas);
+        setContentView(R.layout.activity_meiles);
 
         getSupportActionBar().hide();
         setObjectData();
@@ -76,23 +76,21 @@ public class LaumenuTakasActivity  extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
-
-        methodForFacts();
         methodForHistory();
+        methodForFacts();
     }
-
 
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.laumenuPazintinisIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.laumenuPazintinisIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.laumenuPazintinisIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.laumenuPazintinisIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.laumenuPazintinisIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.meilesIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.meilesIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.meilesIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.meilesIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.meilesIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltlaumenupazintinistakasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltmeilesilankaistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -161,13 +159,13 @@ public class LaumenuTakasActivity  extends AppCompatActivity {
 
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.laumenuPazintinisFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.laumenuPazintinisFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.laumenuPazintinisFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.laumenuPazintinisFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.laumenuPazintinisFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.meilesFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.meilesFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.meilesFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.meilesFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.meilesFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltlaumenupazintinistakasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltmeilesilankafaktai);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -262,11 +260,11 @@ public class LaumenuTakasActivity  extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=16;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=6000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=5;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=2000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint16);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint5);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -369,7 +367,6 @@ public class LaumenuTakasActivity  extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -526,7 +523,7 @@ public class LaumenuTakasActivity  extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint16);
+                Button playButton = (Button) findViewById(R.id.button_addPoint5);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

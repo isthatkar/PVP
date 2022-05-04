@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.PorterDuff;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 import android.widget.ProgressBar;
@@ -34,7 +33,7 @@ public class SearchBarAnimation extends Animation {
         textView.setText((int)value+" %");
 
         if(value == to){
-            context.startActivity(new Intent(context, MainActivity.class));
+            context.startActivity(new Intent(context, LanguageSelection.class));
         }
 
     }

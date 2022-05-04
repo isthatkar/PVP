@@ -35,7 +35,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class SuneliskiuActivity extends AppCompatActivity {
+public class LithuanianLaumenuTakasActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
             playerPositionFaktai,
@@ -55,14 +55,14 @@ public class SuneliskiuActivity extends AppCompatActivity {
     Runnable runnableIstorija,
             runnableFaktai;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_suneliskiu);
+        setContentView(R.layout.activity_laumenutakas);
 
         getSupportActionBar().hide();
         setObjectData();
+
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -76,21 +76,23 @@ public class SuneliskiuActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
+
         methodForFacts();
         methodForHistory();
     }
 
+
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.suneliskiuIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.suneliskiuIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.suneliskiuIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.suneliskiuIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.suneliskiuIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.laumenuPazintinisIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.laumenuPazintinisIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.laumenuPazintinisIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.laumenuPazintinisIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.laumenuPazintinisIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltsuneliskiupiliakalnisistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltlaumenupazintinistakasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -159,13 +161,13 @@ public class SuneliskiuActivity extends AppCompatActivity {
 
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.suneliskiuFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.suneliskiuFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.suneliskiuFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.suneliskiuFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.suneliskiuFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.laumenuPazintinisFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.laumenuPazintinisFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.laumenuPazintinisFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.laumenuPazintinisFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.laumenuPazintinisFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltsuneliskiukalnasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltlaumenupazintinistakasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -250,6 +252,7 @@ public class SuneliskiuActivity extends AppCompatActivity {
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
     }
 
+
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
     String latitude,longitude;
@@ -259,11 +262,11 @@ public class SuneliskiuActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=2;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=2000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=16;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=6000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint2);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint16);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -366,7 +369,6 @@ public class SuneliskiuActivity extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -523,7 +525,7 @@ public class SuneliskiuActivity extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint2);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                Button playButton = (Button) findViewById(R.id.button_addPoint16);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

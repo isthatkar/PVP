@@ -1,4 +1,5 @@
 package com.example.myapplication;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,7 +15,6 @@ import android.provider.Settings;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -35,35 +35,25 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
+public class LithuanianKapitoniskiuActivity extends AppCompatActivity {
 
-public class JachklubasActivity extends AppCompatActivity{
-
-    TextView playerPositionIstorija,
-            playerPositionFaktai,
-            playerDurationIstorija,
+    TextView playerPositionFaktai,
             playerDurationFaktai;
-    SeekBar seekBarIstorija,
-            seekBarFaktai;
-    ImageView btPlayIstorija,
-                btPlayFaktai,
-               btPauseIstorija,
-            btPauseFaktai;
+    SeekBar seekBarFaktai;
+    ImageView btPlayFaktai, btPauseFaktai;
 
-    MediaPlayer mediaPlayerIstorija,
-                mediaPlayerFaktai;
-    Handler handlerIstorija = new Handler();
+    MediaPlayer mediaPlayerFaktai;
     Handler handlerFaktai = new Handler();
-    Runnable runnableIstorija,
-             runnableFaktai;
-
+    Runnable runnableFaktai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jachklubasinfo);
-        getSupportActionBar().hide();
+        setContentView(R.layout.activity_kapitoniskiu);
 
+        getSupportActionBar().hide();
         setObjectData();
+
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -78,95 +68,18 @@ public class JachklubasActivity extends AppCompatActivity{
         }
         showIfUnvisited();
 
-        methodForHistory();
         methodForFacts();
-    }
-
-    public void methodForHistory()
-    {
-        playerPositionIstorija = findViewById(R.id.jachtklubasIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.jachtklubasIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.jachtklubasIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.jachtklubasIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.jachtklubasIstorijaPause);
-
-
-
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltjachtklubasistorija);
-
-        runnableIstorija = new Runnable() {
-            @Override
-            public void run() {
-                seekBarIstorija.setProgress(mediaPlayerIstorija.getCurrentPosition());
-                handlerIstorija.postDelayed(this, 500);
-            }
-        };
-
-        int duration = mediaPlayerIstorija.getDuration();
-        String sDuration = convertFormat(duration);
-        playerDurationIstorija.setText(sDuration);
-
-        btPlayIstorija.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btPlayIstorija.setVisibility(View.GONE);
-                mediaPlayerIstorija.start();
-                seekBarIstorija.setMax(mediaPlayerIstorija.getDuration());
-                handlerIstorija.postDelayed(runnableIstorija, 0);
-                btPauseIstorija.setVisibility(View.VISIBLE);
-            }
-        });
-
-        btPauseIstorija.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btPlayIstorija.setVisibility(View.VISIBLE);
-                mediaPlayerIstorija.pause();
-                handlerIstorija.removeCallbacks(runnableIstorija);
-                handlerIstorija.postDelayed(runnableIstorija, 0);
-                btPauseIstorija.setVisibility(View.GONE);
-            }
-        });
-
-        seekBarIstorija.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if(fromUser){
-                    mediaPlayerIstorija.seekTo(progress);
-                }
-                playerPositionIstorija.setText(convertFormat(mediaPlayerIstorija.getCurrentPosition()));
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        mediaPlayerIstorija.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                btPlayIstorija.setVisibility(View.VISIBLE);
-                mediaPlayerIstorija.seekTo(0);
-                btPauseIstorija.setVisibility(View.GONE);
-            }
-        });
     }
 
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.jachtklubasFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.jachtklubasFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.jachtklubasFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.jachtklubasFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.jachtklubasFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.kapitoniskiuFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.kapitoniskiuFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.kapitoniskiuFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.kapitoniskiuFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.kapitoniskiuFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltjachtklubasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltkapitoniskiupazintinistakasistorija);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -238,19 +151,18 @@ public class JachklubasActivity extends AppCompatActivity{
         if(mediaPlayerFaktai.isPlaying()){
             mediaPlayerFaktai.stop();
         }
-        else
-            mediaPlayerIstorija.stop();
+
         super.onBackPressed();
     }
-
 
     @SuppressLint("DefaultLocale")
     private String convertFormat(int duration) {
         return String.format("%02d:%02d",
                 TimeUnit.MILLISECONDS.toMinutes(duration),
                 TimeUnit.MILLISECONDS.toSeconds(duration) -
-                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
+                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
     }
+
 
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
@@ -261,11 +173,11 @@ public class JachklubasActivity extends AppCompatActivity{
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=0;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=1000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=10;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=7000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint0);
+        Button playButton = (Button) findViewById(R.id.button_addPoint10);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -282,7 +194,6 @@ public class JachklubasActivity extends AppCompatActivity{
         }
 
     }
-
     private void getLocation() {
 
         //Check Permissions again
@@ -369,7 +280,6 @@ public class JachklubasActivity extends AppCompatActivity{
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -526,7 +436,7 @@ public class JachklubasActivity extends AppCompatActivity{
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint0);
+                Button playButton = (Button) findViewById(R.id.button_addPoint10);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

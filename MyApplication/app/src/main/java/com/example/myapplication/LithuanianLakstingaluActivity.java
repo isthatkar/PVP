@@ -35,25 +35,34 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
+public class LithuanianLakstingaluActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
-            playerDurationIstorija;
-    SeekBar seekBarIstorija;
+            playerPositionFaktai,
+            playerDurationIstorija,
+            playerDurationFaktai;
+    SeekBar seekBarIstorija,
+            seekBarFaktai;
     ImageView btPlayIstorija,
-            btPauseIstorija;
+            btPlayFaktai,
+            btPauseIstorija,
+            btPauseFaktai;
 
-    MediaPlayer mediaPlayerIstorija;
+    MediaPlayer mediaPlayerIstorija,
+            mediaPlayerFaktai;
     Handler handlerIstorija = new Handler();
-    Runnable runnableIstorija;
+    Handler handlerFaktai = new Handler();
+    Runnable runnableIstorija,
+            runnableFaktai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rumsiskiu_prieplauka);
+        setContentView(R.layout.activity_lakstingalu);
 
         getSupportActionBar().hide();
         setObjectData();
+
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -67,20 +76,23 @@ public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
+
+        methodForFacts();
         methodForHistory();
     }
 
+
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.prieplaukaIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.prieplaukaIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.prieplaukaIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.prieplaukaIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.prieplaukaIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.lakstingaluIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.lakstingaluIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.lakstingaluIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.lakstingaluIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.lakstingaluIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltrumsiskiuprieplaukaistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltlakstingaluslenisistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -147,11 +159,88 @@ public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
         });
     }
 
+    public void methodForFacts()
+    {
+        playerPositionFaktai = findViewById(R.id.lakstingaluFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.lakstingaluFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.lakstingaluFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.lakstingaluFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.lakstingaluFaktaiPause);
+
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltlakstingaluslenisfaktai);
+
+        runnableFaktai = new Runnable() {
+            @Override
+            public void run() {
+                seekBarFaktai.setProgress(mediaPlayerFaktai.getCurrentPosition());
+                handlerFaktai.postDelayed(this, 500);
+            }
+        };
+
+        int duration = mediaPlayerFaktai.getDuration();
+        String sDuration = convertFormat(duration);
+        playerDurationFaktai.setText(sDuration);
+
+        btPlayFaktai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayFaktai.setVisibility(View.GONE);
+                mediaPlayerFaktai.start();
+                seekBarFaktai.setMax(mediaPlayerFaktai.getDuration());
+                handlerFaktai.postDelayed(runnableFaktai, 0);
+                btPauseFaktai.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btPauseFaktai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayFaktai.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai.pause();
+                handlerFaktai.removeCallbacks(runnableFaktai);
+                handlerFaktai.postDelayed(runnableFaktai, 0);
+                btPauseFaktai.setVisibility(View.GONE);
+            }
+        });
+
+        seekBarFaktai.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    mediaPlayerFaktai.seekTo(progress);
+                }
+                playerPositionFaktai.setText(convertFormat(mediaPlayerFaktai.getCurrentPosition()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mediaPlayerFaktai.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                btPlayFaktai.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai.seekTo(0);
+                btPauseFaktai.setVisibility(View.GONE);
+            }
+        });
+
+    }
+
     @Override
     public void onBackPressed(){
-        if(mediaPlayerIstorija.isPlaying()){
-            mediaPlayerIstorija.stop();
+        if(mediaPlayerFaktai.isPlaying()){
+            mediaPlayerFaktai.stop();
         }
+        else
+            mediaPlayerIstorija.stop();
         super.onBackPressed();
     }
 
@@ -163,6 +252,8 @@ public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
                         TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
     }
 
+
+
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
     String latitude,longitude;
@@ -172,11 +263,11 @@ public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=9;    //###############################################################   0 tik jacht klubui
+    int objectNr=3;    //###############################################################   0 tik jacht klubui
     int ToObjectDistance=1000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint9);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint3);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -279,7 +370,6 @@ public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -436,7 +526,7 @@ public class RumsiskiuPrieplaukaActivity extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint9);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                Button playButton = (Button) findViewById(R.id.button_addPoint3);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }
