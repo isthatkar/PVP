@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class LithuanianMainActivity extends AppCompatActivity {
 
     private Button mapsButton;
     private Button contactButton;

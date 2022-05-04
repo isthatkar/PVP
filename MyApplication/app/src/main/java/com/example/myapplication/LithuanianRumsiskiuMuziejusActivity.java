@@ -35,34 +35,39 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class LakstingaluActivity extends AppCompatActivity {
+public class LithuanianRumsiskiuMuziejusActivity extends AppCompatActivity {
 
-    TextView playerPositionIstorija,
+    TextView playerPositionIstorija1,
             playerPositionFaktai,
-            playerDurationIstorija,
-            playerDurationFaktai;
-    SeekBar seekBarIstorija,
+            playerDurationIstorija1,
+            playerDurationFaktai,
+            playerPositionIstorija2,
+            playerDurationIstorija2;
+    SeekBar seekBarIstorija1,
+            seekBarIstorija2,
             seekBarFaktai;
-    ImageView btPlayIstorija,
+    ImageView btPlayIstorija1,
             btPlayFaktai,
-            btPauseIstorija,
-            btPauseFaktai;
+            btPauseIstorija1,
+            btPauseFaktai,
+            btPlayIstorija2,
+            btPauseIstorija2;
 
-    MediaPlayer mediaPlayerIstorija,
+    MediaPlayer mediaPlayerIstorija1, mediaPlayerIstorija2,
             mediaPlayerFaktai;
-    Handler handlerIstorija = new Handler();
+    Handler handlerIstorija1 = new Handler();
+    Handler handlerIstorija2 = new Handler();
     Handler handlerFaktai = new Handler();
-    Runnable runnableIstorija,
+    Runnable runnableIstorija1,runnableIstorija2,
             runnableFaktai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lakstingalu);
+        setContentView(R.layout.activity_rumsiskiu_muziejus);
 
         getSupportActionBar().hide();
         setObjectData();
-
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -76,65 +81,64 @@ public class LakstingaluActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
-
         methodForFacts();
-        methodForHistory();
+        methodForHistory1();
+        methodForHistory2();
     }
 
-
-    public void methodForHistory()
+    public void methodForHistory1()
     {
-        playerPositionIstorija = findViewById(R.id.lakstingaluIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.lakstingaluIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.lakstingaluIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.lakstingaluIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.lakstingaluIstorijaPause);
+        playerPositionIstorija1 = findViewById(R.id.rumsiskesIstorija1PlayerPosition);
+        playerDurationIstorija1 = findViewById(R.id.rumsiskesIstorija1PlayerDuration);
+        seekBarIstorija1      = findViewById(R.id.rumsiskesIstorija1SeekBar);
+        btPlayIstorija1         = findViewById(R.id.rumsiskesIstorija1Play);
+        btPauseIstorija1        = findViewById(R.id.rumsiskesIstorija1Pause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltlakstingaluslenisistorija);
+        mediaPlayerIstorija1 = MediaPlayer.create(this, R.raw.ltrumsiskiuliaudiesbuitiesmuziejusistorija);
 
-        runnableIstorija = new Runnable() {
+        runnableIstorija1 = new Runnable() {
             @Override
             public void run() {
-                seekBarIstorija.setProgress(mediaPlayerIstorija.getCurrentPosition());
-                handlerIstorija.postDelayed(this, 500);
+                seekBarIstorija1.setProgress(mediaPlayerIstorija1.getCurrentPosition());
+                handlerIstorija1.postDelayed(this, 500);
             }
         };
 
-        int duration = mediaPlayerIstorija.getDuration();
+        int duration = mediaPlayerIstorija1.getDuration();
         String sDuration = convertFormat(duration);
-        playerDurationIstorija.setText(sDuration);
+        playerDurationIstorija1.setText(sDuration);
 
-        btPlayIstorija.setOnClickListener(new View.OnClickListener() {
+        btPlayIstorija1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btPlayIstorija.setVisibility(View.GONE);
-                mediaPlayerIstorija.start();
-                seekBarIstorija.setMax(mediaPlayerIstorija.getDuration());
-                handlerIstorija.postDelayed(runnableIstorija, 0);
-                btPauseIstorija.setVisibility(View.VISIBLE);
+                btPlayIstorija1.setVisibility(View.GONE);
+                mediaPlayerIstorija1.start();
+                seekBarIstorija1.setMax(mediaPlayerIstorija1.getDuration());
+                handlerIstorija1.postDelayed(runnableIstorija1, 0);
+                btPauseIstorija1.setVisibility(View.VISIBLE);
             }
         });
 
-        btPauseIstorija.setOnClickListener(new View.OnClickListener() {
+        btPauseIstorija1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btPlayIstorija.setVisibility(View.VISIBLE);
-                mediaPlayerIstorija.pause();
-                handlerIstorija.removeCallbacks(runnableIstorija);
-                handlerIstorija.postDelayed(runnableIstorija, 0);
-                btPauseIstorija.setVisibility(View.GONE);
+                btPlayIstorija1.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija1.pause();
+                handlerIstorija1.removeCallbacks(runnableIstorija1);
+                handlerIstorija1.postDelayed(runnableIstorija1, 0);
+                btPauseIstorija1.setVisibility(View.GONE);
             }
         });
 
-        seekBarIstorija.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarIstorija1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if(fromUser){
-                    mediaPlayerIstorija.seekTo(progress);
+                    mediaPlayerIstorija1.seekTo(progress);
                 }
-                playerPositionIstorija.setText(convertFormat(mediaPlayerIstorija.getCurrentPosition()));
+                playerPositionIstorija1.setText(convertFormat(mediaPlayerIstorija1.getCurrentPosition()));
             }
 
             @Override
@@ -148,26 +152,104 @@ public class LakstingaluActivity extends AppCompatActivity {
             }
         });
 
-        mediaPlayerIstorija.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        mediaPlayerIstorija1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                btPlayIstorija.setVisibility(View.VISIBLE);
-                mediaPlayerIstorija.seekTo(0);
-                btPauseIstorija.setVisibility(View.GONE);
+                btPlayIstorija1.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija1.seekTo(0);
+                btPauseIstorija1.setVisibility(View.GONE);
 
             }
         });
     }
 
+    public void methodForHistory2()
+    {
+        playerPositionIstorija2 = findViewById(R.id.rumsiskesIstorija2PlayerPosition);
+        playerDurationIstorija2 = findViewById(R.id.rumsiskesIstorija2PlayerDuration);
+        seekBarIstorija2      = findViewById(R.id.rumsiskesIstorija2SeekBar);
+        btPlayIstorija2         = findViewById(R.id.rumsiskesIstorija2Play);
+        btPauseIstorija2        = findViewById(R.id.rumsiskesIstorija2Pause);
+
+
+
+        mediaPlayerIstorija2 = MediaPlayer.create(this, R.raw.ltrumsiskiuliaudiesbuitiesmusiejusistorija2);
+
+        runnableIstorija2 = new Runnable() {
+            @Override
+            public void run() {
+                seekBarIstorija2.setProgress(mediaPlayerIstorija2.getCurrentPosition());
+                handlerIstorija2.postDelayed(this, 500);
+            }
+        };
+
+        int duration = mediaPlayerIstorija2.getDuration();
+        String sDuration = convertFormat(duration);
+        playerDurationIstorija2.setText(sDuration);
+
+        btPlayIstorija2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayIstorija2.setVisibility(View.GONE);
+                mediaPlayerIstorija2.start();
+                seekBarIstorija2.setMax(mediaPlayerIstorija2.getDuration());
+                handlerIstorija2.postDelayed(runnableIstorija2, 0);
+                btPauseIstorija2.setVisibility(View.VISIBLE);
+            }
+        });
+
+        btPauseIstorija2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btPlayIstorija2.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija2.pause();
+                handlerIstorija2.removeCallbacks(runnableIstorija2);
+                handlerIstorija2.postDelayed(runnableIstorija2, 0);
+                btPauseIstorija2.setVisibility(View.GONE);
+            }
+        });
+
+        seekBarIstorija2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if(fromUser){
+                    mediaPlayerIstorija2.seekTo(progress);
+                }
+                playerPositionIstorija2.setText(convertFormat(mediaPlayerIstorija2.getCurrentPosition()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mediaPlayerIstorija2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                btPlayIstorija2.setVisibility(View.VISIBLE);
+                mediaPlayerIstorija2.seekTo(0);
+                btPauseIstorija2.setVisibility(View.GONE);
+
+            }
+        });
+    }
+
+
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.lakstingaluFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.lakstingaluFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.lakstingaluFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.lakstingaluFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.lakstingaluFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.rumsiskesFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.rumsiskesFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.rumsiskesFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.rumsiskesFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.rumsiskesFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltlakstingaluslenisfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltrumsiskiuliaudiesbuitiesmuziejusfaktai);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -239,8 +321,11 @@ public class LakstingaluActivity extends AppCompatActivity {
         if(mediaPlayerFaktai.isPlaying()){
             mediaPlayerFaktai.stop();
         }
+        else if(mediaPlayerIstorija1.isPlaying()){
+            mediaPlayerIstorija1.stop();
+        }
         else
-            mediaPlayerIstorija.stop();
+            mediaPlayerIstorija2.stop();
         super.onBackPressed();
     }
 
@@ -253,7 +338,6 @@ public class LakstingaluActivity extends AppCompatActivity {
     }
 
 
-
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
     String latitude,longitude;
@@ -263,11 +347,11 @@ public class LakstingaluActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=3;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=1000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=8;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=7000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint3);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint8);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -370,7 +454,6 @@ public class LakstingaluActivity extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -527,7 +610,7 @@ public class LakstingaluActivity extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint3);
+                Button playButton = (Button) findViewById(R.id.button_addPoint8);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

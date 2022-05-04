@@ -35,7 +35,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class GastilioniuActivity extends AppCompatActivity {
+public class LithuanianKruonioActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
             playerPositionFaktai,
@@ -55,15 +55,14 @@ public class GastilioniuActivity extends AppCompatActivity {
     Runnable runnableIstorija,
             runnableFaktai;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gastilioniu);
-        getSupportActionBar().hide();
+        setContentView(R.layout.activity_kruonio);
 
+        getSupportActionBar().hide();
         setObjectData();
+
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
 
@@ -78,22 +77,21 @@ public class GastilioniuActivity extends AppCompatActivity {
         }
         showIfUnvisited();
 
-        methodForHistory();
         methodForFacts();
+        methodForHistory();
     }
-
 
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.gastilionuIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.gastilionuIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.gastilionuIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.gastilionuIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.gastilionuIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.kruonioIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.kruonioIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.kruonioIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.kruonioIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.kruonioIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltgastilioniuatodangaistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltkruoniohaeistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -161,13 +159,13 @@ public class GastilioniuActivity extends AppCompatActivity {
 
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.gastilionuFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.gastilionuFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.gastilionuFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.gastilionuFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.gastilionuFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.kruonioFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.kruonioFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.kruonioFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.kruonioFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.kruonioFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltgastilioniuatodangafaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltkruoniohaefaktai);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -234,15 +232,6 @@ public class GastilioniuActivity extends AppCompatActivity {
 
     }
 
-    @SuppressLint("DefaultLocale")
-    private String convertFormat(int duration) {
-        return String.format("%02d:%02d",
-                TimeUnit.MILLISECONDS.toMinutes(duration),
-                TimeUnit.MILLISECONDS.toSeconds(duration) -
-                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
-    }
-
-
     @Override
     public void onBackPressed(){
         if(mediaPlayerFaktai.isPlaying()){
@@ -252,6 +241,15 @@ public class GastilioniuActivity extends AppCompatActivity {
             mediaPlayerIstorija.stop();
         super.onBackPressed();
     }
+
+    @SuppressLint("DefaultLocale")
+    private String convertFormat(int duration) {
+        return String.format("%02d:%02d",
+                TimeUnit.MILLISECONDS.toMinutes(duration),
+                TimeUnit.MILLISECONDS.toSeconds(duration) -
+                        TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(duration)));
+    }
+
 
 
 
@@ -264,11 +262,11 @@ public class GastilioniuActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=7;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=1000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=12;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=6800; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint7);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint12);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -371,7 +369,6 @@ public class GastilioniuActivity extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -528,7 +525,7 @@ public class GastilioniuActivity extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint7);
+                Button playButton = (Button) findViewById(R.id.button_addPoint12);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

@@ -1,5 +1,4 @@
 package com.example.myapplication;
-
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -35,7 +34,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class SkulpturuActivity  extends AppCompatActivity {
+
+public class LithuanianPazaislioActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
             playerPositionFaktai,
@@ -58,9 +58,9 @@ public class SkulpturuActivity  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_skulpturu);
-
+        setContentView(R.layout.activity_pazaislis);
         getSupportActionBar().hide();
+
         setObjectData();
         ActivityCompat.requestPermissions(this,new String[]
                 {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
@@ -79,18 +79,17 @@ public class SkulpturuActivity  extends AppCompatActivity {
         methodForHistory();
     }
 
-
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.skulpturuIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.skulpturuIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.skulpturuIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.skulpturuIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.skulpturuIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.pazaislioIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.pazaislioIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.pazaislioIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.pazaislioIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.pazaislioIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltskulpturuparkasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltpazaisliovienuolynasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -159,13 +158,13 @@ public class SkulpturuActivity  extends AppCompatActivity {
 
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.skulpturuFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.skulpturuFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.skulpturuFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.skulpturuFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.skulpturuFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.pazaislioFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.pazaislioFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.pazaislioFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.pazaislioFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.pazaislioFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltskulpturuparkasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltpazaisliovienuolynasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -259,11 +258,11 @@ public class SkulpturuActivity  extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=14;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=3000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=1;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=2000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint14);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint1);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -366,7 +365,6 @@ public class SkulpturuActivity  extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -523,7 +521,7 @@ public class SkulpturuActivity  extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint14);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                Button playButton = (Button) findViewById(R.id.button_addPoint1);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

@@ -35,7 +35,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class MeilesActivity extends AppCompatActivity {
+public class LithuanianMergakalnioActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
             playerPositionFaktai,
@@ -58,7 +58,7 @@ public class MeilesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_meiles);
+        setContentView(R.layout.activity_mergakalnio);
 
         getSupportActionBar().hide();
         setObjectData();
@@ -76,21 +76,21 @@ public class MeilesActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
-        methodForHistory();
         methodForFacts();
+        methodForHistory();
     }
 
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.meilesIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.meilesIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.meilesIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.meilesIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.meilesIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.mergakalnioIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.mergakalnioIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.mergakalnioIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.mergakalnioIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.mergakalnioIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltmeilesilankaistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltmergakalnioapzvalgosaiksteleistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -159,13 +159,13 @@ public class MeilesActivity extends AppCompatActivity {
 
     public void methodForFacts()
     {
-        playerPositionFaktai = findViewById(R.id.meilesFaktaiPlayerPosition);
-        playerDurationFaktai = findViewById(R.id.meilesFaktaiPlayerDuration);
-        seekBarFaktai        = findViewById(R.id.meilesFaktaiSeekBar);
-        btPlayFaktai         = findViewById(R.id.meilesFaktaiPlay);
-        btPauseFaktai        = findViewById(R.id.meilesFaktaiPause);
+        playerPositionFaktai = findViewById(R.id.mergakalnioFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.mergakalnioFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.mergakalnioFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.mergakalnioFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.mergakalnioFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltmeilesilankafaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltmergakalnioapzvalgosaikstelefaktai);
 
         runnableFaktai = new Runnable() {
             @Override
@@ -251,6 +251,7 @@ public class MeilesActivity extends AppCompatActivity {
     }
 
 
+
     private static  final int REQUEST_LOCATION=1;
     LocationManager locationManager;
     String latitude,longitude;
@@ -260,11 +261,11 @@ public class MeilesActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=5;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=2000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=11;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=1000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint5);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint11);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -367,7 +368,6 @@ public class MeilesActivity extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -524,7 +524,7 @@ public class MeilesActivity extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint5);
+                Button playButton = (Button) findViewById(R.id.button_addPoint11);
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }

@@ -43,7 +43,6 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
             "Žiglos įlanka",
             "Skulptūrų parkas",
             "Žiegždrių takas",
-            "Laumėnų parkas",
             "Laumėnų pažintinis takas",
             "Pakalniškių pažintinis takas"};
 

@@ -5,99 +5,104 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+
         <activity
-            android:name=".VisitedCounterActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".LanguageSelection"
             android:exported="true" />
         <activity
             android:name=".LoadingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCT4UpuxeGfa6GW9Hj59V0ZfsT8ZrlnaJY" />
-
+        <activity
+            android:name=".EnglishMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VisitedCounterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LithuanianMainActivity"
+            android:exported="true" />
         <activity
             android:name=".MapsActivity"
-            android:exported="true"
-            android:label="@string/title_activity_maps"></activity>
+            android:exported="true" />
         <activity
             android:name=".ContactActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
-            android:name=".JachklubasActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianJachklubasActivity"
+            android:exported="true" />
         <activity
-            android:name=".PazaislioActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianPazaislioActivity"
+            android:exported="true" />
         <activity
-            android:name=".SuneliskiuActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianSuneliskiuActivity"
+            android:exported="true" />
         <activity
-            android:name=".LakstingaluActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianLakstingaluActivity"
+            android:exported="true" />
         <activity
-            android:name=".RegioninisActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianRegioninisActivity"
+            android:exported="true" />
         <activity
-            android:name=".GastilioniuActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianGastilioniuActivity"
+            android:exported="true" />
         <activity
-            android:name=".MeilesActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianMeilesActivity"
+            android:exported="true" />
         <activity
-            android:name=".StovyklaActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianStovyklaActivity"
+            android:exported="true" />
         <activity
-            android:name=".RumsiskiuMuziejusActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianRumsiskiuMuziejusActivity"
+            android:exported="true" />
         <activity
-            android:name=".RumsiskiuPrieplaukaActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianRumsiskiuPrieplaukaActivity"
+            android:exported="true" />
         <activity
-            android:name=".KapitoniskiuActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianKapitoniskiuActivity"
+            android:exported="true" />
         <activity
-            android:name=".MergakalnioActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianMergakalnioActivity"
+            android:exported="true" />
         <activity
-            android:name=".KruonioActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianKruonioActivity"
+            android:exported="true" />
         <activity
-            android:name=".LaumenuTakasActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianLaumenuTakasActivity"
+            android:exported="true" />
         <activity
-            android:name=".PakalniskiuActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianPakalniskiuActivity"
+            android:exported="true" />
         <activity
-            android:name=".SkulpturuActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianSkulpturuActivity"
+            android:exported="true" />
         <activity
-            android:name=".ZiegzdriuActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianZiegzdriuActivity"
+            android:exported="true" />
         <activity
-            android:name=".ZiglosActivity"
-            android:exported="true"></activity>
+            android:name=".LithuanianZiglosActivity"
+            android:exported="true" />
         <activity
             android:name=".AllObjectsListActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
+
 </manifest>

@@ -35,38 +35,31 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class RegioninisActivity extends AppCompatActivity {
+public class LithuanianStovyklaActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
-            playerPositionFaktai1,
+            playerPositionFaktai,
             playerDurationIstorija,
-            playerDurationFaktai1,
-            playerPositionFaktai2,
-            playerDurationFaktai2;
+            playerDurationFaktai;
     SeekBar seekBarIstorija,
-            seekBarFaktai1,
-            seekBarFaktai2;
+            seekBarFaktai;
     ImageView btPlayIstorija,
-            btPlayFaktai1,
-            btPlayFaktai2,
+            btPlayFaktai,
             btPauseIstorija,
-            btPauseFaktai1,
-            btPauseFaktai2;
+            btPauseFaktai;
 
     MediaPlayer mediaPlayerIstorija,
-            mediaPlayerFaktai1,
-            mediaPlayerFaktai2;
+            mediaPlayerFaktai;
     Handler handlerIstorija = new Handler();
-    Handler handlerFaktai1 = new Handler();
-    Handler handlerFaktai2 = new Handler();
+    Handler handlerFaktai = new Handler();
     Runnable runnableIstorija,
-            runnableFaktai1,
-            runnableFaktai2;
+            runnableFaktai;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regioninis);
+        setContentView(R.layout.activity_stovykla);
 
         getSupportActionBar().hide();
         setObjectData();
@@ -83,23 +76,21 @@ public class RegioninisActivity extends AppCompatActivity {
             getLocation();
         }
         showIfUnvisited();
+        methodForFacts();
         methodForHistory();
-        methodForFacts1();
-        methodForFacts2();
     }
-
 
     public void methodForHistory()
     {
-        playerPositionIstorija = findViewById(R.id.regioninisIstorijaPlayerPosition);
-        playerDurationIstorija = findViewById(R.id.regioninisIstorijaPlayerDuration);
-        seekBarIstorija      = findViewById(R.id.regioninisIstorijaSeekBar);
-        btPlayIstorija         = findViewById(R.id.regioninisIstorijaPlay);
-        btPauseIstorija        = findViewById(R.id.regioninisIstorijaPause);
+        playerPositionIstorija = findViewById(R.id.stvoyklaIstorijaPlayerPosition);
+        playerDurationIstorija = findViewById(R.id.stvoyklaIstorijaPlayerDuration);
+        seekBarIstorija      = findViewById(R.id.stvoyklaIstorijaSeekBar);
+        btPlayIstorija         = findViewById(R.id.stvoyklaIstorijaPlay);
+        btPauseIstorija        = findViewById(R.id.stvoyklaIstorijaPause);
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltlakstingaluslenisistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -166,57 +157,57 @@ public class RegioninisActivity extends AppCompatActivity {
         });
     }
 
-    public void methodForFacts1()
+    public void methodForFacts()
     {
-        playerPositionFaktai1 = findViewById(R.id.regioninisFaktai1PlayerPosition);
-        playerDurationFaktai1 = findViewById(R.id.regioninisFaktai1PlayerDuration);
-        seekBarFaktai1        = findViewById(R.id.regioninisFaktai1SeekBar);
-        btPlayFaktai1         = findViewById(R.id.regioninisFaktai1Play);
-        btPauseFaktai1        = findViewById(R.id.regioninisFaktai1Pause);
+        playerPositionFaktai = findViewById(R.id.stvoyklaFaktaiPlayerPosition);
+        playerDurationFaktai = findViewById(R.id.stvoyklaFaktaiPlayerDuration);
+        seekBarFaktai        = findViewById(R.id.stvoyklaFaktaiSeekBar);
+        btPlayFaktai         = findViewById(R.id.stvoyklaFaktaiPlay);
+        btPauseFaktai        = findViewById(R.id.stvoyklaFaktaiPause);
 
-        mediaPlayerFaktai1 = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltlakstingaluslenisfaktai);
 
-        runnableFaktai1 = new Runnable() {
+        runnableFaktai = new Runnable() {
             @Override
             public void run() {
-                seekBarFaktai1.setProgress(mediaPlayerFaktai1.getCurrentPosition());
-                handlerFaktai1.postDelayed(this, 500);
+                seekBarFaktai.setProgress(mediaPlayerFaktai.getCurrentPosition());
+                handlerFaktai.postDelayed(this, 500);
             }
         };
 
-        int duration = mediaPlayerFaktai1.getDuration();
+        int duration = mediaPlayerFaktai.getDuration();
         String sDuration = convertFormat(duration);
-        playerDurationFaktai1.setText(sDuration);
+        playerDurationFaktai.setText(sDuration);
 
-        btPlayFaktai1.setOnClickListener(new View.OnClickListener() {
+        btPlayFaktai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btPlayFaktai1.setVisibility(View.GONE);
-                mediaPlayerFaktai1.start();
-                seekBarFaktai1.setMax(mediaPlayerFaktai1.getDuration());
-                handlerFaktai1.postDelayed(runnableFaktai1, 0);
-                btPauseFaktai1.setVisibility(View.VISIBLE);
+                btPlayFaktai.setVisibility(View.GONE);
+                mediaPlayerFaktai.start();
+                seekBarFaktai.setMax(mediaPlayerFaktai.getDuration());
+                handlerFaktai.postDelayed(runnableFaktai, 0);
+                btPauseFaktai.setVisibility(View.VISIBLE);
             }
         });
 
-        btPauseFaktai1.setOnClickListener(new View.OnClickListener() {
+        btPauseFaktai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btPlayFaktai1.setVisibility(View.VISIBLE);
-                mediaPlayerFaktai1.pause();
-                handlerFaktai1.removeCallbacks(runnableFaktai1);
-                handlerFaktai1.postDelayed(runnableFaktai1, 0);
-                btPauseFaktai1.setVisibility(View.GONE);
+                btPlayFaktai.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai.pause();
+                handlerFaktai.removeCallbacks(runnableFaktai);
+                handlerFaktai.postDelayed(runnableFaktai, 0);
+                btPauseFaktai.setVisibility(View.GONE);
             }
         });
 
-        seekBarFaktai1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        seekBarFaktai.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if(fromUser){
-                    mediaPlayerFaktai1.seekTo(progress);
+                    mediaPlayerFaktai.seekTo(progress);
                 }
-                playerPositionFaktai1.setText(convertFormat(mediaPlayerFaktai1.getCurrentPosition()));
+                playerPositionFaktai.setText(convertFormat(mediaPlayerFaktai.getCurrentPosition()));
             }
 
             @Override
@@ -230,87 +221,12 @@ public class RegioninisActivity extends AppCompatActivity {
             }
         });
 
-        mediaPlayerFaktai1.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+        mediaPlayerFaktai.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                btPlayFaktai1.setVisibility(View.VISIBLE);
-                mediaPlayerFaktai1.seekTo(0);
-                btPauseFaktai1.setVisibility(View.GONE);
-            }
-        });
-
-    }
-
-    public void methodForFacts2()
-    {
-        playerPositionFaktai2 = findViewById(R.id.regioninisFaktai2PlayerPosition);
-        playerDurationFaktai2 = findViewById(R.id.regioninisFaktai2PlayerDuration);
-        seekBarFaktai2        = findViewById(R.id.regioninisFaktai2SeekBar);
-        btPlayFaktai2        = findViewById(R.id.regioninisFaktai2Play);
-        btPauseFaktai2        = findViewById(R.id.regioninisFaktai2Pause);
-
-        mediaPlayerFaktai2 = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasfaktai2);
-
-        runnableFaktai2 = new Runnable() {
-            @Override
-            public void run() {
-                seekBarFaktai2.setProgress(mediaPlayerFaktai2.getCurrentPosition());
-                handlerFaktai2.postDelayed(this, 500);
-            }
-        };
-
-        int duration = mediaPlayerFaktai2.getDuration();
-        String sDuration = convertFormat(duration);
-        playerDurationFaktai2.setText(sDuration);
-
-        btPlayFaktai2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btPlayFaktai2.setVisibility(View.GONE);
-                mediaPlayerFaktai2.start();
-                seekBarFaktai2.setMax(mediaPlayerFaktai2.getDuration());
-                handlerFaktai2.postDelayed(runnableFaktai2, 0);
-                btPauseFaktai2.setVisibility(View.VISIBLE);
-            }
-        });
-
-        btPauseFaktai2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btPlayFaktai2.setVisibility(View.VISIBLE);
-                mediaPlayerFaktai2.pause();
-                handlerFaktai2.removeCallbacks(runnableFaktai2);
-                handlerFaktai2.postDelayed(runnableFaktai2, 0);
-                btPauseFaktai2.setVisibility(View.GONE);
-            }
-        });
-
-        seekBarFaktai2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                if(fromUser){
-                    mediaPlayerFaktai2.seekTo(progress);
-                }
-                playerPositionFaktai2.setText(convertFormat(mediaPlayerFaktai2.getCurrentPosition()));
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        mediaPlayerFaktai2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-            @Override
-            public void onCompletion(MediaPlayer mp) {
-                btPlayFaktai2.setVisibility(View.VISIBLE);
-                mediaPlayerFaktai2.seekTo(0);
-                btPauseFaktai2.setVisibility(View.GONE);
+                btPlayFaktai.setVisibility(View.VISIBLE);
+                mediaPlayerFaktai.seekTo(0);
+                btPauseFaktai.setVisibility(View.GONE);
             }
         });
 
@@ -318,11 +234,8 @@ public class RegioninisActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed(){
-        if(mediaPlayerFaktai1.isPlaying()){
-            mediaPlayerFaktai1.stop();
-        }
-        else if(mediaPlayerFaktai2.isPlaying()){
-            mediaPlayerFaktai2.stop();
+        if(mediaPlayerFaktai.isPlaying()){
+            mediaPlayerFaktai.stop();
         }
         else
             mediaPlayerIstorija.stop();
@@ -347,11 +260,11 @@ public class RegioninisActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=4;    //###############################################################   0 tik jacht klubui
-    int ToObjectDistance=10000; // Distance to object (if this is more than actual distance, button wont show)
+    int objectNr=6;    //###############################################################   0 tik jacht klubui
+    int ToObjectDistance=7000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
-        Button playButton = (Button) findViewById(R.id.button_addPoint4);  //##########################################################     cia pakeisti
+        Button playButton = (Button) findViewById(R.id.button_addPoint6);  //##########################################################     cia pakeisti
         if(getFlag(objectNr)==0&&distance(Double.parseDouble(latitude),Double.parseDouble(longitude))<ToObjectDistance)//
         {
             playButton.setVisibility(View.VISIBLE);
@@ -444,7 +357,7 @@ public class RegioninisActivity extends AppCompatActivity {
         objectArray[3]=new Object("Lakštingalų slėnis",54.909123,24.064016);
         objectArray[4]=new Object("Kauno marių regioninis parkas",54.916187,24.088728);
         objectArray[5]=new Object("Meilės įlanka",54.897875,24.126895);
-        objectArray[6]=new Object("Kauno marių apleista stovyklą",54.879261,24.153153);
+        objectArray[6]=new Object("Kauno marių apleista stovykla",54.879261,24.153153);
         objectArray[7]=new Object("Gastilionių atodanga",54.871606,24.150136);
         objectArray[8]=new Object("Rumšiškių liaudies buities muziejus",54.866331,24.200702);
         objectArray[9]=new Object("Rumšiškių prieplauka",54.860661,24.196769);
@@ -454,7 +367,6 @@ public class RegioninisActivity extends AppCompatActivity {
         objectArray[13]=new Object("Žigos įlanka",54.841290,24.194681);
         objectArray[14]=new Object("Skulptūrų parkas",54.858654,24.114648);
         objectArray[15]=new Object("Žiegždrių takas",54.889264,24.076552);
-        objectArray[16]=new Object("Laumėnų parkas",54.874337,24.049471);
         objectArray[17]=new Object("Laumėnų pažintinis takas",54.863047,24.043927);
         objectArray[18]=new Object("Pakalniškių pažintinis takas",54.855207,24.017669);
 
@@ -611,7 +523,7 @@ public class RegioninisActivity extends AppCompatActivity {
         else {
             try {
                 Toast.makeText(this, "Objektas aplankytas!", Toast.LENGTH_SHORT).show();
-                Button playButton = (Button) findViewById(R.id.button_addPoint4);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                Button playButton = (Button) findViewById(R.id.button_addPoint6);//////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 playButton.setVisibility(View.GONE);
                 loadToArray(objectNr,1);
             }
