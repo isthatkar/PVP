@@ -23,7 +23,7 @@ import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class LithuanianMapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private ActivityMapsBinding binding;
     private GoogleMap map;
@@ -59,7 +59,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         typeMapsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupMenu difftype = new PopupMenu(MapsActivity.this, v);
+                PopupMenu difftype = new PopupMenu(LithuanianMapsActivity.this, v);
                 difftype.getMenuInflater().inflate(R.menu.difftype_menu, difftype.getMenu());
                 difftype.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
@@ -92,7 +92,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PopupMenu objectMenu = new PopupMenu(MapsActivity.this, v);
+                PopupMenu objectMenu = new PopupMenu(LithuanianMapsActivity.this, v);
                 objectMenu.getMenuInflater().inflate(R.menu.popup_menu, objectMenu.getMenu());
                 objectMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                     @Override
@@ -258,75 +258,75 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Intent intent;
                 switch (marker.getTitle()){
                     case "Jachtklubas":
-                        intent = new Intent(MapsActivity.this, LithuanianJachklubasActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianJachklubasActivity.class);
                         startActivity(intent);
                         break;
                     case "Pažaislio vienuolynas":
-                        intent = new Intent(MapsActivity.this, LithuanianPazaislioActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianPazaislioActivity.class);
                         startActivity(intent);
                         break;
                     case "Šuneliškių kalnas":
-                        intent = new Intent(MapsActivity.this, LithuanianSuneliskiuActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianSuneliskiuActivity.class);
                         startActivity(intent);
                         break;
                     case "Lakštingalų slėnis":
-                        intent = new Intent(MapsActivity.this, LithuanianLakstingaluActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianLakstingaluActivity.class);
                         startActivity(intent);
                         break;
                     case "Kauno marių regioninis parkas":
-                        intent = new Intent(MapsActivity.this, LithuanianRegioninisActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianRegioninisActivity.class);
                         startActivity(intent);
                         break;
                     case "Gastilionių atodanga":
-                        intent = new Intent(MapsActivity.this, LithuanianGastilioniuActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianGastilioniuActivity.class);
                         startActivity(intent);
                         break;
                     case "Meilės įlanka":
-                        intent = new Intent(MapsActivity.this, LithuanianMeilesActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianMeilesActivity.class);
                         startActivity(intent);
                         break;
                     case "Kauno marių apleista stovykla":
-                        intent = new Intent(MapsActivity.this, LithuanianStovyklaActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianStovyklaActivity.class);
                         startActivity(intent);
                         break;
                     case "Rumšiškių liaudies buities muziejus":
-                        intent = new Intent(MapsActivity.this, LithuanianRumsiskiuMuziejusActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianRumsiskiuMuziejusActivity.class);
                         startActivity(intent);
                         break;
                     case "Rumšiškių prieplauka":
-                        intent = new Intent(MapsActivity.this, LithuanianRumsiskiuPrieplaukaActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianRumsiskiuPrieplaukaActivity.class);
                         startActivity(intent);
                         break;
                     case "Kapitoniškių pažintinis takas":
-                        intent = new Intent(MapsActivity.this, LithuanianKapitoniskiuActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianKapitoniskiuActivity.class);
                         startActivity(intent);
                         break;
                     case "Kruonio HAE":
-                        intent = new Intent(MapsActivity.this, LithuanianKruonioActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianKruonioActivity.class);
                         startActivity(intent);
                         break;
                     case "Žiglos įlanka":
-                        intent = new Intent(MapsActivity.this, LithuanianZiglosActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianZiglosActivity.class);
                         startActivity(intent);
                         break;
                     case "Skulptūrų parkas":
-                        intent = new Intent(MapsActivity.this, LithuanianSkulpturuActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianSkulpturuActivity.class);
                         startActivity(intent);
                         break;
                     case "Žiegždrių takas":
-                        intent = new Intent(MapsActivity.this, LithuanianZiegzdriuActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianZiegzdriuActivity.class);
                         startActivity(intent);
                         break;
                     case "Laumėnų pažintinis takas":
-                        intent = new Intent(MapsActivity.this, LithuanianLaumenuTakasActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianLaumenuTakasActivity.class);
                         startActivity(intent);
                         break;
                     case "Pakalniškių pažintinis takas":
-                        intent = new Intent(MapsActivity.this, LithuanianPakalniskiuActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianPakalniskiuActivity.class);
                         startActivity(intent);
                         break;
                     case "Mergakalnio apžvalgos aikštelė":
-                        intent = new Intent(MapsActivity.this, LithuanianMergakalnioActivity.class);
+                        intent = new Intent(LithuanianMapsActivity.this, LithuanianMergakalnioActivity.class);
                         startActivity(intent);
                         break;
 

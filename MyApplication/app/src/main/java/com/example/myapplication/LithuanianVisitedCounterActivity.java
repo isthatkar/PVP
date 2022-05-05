@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 
-public class VisitedCounterActivity extends AppCompatActivity {
+public class LithuanianVisitedCounterActivity extends AppCompatActivity {
     private static final String FILE_NAME = "example.txt";
     EditText mEditText;
     int[] intArray;
