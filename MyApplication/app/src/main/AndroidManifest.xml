@@ -36,16 +36,16 @@
             android:name=".EnglishMainActivity"
             android:exported="true" />
         <activity
-            android:name=".VisitedCounterActivity"
+            android:name=".LithuanianVisitedCounterActivity"
             android:exported="true" />
         <activity
             android:name=".LithuanianMainActivity"
             android:exported="true" />
         <activity
-            android:name=".MapsActivity"
+            android:name=".LithuanianMapsActivity"
             android:exported="true" />
         <activity
-            android:name=".ContactActivity"
+            android:name=".LithuanianContactActivity"
             android:exported="true" />
         <activity
             android:name=".LithuanianJachklubasActivity"

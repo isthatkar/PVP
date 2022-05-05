@@ -19,7 +19,7 @@
         android:layout_marginTop="6dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="-5dp"
-        tools:context=".MapsActivity" />
+        tools:context=".LithuanianMapsActivity" />
 
     <ImageView
         android:id="@+id/typeImage"

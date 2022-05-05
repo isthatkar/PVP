@@ -2,12 +2,9 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
 public class LithuanianMainActivity extends AppCompatActivity {
 
@@ -62,16 +59,16 @@ public class LithuanianMainActivity extends AppCompatActivity {
     }
 
     public void openMaps(){
-        Intent intent = new Intent(this, MapsActivity.class);
+        Intent intent = new Intent(this, LithuanianMapsActivity.class);
         startActivity(intent);
     }
 
     public void openContacts(){
-        Intent intent = new Intent(this, ContactActivity.class);
+        Intent intent = new Intent(this, LithuanianContactActivity.class);
         startActivity(intent);
     }
     public void openCounter(){
-        Intent intent = new Intent(this, VisitedCounterActivity.class);
+        Intent intent = new Intent(this, LithuanianVisitedCounterActivity.class);
         startActivity(intent);
     }
 

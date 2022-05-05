@@ -11,32 +11,32 @@ public class LocationPermissions{
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
     private boolean mLocationPermissionsGranted = false;
 
-    public void enableLocation(GoogleMap googleMap, MapsActivity mapsActivity)
+    public void enableLocation(GoogleMap googleMap, LithuanianMapsActivity lithuanianMapsActivity)
     {
-        if (ActivityCompat.checkSelfPermission(mapsActivity, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-                && ActivityCompat.checkSelfPermission(mapsActivity, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(lithuanianMapsActivity, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(lithuanianMapsActivity, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
             return;
         }
         googleMap.setMyLocationEnabled(true);
     }
 
-    public void getLocationPermission(MapsActivity mapsActivity){
+    public void getLocationPermission(LithuanianMapsActivity lithuanianMapsActivity){
         String[] permissions = {android.Manifest.permission.ACCESS_FINE_LOCATION,
                 Manifest.permission.ACCESS_COARSE_LOCATION};
 
-        if(ActivityCompat.checkSelfPermission(mapsActivity.getApplicationContext(),
+        if(ActivityCompat.checkSelfPermission(lithuanianMapsActivity.getApplicationContext(),
                 Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-            if(ActivityCompat.checkSelfPermission(mapsActivity.getApplicationContext(),
+            if(ActivityCompat.checkSelfPermission(lithuanianMapsActivity.getApplicationContext(),
                     Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
                 mLocationPermissionsGranted = true;
             }else{
-                ActivityCompat.requestPermissions(mapsActivity,
+                ActivityCompat.requestPermissions(lithuanianMapsActivity,
                         permissions,
                         LOCATION_PERMISSION_REQUEST_CODE);
             }
         }else{
-            ActivityCompat.requestPermissions(mapsActivity,
+            ActivityCompat.requestPermissions(lithuanianMapsActivity,
                     permissions,
                     LOCATION_PERMISSION_REQUEST_CODE);
         }
