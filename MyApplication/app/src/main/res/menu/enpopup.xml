@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jachtklubas"
+        android:title="Yacht club" />
+    <item
+        android:id="@+id/pazaislis"
+        android:title="Pažaislis monastery" />
+    <item
+        android:id="@+id/suneliskiuKalnas"
+        android:title= "Šuneliškės mountain" />
+    <item
+        android:id="@+id/lakstingaluSlenis"
+        android:title=  "Lakštingalos valley" />
+    <item
+        android:id="@+id/kaunoMariuRegioninisParkas"
+        android:title= "Kauno marios regional park" />
+    <item
+        android:id="@+id/meilesIlanka"
+        android:title= "Love bay" />
+    <item
+        android:id="@+id/apleistaStovykla"
+        android:title="Kauno marios abandoned camp"/>
+    <item
+        android:id="@+id/gastilioniuAtodanga"
+        android:title= "Gastilionai exposure" />
+    <item
+        android:id="@+id/rumsiskiuMuziejus"
+        android:title="Rumšiškės folk household museum" />
+    <item
+        android:id="@+id/rumsiskiuPrieplauka"
+        android:title="Rumšiškės pier" />
+    <item
+        android:id="@+id/kapitoniskiuPazintinisTakas"
+        android:title= "Kapitoniškės cognitive path" />
+    <item
+        android:id="@+id/mergakalnis"
+        android:title= "Mergakalnis viewpoint" />
+    <item
+        android:id="@+id/kruonioHAE"
+        android:title="Kruonis hydo electric power plant" />
+    <item
+        android:id="@+id/zigosIlanka"
+        android:title="Žigla bay" />
+    <item
+        android:id="@+id/skulpturuParkas"
+        android:title="Skulptūrų park" />
+    <item
+        android:id="@+id/ziegzdzriuTakas"
+        android:title= "Žiegždrės path" />
+    <item
+        android:id="@+id/laumenuPazintinisTakas"
+        android:title= "Laumėnai cognitive path" />
+    <item
+        android:id="@+id/pakalniskiuPazintinisTakas"
+        android:title= "Pakalniškės cognitive path" />
+
+
+</menu>
