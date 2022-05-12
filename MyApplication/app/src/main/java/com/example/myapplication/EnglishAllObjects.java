@@ -38,14 +38,14 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
             "Kauno marios abandoned camp",
             "Gastilionai exposure",
             "Rumšiškės folk household museum",
-            "Kapitoniškės cognitive path",
+            "Kapitoniškės tourist trail",
             "Mergakalnis viewpoint",
             "Kruonis hydo electric power plant",
-            "Žigla bay",
+            "Žigla gulf",
             "Skulptūrų park",
             "Žiegždrės path",
-            "Laumėnai cognitive path",
-            "Pakalniškės cognitive path"};
+            "Laumėnai tourist trail",
+            "Pakalniškės tourist trail"};
 
 
     @Override

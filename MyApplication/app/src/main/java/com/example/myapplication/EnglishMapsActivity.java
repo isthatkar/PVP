@@ -263,71 +263,71 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
                         startActivity(intent);
                         break;
                     case "Pažaislio vienuolynas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianPazaislioActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishPazaislioVienuolynas.class);
                         startActivity(intent);
                         break;
                     case "Šuneliškių kalnas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianSuneliskiuActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishSuneliskesKalnasActivity.class);
                         startActivity(intent);
                         break;
                     case "Lakštingalų slėnis":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianLakstingaluActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishLakstingaluSlenisActivity.class);
                         startActivity(intent);
                         break;
                     case "Kauno marių regioninis parkas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianRegioninisActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishKaunoMariuRegioninisParkasACtivity.class);
                         startActivity(intent);
                         break;
                     case "Gastilionių atodanga":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianGastilioniuActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishGastilijonuAtodangaActivity.class);
                         startActivity(intent);
                         break;
                     case "Meilės įlanka":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianMeilesActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishMeilesIlankaACtivity.class);
                         startActivity(intent);
                         break;
                     case "Kauno marių apleista stovykla":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianStovyklaActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishKaunoMariuApleistaStovyklaActivity.class);
                         startActivity(intent);
                         break;
                     case "Rumšiškių liaudies buities muziejus":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianRumsiskiuMuziejusActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishRumsiskiuMuziejusActivity.class);
                         startActivity(intent);
                         break;
                     case "Rumšiškių prieplauka":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianRumsiskiuPrieplaukaActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishRumsiskiuPrieplaukaActivity.class);
                         startActivity(intent);
                         break;
                     case "Kapitoniškių pažintinis takas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianKapitoniskiuActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishKapitoniskiuPazintinisTakasEnglish.class);
                         startActivity(intent);
                         break;
                     case "Kruonio HAE":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianKruonioActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishKruonioHAEActivity.class);
                         startActivity(intent);
                         break;
                     case "Žiglos įlanka":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianZiglosActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishZiglosIlankaActivity.class);
                         startActivity(intent);
                         break;
                     case "Skulptūrų parkas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianSkulpturuActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishSkulturuParkasActivity.class);
                         startActivity(intent);
                         break;
                     case "Žiegždrių takas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianZiegzdriuActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishZiegzdriuTakasEnglish.class);
                         startActivity(intent);
                         break;
                     case "Laumėnų pažintinis takas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianLaumenuTakasActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishLaumenuPazintinisTakas.class);
                         startActivity(intent);
                         break;
                     case "Pakalniškių pažintinis takas":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianPakalniskiuActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishPakalniskiuPazintinisTakas.class);
                         startActivity(intent);
                         break;
                     case "Mergakalnio apžvalgos aikštelė":
-                        intent = new Intent(EnglishMapsActivity.this, LithuanianMergakalnioActivity.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishMergakalnioApzvalgosAiksteActivity.class);
                         startActivity(intent);
                         break;
 
