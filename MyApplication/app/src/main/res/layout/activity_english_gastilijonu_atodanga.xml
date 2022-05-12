@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EnglishGastilijonuAtodangaActivity">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="GASTILIONAI EXPOSURE"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilijonuatodangaa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/gastilionuFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/imageView5"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/gastilionuFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/gastilionuFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gastilionuFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/gastilionuFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gastilionuFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gastilionuFaktai"
+            android:layout_marginTop="30px"
+            android:text="800 metrų ilgio ir 30 m aukščio atodanga, kurią sudaro Gastilionių pusiasalio smaigalys ir į abi puses nusitęsę aukšti šlaitai. Atodangoje galima įžiūrėti moreninės dangos pjūvį, kuriame dviejų ledynų suguldyti du moreninio priemolio sluoksniai, perkirsti tarpledynmetyje tyvuliavusio ežero smėlio." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView7"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilioniu" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:text="ISTORIJA"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/gastilionuIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/gastilionuIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/gastilionuIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gastilionuIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/gastilionuIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gastilionuIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gastilionuIstorija"
+            android:text="Gastilionių atodanga – geologinis gamtos paveldo objektas, paskelbtas saugomu 2008 m. Atodanga yra Kaišiadorių rajone, Rumšiškių seniūnijoje, Kaišiadorių miškų urėdijos Rumšiškių girininkijos teritorijoje, Rumšiškių miške, Kauno marių dešiniajame krante. Atodanga patenka į Kauno marių regioninio parko teritoriją. Atodanga dešiniąja Kauno marių pakrante tęsiasi apie 600 m su beveik stačia iki 20 m aukščio siena, kurioje aiškiai matomi dviejų ledynmečių sukloti moreninio priemolio sluoksniai, perskirti tarpledynmečio metu sukloto smėlio sluoksniais." />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilijonuatodangac" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRAMOGOS"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView3"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netoliese yra Gastilijonų gūbrys, Rumšiškių miško pušis."
+            android:layout_below="@id/textView10"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView10"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/gastilijonuatodangab" />
+
+        <Button
+            android:id="@+id/button_addPoint7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

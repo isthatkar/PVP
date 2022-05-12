@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EnglishLaumenuPazintinisTakas">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:layout_marginTop="30px"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:text="LAUMĖNAI EDUCATIONAL TRAIL" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/laumenupazintinistakas2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/laumenuPazintinisFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/imageView3"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/laumenuPazintinisFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/laumenuPazintinisFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/laumenuPazintinisFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/laumenuPazintinisFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/laumenuPazintinisFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_below="@id/laumenuPazintinisFaktai"
+            android:text="Keliaudami trasa turėsite galimybę stebėti Kauno marių ardomas pakrantes, grožėsitės atodangomis ir vaizdais nuo jų, o jei pasiseks – vasaros metu galėsite pastebėti palei pakrantes zujančius retus pakrančių gyventojus – tulžius. Taip pat atodangose įsikurti mėgsta urvinės kregždės – atodangose jų išrausti ištisi daugiabučiai." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:layout_below="@id/textView7"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/laumenupazintinistakas1" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:text="ISTORIJA"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/laumenuPazintinisIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/laumenuPazintinisIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/laumenuPazintinisIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/laumenuPazintinisIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/laumenuPazintinisIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/laumenuPazintinisIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/laumenuPazintinisIstorija"
+            android:text="Laumėnų pažintinis takas, tai laukinė trasa mišku. Keliaudami šia trasa turėtumėte vadovautis ženklinimu ant medžių, kad neišklysti iš kelio.
+Keliaudami trasa, taip pat prieisite ir “Laumėnų parką”, nuo kurio atsiveria nepakartojamas vaizdas į Kauno marias..
+Trasa patogiausia pradėti keliauti nuo Girionių poilsiavietės, o jos pabaigoje prieisite Žiegždrių geologinį taką. Trasos ilgis į vieną pusę sudaro 4,3km.
+" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/laumenupazintinistakas3" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRAMOGOS"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView4"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laumėnų poilsiavietė, Žiegždrių geologinis takas, Girionių poilsiavietė"
+            android:layout_below="@id/textView10"/>
+        <Button
+            android:id="@+id/button_addPoint16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

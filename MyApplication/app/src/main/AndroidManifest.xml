@@ -11,11 +11,76 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:label="@string/app_name"
         android:theme="@style/Theme.MyApplication">
-
+        <activity
+            android:name=".EnglishRumsiskiuMuziejusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishJachklubasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishMergakalnioApzvalgosAiksteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishPakalniskiuPazintinisTakas"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishLaumenuPazintinisTakas"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishZiegzdriuTakasEnglish"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSkulturuParkasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishZiglosIlankaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishKruonioHAEActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishKapitoniskiuPazintinisTakasEnglish"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishRumsiskiuPrieplaukaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LithuanianRumsiskiuMuziejusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishKaunoMariuApleistaStovyklaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishMeilesIlankaACtivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishGastilijonuAtodangaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishKaunoMariuRegioninisParkasACtivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishLakstingaluSlenisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishSuneliskesKalnasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishPazaislioVienuolynas"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishMapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishVisitedCounterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishAllObjects"
+            android:exported="false" />
         <activity
             android:name=".LanguageSelection"
             android:exported="true" />
@@ -24,14 +89,15 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCT4UpuxeGfa6GW9Hj59V0ZfsT8ZrlnaJY" />
+            android:value="AIzaSyCN8Zh3feRaiCRnk9w22yOri-GZ3P_TWtE" />
+
         <activity
             android:name=".EnglishMainActivity"
             android:exported="true" />
@@ -70,9 +136,6 @@
             android:exported="true" />
         <activity
             android:name=".LithuanianStovyklaActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LithuanianRumsiskiuMuziejusActivity"
             android:exported="true" />
         <activity
             android:name=".LithuanianRumsiskiuPrieplaukaActivity"

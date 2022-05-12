@@ -7,4 +7,9 @@
         <item>Neaplankyti objektai</item>
         <item>Aplankyti objektai</item>
     </string-array>
+    <string-array name="choices">
+        <item>All objects</item>
+        <item>Unvisited objects</item>
+        <item>Visited objects</item>
+    </string-array>
 </resources>

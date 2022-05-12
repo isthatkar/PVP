@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".EnglishSuneliskesKalnasActivity">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:layout_marginTop="30px"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:text="ŠUNELIŠKĖS MOUNTAIN" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView6"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/suneliskiukalnas2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/suneliskiuFaktai"
+            android:padding="7dp"
+            android:layout_below="@id/imageView3"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuFaktaiPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuFaktaiPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuFaktaiPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/suneliskiuFaktaiSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuFaktaiPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:layout_below="@id/suneliskiuFaktai"
+            android:text="Žmonės pasakoja, kad kadais ant piliakalnio nusižudė vietos dvarininko duktė. Nuo tada čia ėmę vaidentis. Eini naktį, tai čiulba, tai staugia. Bet dažniausia tai vaidenasi visokie šunys, nuo jų toks ir kalno vardas. Už piliakalnio prasideda Lakštingalų slėnis." />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView7"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/suneliskiu" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView2"
+            android:text="ISTORIJA"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/suneliskiuIstorija"
+            android:padding="7dp"
+            android:layout_below="@id/textView9"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuIstorijaPlay"
+                android:src="@drawable/playbuttonmedia"
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/suneliskiuIstorijaPause"
+                android:src="@drawable/ic_baseline_pause_24"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuIstorijaPlayerPosition"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/suneliskiuIstorijaSeekBar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suneliskiuIstorijaPlayerDuration"
+                android:text="00:00"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suneliskiuIstorija"
+            android:text="Vieškūnų piliakalnis dar vadinamas Šuneliškių kalnu, įrengtas aukštumos kyšulyje į Nemuno slėnį, dabar iš pietų juosiamame Kauno marių, o iš vakarų – Šuneliškių Ravo upelio. Tai – vienas geriausiai išlikusių Lietuvos piliakalnių, nes ilgą laiką buvo nežinomas ir atrastas tik 1992 metais.
+Vieškūnų piliakalnis datuojamas XIV a. antrąja puse. Piliakalnis buvo įrengtas kaip mūrinę Kauno pilį iš pietryčių pusės dengianti medinė pilaitė. Pilaitė buvo mažiausiai vieną kartą pulta.
+Šalia pilaitės buvo įkurta papėdės gyvenvietė, įrengta ankstesnės akmens amžiaus gyvenvietės vietoje ir gyvavusi tiek pat, kiek ir pats piliakalnis. Medinei pilaitei Vieškūnų piliakalnyje sunykus, gyvenimas vėl persikėlė į Nemuno slėnį. Jame turėjo būti ir to meto kapinynas.
+"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView8"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/suneliskiukalnas3" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRAMOGOS"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageView4"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netoli yra geležinkelio (Palemono) fortas."
+            android:layout_below="@id/textView10"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="600px"
+            android:layout_below="@id/textView11"
+            android:padding="0px"
+            android:paddingBottom="0px"
+            app:srcCompat="@drawable/suneliskiukalnas4" />
+
+        <Button
+            android:id="@+id/button_addPoint2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Esu objekto teritorijoje!"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>
