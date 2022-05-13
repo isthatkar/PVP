@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/gastilionuFaktai"
             android:layout_marginTop="30px"
-            android:text="800 metrų ilgio ir 30 m aukščio atodanga, kurią sudaro Gastilionių pusiasalio smaigalys ir į abi puses nusitęsę aukšti šlaitai. Atodangoje galima įžiūrėti moreninės dangos pjūvį, kuriame dviejų ledynų suguldyti du moreninio priemolio sluoksniai, perkirsti tarpledynmetyje tyvuliavusio ežero smėlio." />
+            android:text="An outcrop 800 meters long and 30 m high, consisting of the peak of the Gastilioniai peninsula and high slopes stretching in both directions. In the outcrop, a section of the moraine cover can be seen, in which two layers of moraine loam have been deposited by two glaciers, cut through the sand of the lake that was in the middle of the glacial period." />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -99,10 +99,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
 
         <LinearLayout
@@ -155,7 +154,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/gastilionuIstorija"
-            android:text="Gastilionių atodanga – geologinis gamtos paveldo objektas, paskelbtas saugomu 2008 m. Atodanga yra Kaišiadorių rajone, Rumšiškių seniūnijoje, Kaišiadorių miškų urėdijos Rumšiškių girininkijos teritorijoje, Rumšiškių miške, Kauno marių dešiniajame krante. Atodanga patenka į Kauno marių regioninio parko teritoriją. Atodanga dešiniąja Kauno marių pakrante tęsiasi apie 600 m su beveik stačia iki 20 m aukščio siena, kurioje aiškiai matomi dviejų ledynmečių sukloti moreninio priemolio sluoksniai, perskirti tarpledynmečio metu sukloto smėlio sluoksniais." />
+            android:text="Gastilioniai outcrop is a geological natural heritage object declared protected in 2008. The exposure is located in Kaišiadorys district, Rumšiškės eldership, in the territory of Kaišiadorys forest enterprise Rumšiškės forest district, Rumšiškės forest, on the right bank of Kaunas lagoon. The outcrop falls into the territory of Kaunas Lagoon Regional Park. The outcrop on the right bank of the Kaunas Lagoon extends for about 600 m with an almost steep wall up to 20 m high, in which layers of moraine loam laid by two ice ages, separated by layers of sand laid during the interglacial period, are clearly visible." />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -170,23 +169,23 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/imageView3"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/imageView3"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Netoliese yra Gastilijonų gūbrys, Rumšiškių miško pušis."
+            android:text="Nearby is the ridge of Gastilijonai, pine forest of Rumšiškės."
             android:layout_below="@id/textView10"/>
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="wrap_content"
             android:layout_height="600px"
-            android:layout_below="@id/textView10"
+            android:layout_below="@id/textView11"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/gastilijonuatodangab" />
@@ -198,7 +197,7 @@
             android:layout_below="@+id/imageView6"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="Esu objekto teritorijoje!"
+            android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

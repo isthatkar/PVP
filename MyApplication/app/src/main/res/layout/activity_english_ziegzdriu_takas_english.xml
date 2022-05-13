@@ -81,9 +81,9 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
             android:layout_below="@id/ziegzdriuFaktai"
-            android:text="Tai vienintelė vieta Lietuvoje, kur galima rasti varvančio vandens suformuotų uolienų varveklių ir piršto storumo stalaktitų. Atodangos ilgis siekia net 400 m., o aukštis - 22 m. Žiegždrių pažintiniame take pastebėsite ir storiausią Kauno marių apylinkėse šimtametę liepą, jos storis 4,3m." />
+            android:layout_marginTop="30px"
+            android:text="It is the only place in Lithuania where you can find rock icicles formed by dripping water and stalactites of finger thickness. The length of the outcrop reaches as much as 400 m. and the height is 22 m. On the Žiegždriai cognitive trail you will notice the thickest 100-year-old linden in the vicinity of kaunas lagoon, its thickness is 4.3m." />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -99,10 +99,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -153,7 +152,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ziegzdriuIstorija"
-            android:text="Takas apjungia du valstybės saugomus gamtos paveldo objektus – Kalniškių konglomerato ir Žiegždrių atodangas. Tako ilgis į vieną pusę – 1,6 km. Takas nėra žiedinis, tad teks keliauti pirmyn atgal. Nenorėdami grįžti tuo pačiu maršrutu, galite keliauti keliu per gyvenvietę arba, kai palankios oro ir hidrologinės sąlygos – bristi pamariu." />
+            android:text="The trail combines two state-protected natural heritage objects – kalniškės conglomerate and Žiegždriai outcrop. The length of the trail to one side is 1.6 km. The trail is not circular, so you will have to go back and forth. If you do not want to return on the same route, you can travel by road through the settlement or, in case of favorable weather and hydrological conditions, take the seaside.
+From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pažaislis monastery towers, the outcrop of kalniškės conglomerate (The conglomerate is cement formed from the nature of the Ice Age from lime, clay, gravel and gargždas.) Entertainment for children will be guaranteed when travelling along the Žiegždriai cognitive trail, as puzzles about local plants, birds and other natural resources are installed.
+" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -168,19 +169,17 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/imageView4"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Iš poilsio aikštelių galima išvysti Vieškūnų piliakalnį, Palemoną, Pažaislio vienuolyno bokštus, Kalniškių konglomerato atodanga (Konglomeratas – tai nuo ledynmečio gamtos suformuotas cementas iš kalkių, molio, žvyro ir gargždo.)
-Pramogos vaikams bus garantuotos keliaujant Žiegždrių pažintiniu taku, nes yra įrengtos dėlionės apie vietos augalus, paukštelius ir kitus gamtos turtus.
-"
-            android:layout_below="@id/textView10"/>
+            android:layout_below="@id/textView10"
+            android:text="From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pažaislis monastery towers, the outcrop of kalniškės conglomerate (The conglomerate is cement formed from the nature of the Ice Age from lime, clay, gravel and gargždas.) Entertainment for children will be guaranteed when travelling along the Žiegždriai cognitive trail, as puzzles about local plants, birds and other natural resources are installed." />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -198,7 +197,7 @@ Pramogos vaikams bus garantuotos keliaujant Žiegždrių pažintiniu taku, nes y
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="Esu objekto teritorijoje!"
+            android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

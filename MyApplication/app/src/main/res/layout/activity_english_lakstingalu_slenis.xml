@@ -80,9 +80,10 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
             android:layout_below="@id/lakstingaluFaktai"
-            android:text="Lakštingalų slėnį ne vienerius metus bandė gaivinti Palemono bendruomenė. Čia vykdavo moksleivių rengiamos šventės „Poezijos pavasarėliai“. 2012 metų vasarą vietoje senų suolų buvo įrengtos spalvotos kėdutės, tačiau dėl pasilinksminti susirenkančio jaunimo, dauguma jų jau nebėra." />
+            android:layout_marginTop="30px"
+            android:text="The Palemonas community has been trying to revitalize the nightingale valley for years. The &quot;Poetry Spring&quot; festival organized by the students took place here. In the summer of 2012, colorful chairs were installed in place of the old benches, but due to the young people gathering to have fun, most of them are no longer there.
+" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -98,10 +99,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
 
         <LinearLayout
@@ -154,10 +154,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/lakstingaluIstorija"
-            android:text="Lakštingalų slėnis – tai unikalus gamtos užkaboris Kauno marių regioniniame parke, šalia kurio Palemone 1937 m. įsikūrė viena žymiausių praėjusio amžiaus lietuvių poečių Salomėja Nėris. Jos name jau daugiau nei pusę amžiau veikia memorialinis muziejus.
-O šalia plytintis slėnis, šiuo metu nusidažęs nuostabiomis rudens spalvomis, 1965 m. tapo „Poezijos pavasario“ festivalio įsčiomis. Literatūros šventė kasmet čia vyko net tris dešimtmečius, o jos laurus skynė tokie poezijos korifėjai kaip Paulius Širvys, Antanas Miškinis, Justinas Marcinkevičius, Algimantas Baltakis, Bernardas Brazdžionis ir daug kitų.
-Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliepsnodavo kūrybos laisvės ugnis, pasodintas ąžuoliukas, dabar – jau platus išsikerojęs ąžuolas. Visgi poezijos aukuras nedega jau daugiau kaip 20 metų – 1995 m. šventė perkelta į Maironio lietuvių literatūros muziejų Kauno Senamiestyje, mat publika pabrangus kurui tiesiog nebegalėjo sau leisti atvažiuoti į Palemoną.
-"/>
+            android:text="Nightingale Valley is a unique nature enclosure in Kaunas Lagoon Regional Park, near which, in Palemone in 1937 Salomėja Nėris, one of the most famous Lithuanian poets of the last century, was established in. Her house has housed a memorial museum for more than half a century.
+
+And the nearby valley, now painted in stunning autumn colors, was built in 1965. became the birthplace of the Poetry Spring Festival. The Literature Festival has been held here for as long as three decades, and its laurels have been picked up by poetry corridors such as Paulius Širvys, Antanas Miškinis, Justinas Marcinkevičius, Algimantas Baltakis, Bernardas Brazdžionis and many others.
+
+During the first festival, an altar was erected in the valley, where the fire of creative freedom was lit every year, an oak tree was planted, and now it is a wide oak tree. However, the altar of poetry has not been burning for more than 20 years - in 1995. The festival was moved to the Maironis Museum of Lithuanian Literature in Kaunas Old Town, because the audience simply could not afford to come to Palemona after the increase in fuel prices.
+" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -172,33 +174,33 @@ Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliep
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/imageView4"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Salomėjos Nėries Memorialinis Muziejus"
-            android:layout_below="@id/textView10"/>
+            android:layout_below="@id/textView10"
+            android:text="Salomėja Nėris Memorial Museum" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ARTĖJANTYS RENGINIAI"
-            android:textSize="20dp"
+            android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView11"/>
+            android:text="UPCOMING EVENTS"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Anksčiau vykdavo poezijos vakarai, bet pastaruoju metu renginių nebevyksta."
-            android:layout_below="@id/textView12"/>
+            android:layout_below="@id/textView12"
+            android:text="poetry evenings no longer take place here." />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -216,7 +218,7 @@ Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliep
             android:layout_below="@+id/imageView6"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="Esu objekto teritorijoje!"
+            android:text="I am near the object!"
             android:visibility="gone" />
 
     </RelativeLayout>
