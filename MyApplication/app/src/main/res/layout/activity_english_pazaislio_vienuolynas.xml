@@ -80,10 +80,10 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
             android:layout_below="@id/pazaislioFaktai"
-            android:text="Ansamblis laikomas vienu geriausių brandžiojo baroko pavyzdžių Šiaurės ir Rytų Europoje. Tai vienas iš dviejų Lietuvoje išlikusių vienuolynų ir bažnyčių ansamblių (kitas Tytuvėnuose). Pagrindiniai pastatai sugrupuoti simetriškai pagal išilginę kompozicinę vakarų-rytų krypties ašį, prie kurios išdėstyti pastatai (foresterija, oficinos, vienuolynas, eremo nameliai).
-Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžiaus plano, turi šešiabriaunį 53 m aukščio kupolą (su žibintu ir kryžiumi). Pietų fasade įrengtas saulės laikrodis. Vienuolyno korpusai (kartu su galerijomis) 1-2 aukštų. Jų sienos tinkuotos, langų ir durų apvadai pilko smiltainio. Pagrindinę ansamblio teritoriją juosia 2,5 m aukščio vientisa mūro tvora, dengta čerpėmis. Komplekso planas primena vienuolių kamaldulių herbą – du balandžius, geriančius iš vienos taurės.
+            android:layout_marginTop="30px"
+            android:text="The ensemble is considered one of the best examples of mature baroque in Northern and Eastern Europe. It is one of the two surviving monasteries and church ensembles in Lithuania (the other in Tytuvėnai). The main buildings are grouped symmetrically along the longitudinal composite west-east axis along which the buildings are located (forester, office, monastery, hermitage).
+The most important accent of the ensemble is the church. It is a baroque, Latin cross plan, with a hexagonal dome 53 m high (with lantern and cross). There is a sundial on the south façade. Monastery buildings (together with galleries) 1-2 floors. Their walls are plastered, the edges of the windows and doors are gray sandstone. The main territory of the ensemble is surrounded by a 2.5 m high solid masonry fence covered with tiles. The plan of the complex is reminiscent of the coat of arms of the Camaldolese monks - two pigeons drinking from one cup.
 " />
 
         <ImageView
@@ -100,10 +100,9 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -154,7 +153,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pazaislioIstorija"
-            android:text="Pažaislio bažnyčios ir vienuolyno ansamblis pastatytas XVII–XVIII a. funduojant Lietuvos Didžiosios Kunigaikštystės Didžiajam kancleriui Kristupui Zigmantui Pacui. 1660 m. jis kreipėsi į Kamaldulių ordino vyresnybę Romoje, raštu pasižadėdamas finansuoti vienuolyno ir bažnyčios statybą Lietuvoje. Netrukus, gavęs aukščiausiosios bažnytinės vadovybės palaiminimą, kartu su architektu ir keliais Krokuvos Bielianų kamaldulių vienuoliais netoli Kauno surado planuojamam statyti vienuolynui tinkamą vietą – Pažaislį. Šią gražią miškingą vietovę fundatorius nupirko iš Kauno žemės teisėjo Samuelio Oborskio ir pavadino Ramybės (Taikos) kalnu (Mons Pacis)." />
+            android:text="The ensemble of Pažaislis Church and Monastery was built in the 17th-18th centuries. In the foundation of the Grand Chancellor of the Grand Duchy of Lithuania Kristupas Zigmantas Pacas. 1660 he applied to the command of the Camaldolese Order in Rome, promising in writing to finance the construction of a monastery and a church in Lithuania. Soon after receiving the blessing of the highest ecclesiastical leadership, together with the architect and several monks of the Camielian Baldian in Krakow, near Kaunas, they found a suitable place for the planned monastery - Pažaislis. The founder bought this beautiful wooded area from Kaunas Land Judge Samuel Oborskis and named it the Hill of Peace (Mons Pacis)." />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -169,33 +168,33 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/imageView4"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vienuolyne vyksta edukacinės programos, ekspozicijos, vedamos ekskursijos."
-            android:layout_below="@id/textView10"/>
+            android:layout_below="@id/textView10"
+            android:text="The monastery hosts educational programs, expositions and guided tours." />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ARTĖJANTYS RENGINIAI"
-            android:textSize="20dp"
+            android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView11"/>
+            android:text="COMING SOON"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pažaislio muzikos festivais, koncertai."
-            android:layout_below="@id/textView12"/>
+            android:layout_below="@id/textView12"
+            android:text="Pažaislis music festival, concerts." />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -213,7 +212,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="Esu objekto teritorijoje!"
+            android:text="I am near object!"
             android:visibility="gone" />
 
     </RelativeLayout>

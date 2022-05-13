@@ -81,10 +81,11 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
             android:layout_below="@id/meilesFaktai"
-            android:text="Šioje vietovėje dažnai lankosi Didieji pilkieji garniai, užsuka ir vienas kitas Baltasis, atokių vietų mėgėjai garniai čia, pasak gamtininko, mėgsta pažvejoti. Idilišką ramybę Kauno marių regioninio parko gamtos apsuptyje karts nuo karto sudrumsčia rėksmingas paukštis tulžys.
-Įlanka gan gili, tinkama priplaukti prie kranto nedidelėmis jachtomis, burlaiviais, laivais ir valtimis. Atkeliauti galima ir pėsčiomis, tą ypač mėgsta žygeiviai. Vanduo Meilės įlankoje gan švarus, tinkamas maudynėms, tačiau rekėtų pasisaugoti gylio, kuris vietomis siekia ir apie 11 metrų.
+            android:layout_marginTop="30px"
+            android:text="The Great Gray Heron often visits this area, sometimes even White Herons come by. The idyllic tranquility surrounded by the nature of Kaunas Lagoon Regional Park is sometimes clouded by the screaming bird bile.
+
+The bay is quite deep, suitable for access to the shore by small yachts, sailboats and boats. You can also come on foot, which is especially popular with hikers. The water in the Bay of Love is quite clean, suitable for bathing, but it is necessary to be wary of depth, which in some places reaches about 11 meters.
 " />
 
         <ImageView
@@ -101,10 +102,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -155,8 +155,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/meilesIstorija"
-            android:text="Pasak Kauno marių regioninio parko vyriausiojo specialisto (kraštotvarkininko – reindžerio) Evaldo Makricko, Meilės pavadinimą įlanka gavo dar sovietmečiu, kai porelės pamėgo į šią atokią vietą atplaukti laiveliais ir pasibūti vienudu, atokiau nuo miesto šurmulio, akių, pasigėrėti atodanga, gražia panorama, pailsėti, pasivaišinti užkandžiais ir pakopinėti meilės medų.
-Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta puikiai tinka nedideliems piknikams.
+            android:text="According to Evaldas Makrickas, the chief specialist of Kaunas Lagoon Regional Park (land manager - ranger), the bay got the name of love in the Soviet era, when couples liked to come to this remote place by boat and be alone, away from the city bustle, eyes, admire the have a snack and step into the honey of love.
+
+There is a cognitive stand on the shore, two tables and benches, so the place is perfect for small picnics.
 " />
 
 
@@ -164,17 +165,17 @@ Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta pui
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/textView8"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Galima išsinuomuoti laivelį arba katerį."
-            android:layout_below="@id/textView10"/>
+            android:layout_below="@id/textView10"
+            android:text="It is possible to rent a boat." />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -192,7 +193,7 @@ Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta pui
             android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="Esu objekto teritorijoje!"
+            android:text="I am near object!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

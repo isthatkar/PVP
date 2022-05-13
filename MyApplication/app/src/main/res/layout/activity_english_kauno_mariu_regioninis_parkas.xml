@@ -115,9 +115,13 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
             android:layout_below="@id/regioninisFaktai2"
-            android:text="Kauno marių regioninis parkas pasižymi didele biologine įvairove. Čia yra vienintelė mūsų krašto vieta, kur trijose augavietėse dar aptinkama griežtai saugoma rūšis – gauruotasis gvazdikas. Rumšiškių miško pušis ir Žiglos maumedis yra storiausi tos rūšies medžiai Lietuvoje. Čia galima išvysti retų rūšių gyvūnų, paukščių, augalų, grybų: didžiųjų miegapelių, tulžių, krokinių minkštenių, niūraspalvių auksavabalių, kūdrinių pelėausių. Apsilankius šioje vaizdingoje Lietuvos dalelėje, norėsis grįžti dar ne kartą. Kauno marių regioninis parkas unikalus savo istorine patirtimi ir išraiškingu kraštovaizdžiu, kurį formuoja marių vandenys su pusamžiais miškais virtusiomis apsauginių želdinių juostomis ir išlikusiais sengirių ploteliais, neįsivaizduojamas be mariose baltuojančių jachtų, puošnių Pažaislio bažnyčios bokštų bei aukštų stačiašlaičių pakrančių. Kauno marių vanduo virš jūros lygio pakilęs 44 metrus, o aukščiausia parko vieta Pastrėvio miške – 93 m virš jūros lygio. Plačiausioje vietoje marios siekia 3,3 km, o siauriausioje – 0,3 km. Giliausia Kauno marių vieta siekia 22 metrus, o bendras pakrančių ilgis (iki Balbieriškio) – 200 km." />
+            android:layout_marginTop="30px"
+            android:text="Kaunas Lagoon Regional Park is characterized by high biological diversity. Here is the only place in our country where a strictly protected species is still found in three habitats - the hairy carnation. Rumšiškės forest pine and Žigla larch are the thickest trees of this species in Lithuania. Here you can see rare species of animals, birds, plants, fungi: large sleeping moths, bile, curly mildew, dark-colored golden beetle, pond mold. After visiting this picturesque part of Lithuania, you will want to return more than once.
+
+
+Kaunas Lagoon Regional Park is unique in its historical experience and expressive landscape, which is formed by the waters of the lagoon with strips of protective greenery and surviving old forest areas, unimaginable in the lagoon. The water of Kaunas Lagoon has risen 44 meters above sea level, and the highest point of the park in Pastrėvis Forest is 93 m above sea level. The widest point of the lagoon is 3.3 km, and the narrowest is 0.3 km. The deepest point of Kaunas Lagoon is 22 meters, and the total length of the coast (up to Balbieriškis) is 200 km.
+" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -133,10 +137,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -188,41 +191,43 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/regioninisIstorija"
-            android:text="Kauno marių regioninis parkas įsteigtas Lietuvos Respublikos Aukščiausiosios Tarybos 1992 m. rugsėjo 24 d. nutarimu, siekiant išsaugoti unikalų Kauno marių tvenkinio kraštovaizdžio kompleksą, didžiąsias atodangas, užlietas Nemuno intakų žiotis, unikalų Pažaislio vienuolyno architektūrinį kompleksą, Kauno marių gamtinės ekosistemos stabilumą, biotos komponentus, ypač vertingą Gastilionių mišką su miegapelių populiacija bei kultūros paveldo vertybes, jas tvarkyti ir racionaliai naudoti. Regioninio parko paskirtis nustatyta Lietuvos Respublikos Vyriausybės 1999 m. balandžio 29 d. nutarimu Nr. 490 „Dėl regioninių parkų nuostatų patvirtinimo“.
-Daugiau nei prieš 50 metų atsiradusios Kauno marios – didžiuliu tvenkiniu virtusi Nemuno dalis, unikalus gamtos ir žmogaus kūrinys, gausus atodangų ir užtvindytų upelių slėnių – fiordų. Marios tarsi į vieną virtinę suvėrė daugybę įspūdingų gamtos bei kultūros paveldo objektų – šie traukia lankytojų akį ir žadina smalsumą.
+            android:text="Kaunas Lagoon Regional Park was established by the Supreme Council of the Republic of Lithuania in 1992. September 24 in order to preserve the unique Kaunas Lagoon pond landscape complex, large outcrops, flooded Nemunas estuary, unique Pažaislis monastery architectural complex, stability of Kaunas Lagoon natural ecosystem, biota components, especially valuable Gastilioniai forest with sleeping population and cultural heritage to use. The purpose of the regional park was established by the Government of the Republic of Lithuania in 1999. April 29 by resolution no. 490 &quot;On the Approval of the Regulations for Regional Parks&quot;.
+
+Kaunas Lagoon, which appeared more than 50 years ago, is a part of the Nemunas turned into a huge pond, a unique creation of nature and man, rich in fjords and flooded stream valleys. The lagoon seems to have merged many impressive natural and cultural heritage objects into one chain - these attract the eye of visitors and arouse curiosity.
 " />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/textView8"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kauno marios – vienas tinkamiausių vandens telkinių Lietuvoje mėgstantiems buriuoti bei plaukioti motorinėmis valtimis. Galima pasinaudoti Kauno „Žalgirio“ jachtų klubo paslaugomis, čia organizuojami pramoginiai plaukiojimai jachtomis, kateriais, mokoma buriuoti. Daugiausia tinkamų poilsiauti bei maudytis pakrančių yra žemutinėje marių dalyje – Pažaislio pusiasalyje, ties Jakštonimis, Grabučiškėmis, Girionimis. Pasistatyti palapinę ar susikurti laužą galima Duobkalnio, Laumėnų, Samylų, Rumšiškių poilsiavietėse."
-            android:layout_below="@id/textView10"/>
+            android:layout_below="@id/textView10"
+            android:text="Kaunas Lagoon is one of the most suitable water bodies in Lithuania for those who like sailing and motor boating. It is possible to use the services of Kaunas &quot;Žalgiris&quot; yacht club, recreational sailing yachts and boats are organized here, and sailing is taught. Most of the coasts suitable for rest and swimming are in the lower part of the lagoon - on the Pažaislis peninsula, near Jakštonis, Grabučiškės, Girionis. It is possible to set up a tent or create a campfire in Duobkalnis, Laumėnai, Samylai and Rumšiškės resorts.
+" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ARTĖJANTYS RENGINIAI"
-            android:textSize="20dp"
+            android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView11"/>
+            android:text="UPCOMING EVENTS"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Šiuo metu renginių nevyksta, bet vyksta edukacijos ir ekskursijos."
-            android:layout_below="@id/textView12"/>
+            android:layout_below="@id/textView12"
+            android:text="It is possible to book educational activities and excursions." />
         <Button
             android:id="@+id/button_addPoint4"
             android:layout_width="wrap_content"
@@ -230,7 +235,7 @@ Daugiau nei prieš 50 metų atsiradusios Kauno marios – didžiuliu tvenkiniu v
             android:layout_below="@+id/textView13"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="Esu objekto teritorijoje!"
+            android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

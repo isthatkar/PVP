@@ -80,9 +80,9 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
             android:layout_below="@id/rumsiskesFaktai"
-            android:text="Lietuvos liaudies buities muziejus – vienas didžiausių pagal užimamą plotą (195 ha) bei nekilnojamų eksponatų skaičių muziejų po atviru dangumi Europoje. Tai vienintelis etnografijos rūšies muziejus Lietuvoje, pristatantis sumažintą visų etnografinių Lietuvos regionų ir miestelio atspindį. Atskiras sektorius skirtas Lietuvos gyventojų tremties ir pasipriešinimo atminimui: pastatyta jurta (žeminukė), tremties vagonas, partizanų slėptuvė (bunkeris), paminklai. Jame lankytojus pasitinka edukatorė – buvusi tremtinė, kurios įtaigus pasakojimas leidžia tarsi juste pajusti visą ištremtų žmonių tragediją. Muziejuje stovintys unikalūs Aristavėlės dvaro rūmai – vertingas baroko laikotarpio medinės architektūros pavyzdys. Lietuvos liaudies buities muziejaus išskirtinumas europiniame kontekste – demonstruojamos žemės įdirbimo sistemos ir gyvenviečių vystymosi raida." />
+            android:layout_marginTop="30px"
+            android:text="The Lithuanian Folk Museum is one of the largest open-air museums in Europe in terms of area (195 ha) and number of real exhibits. It is the only ethnographic museum in Lithuania, presenting a reduced reflection of all ethnographic regions and towns in Lithuania. A separate sector is dedicated to the memory of the deportation and resistance of the Lithuanian population: a yurt (underground), an exile wagon, a partisan hideout (bunker), and monuments were built. In it, visitors are greeted by an educator - a former deportee, whose mesmerizing story allows you to feel the whole tragedy of the deportees. The unique Aristavėlė manor house in the museum is a valuable example of Baroque wooden architecture. The uniqueness of the Lithuanian Folk Museum in the European context is the development of land cultivation systems and settlement development." />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -98,10 +98,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -196,9 +195,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/rumsiskesIstorija2"
-            android:text="Muziejaus įkūrimo idėją puoselėjo menotyrininkai Vacys Milius ir Klemensas Čerbulėnas, etnografas Izidorius Butkevičius, architektai Vytautas Landsbergis-Žemkalnis, Juozas Baršauskas. 1965 m. LSSR vyriausybė priėmė nutarimą dėl muziejaus steigimo. Muziejus įkurtas 1966 m. Pievelių kaimo vietoje. Tuomet čia gyveno 18 šeimų. 1966 m. parengtas detalusis planas.
-Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastatų. Lygiagrečiai buvo renkama ir aprašomoji bei ikonografinė medžiaga. Pirmosios ekspedicijos vyko dviračiais, vėliau įsigytas sunkvežimis. Statybos darbus vykdė tuometės Kauno restauracinės dirbtuvės.
-1969 m. jau stovėjo žemaičių XVIII a. svirnas, numas ir t. t., iš viso 8 pastatai. Po metų beveik sukomplektuota dzūkų sodyba, pastatyta Josvainių karčema ir daug kitų. Perkėlus daugiau pastatų reikėjo sustiprinti priešgaisrinę sistemą, todėl buvo įsigyta gaisrinė mašina, o dirbti su ja buvo rengiamos priešgaisrinės pratybos, kuriose dalyvaudavo visi jaunesni muziejaus darbuotojai. Turint savo priešgaisrinę apsaugą, pavyko išvengti didesnių gaisrų, skirtingai nei Estijos ar Latvijos liaudies buities muziejuose.
+            android:text="Art researchers Vacys Milius and Klemensas Čerbulėnas, ethnographer Izidorius Butkevičius, architects Vytautas Landsbergis-Žemkalnis, Juozas Baršauskas cherished the idea of ​​establishing the museum. 1965 The government of the LSSR adopted a resolution on the establishment of the museum. The museum was founded in 1966. In the village of Lawns. At that time, 18 families lived here. 1966 a detailed plan has been prepared.
+
+All collaborators went on expeditions to search for exhibits and select buildings. At the same time, descriptive and iconographic material was collected. The first expeditions took place by bicycle, later a truck was purchased. The construction works were carried out by the then Kaunas restoration workshop.
+
+1969 already stood the Samogitians in the 18th century. barn, hut, etc. i.e. a total of 8 buildings. A year later, the Dzūk homestead was almost completed, the Josvainiai tavern and many others were built. The relocation of more buildings required the strengthening of the fire system, which led to the purchase of a fire truck and the organization of fire drills with all the younger members of the museum. Having its own fire protection, we managed to avoid larger fires, unlike in Estonian or Latvian folk museums.
 " />
 
         <ImageView
@@ -214,33 +215,33 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/imageView4"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ekskursijos, edukacijos, pabėgimo kambarys, orientacinio žaidimas, pasivažinėjimas ir jodinėjimas, patalpų nuoma."
-            android:layout_below="@id/textView10"/>
+            android:layout_below="@id/textView10"
+            android:text="Excursions, education, escape room, orienteering game, rides and horseback riding, room rental." />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ARTĖJANTYS RENGINIAI"
-            android:textSize="20dp"
+            android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView11"/>
+            android:text="UPCOMING EVENTS"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Užgavėnių šventės, muzikos festivalis “Granatos”, Velykos, žolinės šventės, muziejų naktis, adventinis miestelis, Oninės ir rugiapjūtė, Joninės"
-            android:layout_below="@id/textView12"/>
+            android:layout_below="@id/textView12"
+            android:text="Sunday 27/03 Stork Festival" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -258,7 +259,7 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="18dp"
-            android:text="Esu objekto teritorijoje!"
+            android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

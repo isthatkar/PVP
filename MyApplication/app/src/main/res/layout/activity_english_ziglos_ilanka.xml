@@ -71,9 +71,9 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30px"
             android:layout_below="@id/ziglosFaktai"
-            android:text="Upelį supa vešliu mišku apaugę skardžiai, o šlaituose subujoję įspūdingi gebenės lipikės sąžalynai." />
+            android:layout_marginTop="30px"
+            android:text="The stream is surrounded by cliffs overgrown with lush forest, and impressive ivy lipsticks have collapsed on the slopes." />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -89,10 +89,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
-            android:text="ISTORIJA"
-            android:textSize="20dp"
             android:layout_centerHorizontal="true"
-            />
+            android:text="HISTORY"
+            android:textSize="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -143,41 +142,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ziglosIstorija"
-            android:text="Tai sankirta nedidelės upės Kauno rajone, patenkančios į Kauno marių regioninio parko teritoriją. Priklauso Nemuno mažųjų intakų (su Nemunu) baseinui. Įteka kairiajame krante, 242,2 km atstumu nuo pastarojo žiočių. Prasidėjęs aukštumose prie Viršužiglio. Prie įtekėjimo į marias vietos upelis ženkliai išplatėja, ten susidariusi įlanka." />
+            android:text="It is an intersection of a small river in Kaunas district, which falls into the territory of Kaunas Lagoon Regional Park. Belongs to the Nemunas small tributaries (with the Nemunas) basin. It flows into the left bank, 242.2 km from the mouth of the latter. Starting in the highlands near Viršužiglis. At the confluence with the lagoon, the stream widens significantly, forming a bay there." />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PRAMOGOS"
-            android:textSize="20dp"
+            android:layout_below="@id/textView8"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView8"/>
+            android:text="ACTIVITIES"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Netoliese saugomas gamtos paveldo objektas „Žiglos maumedis“, kilometro atstumu pasiekimas Kadagių slėnis.
-Netoliese yra žirgynas, kur galėsite išmėginti pasijodinėjimą, ar ramų pasivaikščiojimą su žirgais Arlaviškių- Viršužiglio apylinkėse.
-"
-            android:layout_below="@id/textView10"/>
+            android:layout_below="@id/textView10"
+            android:text="Nearby is the natural heritage object &quot;Žiglos larch&quot;, reaching juniper valley at a distance of a kilometer. There is a stud farm nearby, where you can try a ride or a quiet walk with horses in the vicinity of Arlaviškiai-Viršužiglis." />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RENGINIAI"
-            android:textSize="20dp"
+            android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/textView11"/>
+            android:text="EVENTS"
+            android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Netoliese yra žirgynas, kur galėsite išmėginti pasijodinėjimą, ar ramų pasivaikščiojimą su žirgais Arlaviškių- Viršužiglio apylinkėse."
-            android:layout_below="@id/textView12"/>
+            android:layout_below="@id/textView12"
+            android:text="There is a stud farm nearby, where you can try a ride or a quiet walk with horses in the vicinity of Arlaviškiai-Viršužiglis." />
         <Button
             android:id="@+id/button_addPoint13"
             android:layout_width="wrap_content"
