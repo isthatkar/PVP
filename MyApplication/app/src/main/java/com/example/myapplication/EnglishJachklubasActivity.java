@@ -91,7 +91,7 @@ public class EnglishJachklubasActivity  extends AppCompatActivity{
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltjachtklubasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engjachtklubasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -165,7 +165,7 @@ public class EnglishJachklubasActivity  extends AppCompatActivity{
         btPlayFaktai         = findViewById(R.id.jachtklubasFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.jachtklubasFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltjachtklubasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engjachtklubasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override

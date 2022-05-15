@@ -80,7 +80,7 @@ public class EnglishRumsiskiuPrieplaukaActivity extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltrumsiskiuprieplaukaistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engrumsiskiuprieplaukaistorija);
 
         runnableIstorija = new Runnable() {
             @Override

@@ -78,7 +78,7 @@ public class EnglishKapitoniskiuPazintinisTakasEnglish extends AppCompatActivity
         btPlayFaktai         = findViewById(R.id.kapitoniskiuFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.kapitoniskiuFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltkapitoniskiupazintinistakasistorija);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engkapitoniskiutakasistorija);
 
         runnableFaktai = new Runnable() {
             @Override

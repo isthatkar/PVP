@@ -91,7 +91,7 @@ public class EnglishKruonioHAEActivity extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltkruoniohaeistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engkruoniohaeistorija);
 
         runnableIstorija = new Runnable() {
             @Override

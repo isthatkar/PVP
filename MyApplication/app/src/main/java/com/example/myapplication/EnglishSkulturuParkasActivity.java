@@ -90,7 +90,7 @@ public class EnglishSkulturuParkasActivity extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltskulpturuparkasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engskulpturuparkasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -165,7 +165,7 @@ public class EnglishSkulturuParkasActivity extends AppCompatActivity {
         btPlayFaktai         = findViewById(R.id.skulpturuFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.skulpturuFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltskulpturuparkasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engskulpturuparkasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override

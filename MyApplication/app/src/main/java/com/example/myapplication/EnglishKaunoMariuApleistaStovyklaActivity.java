@@ -91,7 +91,7 @@ public class EnglishKaunoMariuApleistaStovyklaActivity extends AppCompatActivity
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltlakstingaluslenisistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engkaunomariuapleistastovyklaistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -166,7 +166,7 @@ public class EnglishKaunoMariuApleistaStovyklaActivity extends AppCompatActivity
         btPlayFaktai         = findViewById(R.id.stvoyklaFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.stvoyklaFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltlakstingaluslenisfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engkaunomariuapleistastovyklafaktai);
 
         runnableFaktai = new Runnable() {
             @Override

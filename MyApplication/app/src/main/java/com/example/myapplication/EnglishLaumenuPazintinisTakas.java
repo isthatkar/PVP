@@ -94,7 +94,7 @@ public class EnglishLaumenuPazintinisTakas extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltlaumenupazintinistakasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.englaumenupazintinistakasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -169,7 +169,7 @@ public class EnglishLaumenuPazintinisTakas extends AppCompatActivity {
         btPlayFaktai         = findViewById(R.id.laumenuPazintinisFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.laumenuPazintinisFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltlaumenupazintinistakasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.englaumenupazintinistakasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override

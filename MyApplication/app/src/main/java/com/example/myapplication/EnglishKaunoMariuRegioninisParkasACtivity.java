@@ -101,7 +101,7 @@ public class EnglishKaunoMariuRegioninisParkasACtivity extends AppCompatActivity
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engkaunomariuregioninisistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -176,7 +176,7 @@ public class EnglishKaunoMariuRegioninisParkasACtivity extends AppCompatActivity
         btPlayFaktai1         = findViewById(R.id.regioninisFaktai1Play);
         btPauseFaktai1        = findViewById(R.id.regioninisFaktai1Pause);
 
-        mediaPlayerFaktai1 = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasfaktai);
+        mediaPlayerFaktai1 = MediaPlayer.create(this, R.raw.engkaunomariuregioninisfaktai);
 
         runnableFaktai1 = new Runnable() {
             @Override
@@ -251,7 +251,7 @@ public class EnglishKaunoMariuRegioninisParkasACtivity extends AppCompatActivity
         btPlayFaktai2        = findViewById(R.id.regioninisFaktai2Play);
         btPauseFaktai2        = findViewById(R.id.regioninisFaktai2Pause);
 
-        mediaPlayerFaktai2 = MediaPlayer.create(this, R.raw.ltkaunomariuregioninisparkasfaktai2);
+        mediaPlayerFaktai2 = MediaPlayer.create(this, R.raw.engkaunomariuregioninisfaktai2);
 
         runnableFaktai2 = new Runnable() {
             @Override

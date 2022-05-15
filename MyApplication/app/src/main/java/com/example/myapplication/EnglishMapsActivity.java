@@ -234,99 +234,99 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
         LatLng laumenuPazintinisTakas = new LatLng(54.863047, 24.043927);
         LatLng pakalniskiuPazintinisTakas = new LatLng(54.855207, 24.017669);
 
-        mMap.addMarker(new MarkerOptions().position(jachtklubas).title("Jachtklubas").icon(BitmapDescriptorFactory.fromResource(R.drawable.jachtklubasicon)));
-        mMap.addMarker(new MarkerOptions().position(pazaislis).title("Pažaislio vienuolynas").icon(BitmapDescriptorFactory.fromResource(R.drawable.pazaislisicon)));
-        mMap.addMarker(new MarkerOptions().position(suneliskiuKalnas).title("Šuneliškių kalnas").icon(BitmapDescriptorFactory.fromResource(R.drawable.suneliskiuicon)));
-        mMap.addMarker(new MarkerOptions().position(lakstingaluSlenis).title("Lakštingalų slėnis").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(kaunoMariuRegioninisParkas).title("Kauno marių regioninis parkas").icon(BitmapDescriptorFactory.fromResource(R.drawable.regioninisicon)));
-        mMap.addMarker(new MarkerOptions().position(meilesIlanka).title("Meilės įlanka").icon(BitmapDescriptorFactory.fromResource(R.drawable.loveicon)));
-        mMap.addMarker(new MarkerOptions().position(apleistaStovykla).title("Kauno marių apleista stovykla").icon(BitmapDescriptorFactory.fromResource(R.drawable.apleistaicon)));
-        mMap.addMarker(new MarkerOptions().position(gastilioniuAtodanga).title("Gastilionių atodanga").icon(BitmapDescriptorFactory.fromResource(R.drawable.suneliskiuicon)));
-        mMap.addMarker(new MarkerOptions().position(rumsiskiuMuziejus).title("Rumšiškių liaudies buities muziejus").icon(BitmapDescriptorFactory.fromResource(R.drawable.liaudiesicon)));
-        mMap.addMarker(new MarkerOptions().position(rumsiskiuPrieplauka).title("Rumšiškių prieplauka").icon(BitmapDescriptorFactory.fromResource(R.drawable.rumsiskiuicon)));
-        mMap.addMarker(new MarkerOptions().position(kapitoniskiuPazintinisTakas).title("Kapitoniškių pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(mergakalnis).title("Mergakalnio apžvalgos aikštelė").icon(BitmapDescriptorFactory.fromResource(R.drawable.mergakalnioicon)));
-        mMap.addMarker(new MarkerOptions().position(kruonioHAE).title("Kruonio HAE").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
-        mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žiglos įlanka").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
-        mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų parkas").icon(BitmapDescriptorFactory.fromResource(R.drawable.skulpturuicon)));
-        mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrių takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnų pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškių pažintinis takas").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
+        mMap.addMarker(new MarkerOptions().position(jachtklubas).title("Yach Club").icon(BitmapDescriptorFactory.fromResource(R.drawable.jachtklubasicon)));
+        mMap.addMarker(new MarkerOptions().position(pazaislis).title("Pažaislis monastery").icon(BitmapDescriptorFactory.fromResource(R.drawable.pazaislisicon)));
+        mMap.addMarker(new MarkerOptions().position(suneliskiuKalnas).title("Šuneliškės mountain").icon(BitmapDescriptorFactory.fromResource(R.drawable.suneliskiuicon)));
+        mMap.addMarker(new MarkerOptions().position(lakstingaluSlenis).title("Lakštingalos valley").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
+        mMap.addMarker(new MarkerOptions().position(kaunoMariuRegioninisParkas).title("Kauno marios regional park").icon(BitmapDescriptorFactory.fromResource(R.drawable.regioninisicon)));
+        mMap.addMarker(new MarkerOptions().position(meilesIlanka).title("Love bay").icon(BitmapDescriptorFactory.fromResource(R.drawable.loveicon)));
+        mMap.addMarker(new MarkerOptions().position(apleistaStovykla).title("Kauno marios abandoned camp").icon(BitmapDescriptorFactory.fromResource(R.drawable.apleistaicon)));
+        mMap.addMarker(new MarkerOptions().position(gastilioniuAtodanga).title("Gastilionai exposure").icon(BitmapDescriptorFactory.fromResource(R.drawable.suneliskiuicon)));
+        mMap.addMarker(new MarkerOptions().position(rumsiskiuMuziejus).title("Rumšiškės folk household museum").icon(BitmapDescriptorFactory.fromResource(R.drawable.liaudiesicon)));
+        mMap.addMarker(new MarkerOptions().position(rumsiskiuPrieplauka).title("Rumšiškės pier").icon(BitmapDescriptorFactory.fromResource(R.drawable.rumsiskiuicon)));
+        mMap.addMarker(new MarkerOptions().position(kapitoniskiuPazintinisTakas).title("Kapitoniškės cognitive path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
+        mMap.addMarker(new MarkerOptions().position(mergakalnis).title("Mergakalnis viewpoint").icon(BitmapDescriptorFactory.fromResource(R.drawable.mergakalnioicon)));
+        mMap.addMarker(new MarkerOptions().position(kruonioHAE).title("Kruonis hydroelectric power plant").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
+        mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žigla bay").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
+        mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų park").icon(BitmapDescriptorFactory.fromResource(R.drawable.skulpturuicon)));
+        mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrės path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
+        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnai cognitive path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
+        mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškės cognitive path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(@NonNull Marker marker) {
                 Intent intent;
                 switch (marker.getTitle()){
-                    case "Jachtklubas":
+                    case "Yach Club":
                         intent = new Intent(EnglishMapsActivity.this, EnglishJachklubasActivity.class);
                         startActivity(intent);
                         break;
-                    case "Pažaislio vienuolynas":
+                    case "Pažaislis monastery":
                         intent = new Intent(EnglishMapsActivity.this, EnglishPazaislioVienuolynas.class);
                         startActivity(intent);
                         break;
-                    case "Šuneliškių kalnas":
+                    case "Šuneliškės mountain":
                         intent = new Intent(EnglishMapsActivity.this, EnglishSuneliskesKalnasActivity.class);
                         startActivity(intent);
                         break;
-                    case "Lakštingalų slėnis":
+                    case "Lakštingalos valley":
                         intent = new Intent(EnglishMapsActivity.this, EnglishLakstingaluSlenisActivity.class);
                         startActivity(intent);
                         break;
-                    case "Kauno marių regioninis parkas":
+                    case "Kauno marios regional park":
                         intent = new Intent(EnglishMapsActivity.this, EnglishKaunoMariuRegioninisParkasACtivity.class);
                         startActivity(intent);
                         break;
-                    case "Gastilionių atodanga":
+                    case "Gastilionai exposure":
                         intent = new Intent(EnglishMapsActivity.this, EnglishGastilijonuAtodangaActivity.class);
                         startActivity(intent);
                         break;
-                    case "Meilės įlanka":
+                    case "Love bay":
                         intent = new Intent(EnglishMapsActivity.this, EnglishMeilesIlankaACtivity.class);
                         startActivity(intent);
                         break;
-                    case "Kauno marių apleista stovykla":
+                    case "Kauno marios abandoned camp":
                         intent = new Intent(EnglishMapsActivity.this, EnglishKaunoMariuApleistaStovyklaActivity.class);
                         startActivity(intent);
                         break;
-                    case "Rumšiškių liaudies buities muziejus":
+                    case "Rumšiškės folk household museum":
                         intent = new Intent(EnglishMapsActivity.this, EnglishRumsiskiuMuziejusActivity.class);
                         startActivity(intent);
                         break;
-                    case "Rumšiškių prieplauka":
+                    case "Rumšiškės pier":
                         intent = new Intent(EnglishMapsActivity.this, EnglishRumsiskiuPrieplaukaActivity.class);
                         startActivity(intent);
                         break;
-                    case "Kapitoniškių pažintinis takas":
+                    case "Kapitoniškės cognitive path":
                         intent = new Intent(EnglishMapsActivity.this, EnglishKapitoniskiuPazintinisTakasEnglish.class);
                         startActivity(intent);
                         break;
-                    case "Kruonio HAE":
+                    case "Kruonis hydroelectric power plant":
                         intent = new Intent(EnglishMapsActivity.this, EnglishKruonioHAEActivity.class);
                         startActivity(intent);
                         break;
-                    case "Žiglos įlanka":
+                    case "Žigla bay":
                         intent = new Intent(EnglishMapsActivity.this, EnglishZiglosIlankaActivity.class);
                         startActivity(intent);
                         break;
-                    case "Skulptūrų parkas":
+                    case "Skulptūrų park":
                         intent = new Intent(EnglishMapsActivity.this, EnglishSkulturuParkasActivity.class);
                         startActivity(intent);
                         break;
-                    case "Žiegždrių takas":
+                    case "Žiegždrės path":
                         intent = new Intent(EnglishMapsActivity.this, EnglishZiegzdriuTakasEnglish.class);
                         startActivity(intent);
                         break;
-                    case "Laumėnų pažintinis takas":
+                    case "Laumėnai cognitive path":
                         intent = new Intent(EnglishMapsActivity.this, EnglishLaumenuPazintinisTakas.class);
                         startActivity(intent);
                         break;
-                    case "Pakalniškių pažintinis takas":
+                    case "Pakalniškės cognitive path":
                         intent = new Intent(EnglishMapsActivity.this, EnglishPakalniskiuPazintinisTakas.class);
                         startActivity(intent);
                         break;
-                    case "Mergakalnio apžvalgos aikštelė":
+                    case "Mergakalnis viewpoint":
                         intent = new Intent(EnglishMapsActivity.this, EnglishMergakalnioApzvalgosAiksteActivity.class);
                         startActivity(intent);
                         break;

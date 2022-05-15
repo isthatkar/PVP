@@ -90,7 +90,7 @@ public class EnglishPazaislioVienuolynas extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltpazaisliovienuolynasistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engpazaisliovienuolynasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -165,7 +165,7 @@ public class EnglishPazaislioVienuolynas extends AppCompatActivity {
         btPlayFaktai         = findViewById(R.id.pazaislioFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.pazaislioFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltpazaisliovienuolynasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engpazaisliovienuolynasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override

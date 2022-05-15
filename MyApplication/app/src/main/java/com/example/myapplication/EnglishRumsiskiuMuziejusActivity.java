@@ -97,7 +97,7 @@ public class EnglishRumsiskiuMuziejusActivity extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija1 = MediaPlayer.create(this, R.raw.ltrumsiskiuliaudiesbuitiesmuziejusistorija);
+        mediaPlayerIstorija1 = MediaPlayer.create(this, R.raw.engrumsiskiumuziejusistorija);
 
         runnableIstorija1 = new Runnable() {
             @Override
@@ -174,7 +174,7 @@ public class EnglishRumsiskiuMuziejusActivity extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija2 = MediaPlayer.create(this, R.raw.ltrumsiskiuliaudiesbuitiesmusiejusistorija2);
+        mediaPlayerIstorija2 = MediaPlayer.create(this, R.raw.engrumsiskiumuziejusistorija2);
 
         runnableIstorija2 = new Runnable() {
             @Override
@@ -250,7 +250,7 @@ public class EnglishRumsiskiuMuziejusActivity extends AppCompatActivity {
         btPlayFaktai         = findViewById(R.id.rumsiskesFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.rumsiskesFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltrumsiskiuliaudiesbuitiesmuziejusfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engrumsiskiumuziejusfaktai);
 
         runnableFaktai = new Runnable() {
             @Override

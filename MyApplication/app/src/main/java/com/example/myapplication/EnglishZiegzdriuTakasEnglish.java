@@ -93,7 +93,7 @@ public class EnglishZiegzdriuTakasEnglish extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltziegzdriupazintinistakasisotrija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engziegzdriutakasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -168,7 +168,7 @@ public class EnglishZiegzdriuTakasEnglish extends AppCompatActivity {
         btPlayFaktai         = findViewById(R.id.ziegzdriuFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.ziegzdriuFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltziegzdriupazintinistakasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engziegzdriutakasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override

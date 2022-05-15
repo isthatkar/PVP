@@ -90,7 +90,7 @@ public class EnglishSuneliskesKalnasActivity extends AppCompatActivity {
 
 
 
-        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.ltsuneliskiupiliakalnisistorija);
+        mediaPlayerIstorija = MediaPlayer.create(this, R.raw.engsuneliskiukalnasistorija);
 
         runnableIstorija = new Runnable() {
             @Override
@@ -165,7 +165,7 @@ public class EnglishSuneliskesKalnasActivity extends AppCompatActivity {
         btPlayFaktai         = findViewById(R.id.suneliskiuFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.suneliskiuFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltsuneliskiukalnasfaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engsuneliskiukalnasfaktai);
 
         runnableFaktai = new Runnable() {
             @Override
