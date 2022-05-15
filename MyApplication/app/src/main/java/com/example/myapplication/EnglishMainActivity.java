@@ -61,7 +61,7 @@ public class EnglishMainActivity extends AppCompatActivity {
     }
 
     public void openContacts(){
-        Intent intent = new Intent(this, LithuanianContactActivity.class);
+        Intent intent = new Intent(this, EnglishContactActivity.class);
         startActivity(intent);
     }
     public void openCounter(){

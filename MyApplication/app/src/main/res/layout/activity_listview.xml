@@ -15,6 +15,6 @@
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:background="#59176129"
+        android:background="@color/quantum_bluegrey200"
         />
 </LinearLayout>

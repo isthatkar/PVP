@@ -165,7 +165,7 @@ public class EnglishKruonioHAEActivity extends AppCompatActivity {
         btPlayFaktai         = findViewById(R.id.kruonioFaktaiPlay);
         btPauseFaktai        = findViewById(R.id.kruonioFaktaiPause);
 
-        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.ltkruoniohaefaktai);
+        mediaPlayerFaktai = MediaPlayer.create(this, R.raw.engkruoniohaefaktai);
 
         runnableFaktai = new Runnable() {
             @Override

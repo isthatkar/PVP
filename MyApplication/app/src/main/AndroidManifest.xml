@@ -114,6 +114,9 @@
             android:name=".LithuanianContactActivity"
             android:exported="true" />
         <activity
+            android:name=".EnglishContactActivity"
+            android:exported="true" />
+        <activity
             android:name=".LithuanianJachklubasActivity"
             android:exported="true" />
         <activity

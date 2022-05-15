@@ -41,7 +41,8 @@
         <entry key="..\:/Users/Vartotojas/Desktop/TretiMetai/AntrasSemestras/pvpProjektas/pvp/PVP/MyApplication/app/src/main/res/layout/activity_visited_counter.xml" value="0.49818840579710144" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout-sw320dp/activity_contact.xml" value="0.15260416666666668" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_allobjects.xml" value="0.12411347517730496" />
-        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_contact.xml" value="0.23529411764705882" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_contact.xml" value="0.1" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_english_all_objects.xml" value="0.15715579710144928" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_english_jachklubas.xml" value="0.1" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_gastilioniu.xml" value="0.12411347517730496" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_jachklubasinfo.xml" value="0.2" />
@@ -52,6 +53,7 @@
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_laumenuTakas.xml" value="0.1" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_laumenutakas.xml" value="0.1" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_listview.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_loading.xml" value="0.15715579710144928" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.182518115942029" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_maps.xml" value="0.182518115942029" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_meiles.xml" value="0.12411347517730496" />
@@ -66,6 +68,7 @@
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_suneliskiu.xml" value="0.11651469098277609" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_ziegzdriu.xml" value="0.12411347517730496" />
         <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_ziglos.xml" value="0.12411347517730496" />
+        <entry key="..\:/Users/rugil/AndroidStudioProjects/MyApplication/app/src/main/res/layout/english_activity_contact.xml" value="0.15715579710144928" />
       </map>
     </option>
   </component>
