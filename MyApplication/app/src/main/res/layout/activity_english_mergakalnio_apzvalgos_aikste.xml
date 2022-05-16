@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:textSize="40dp"
             android:layout_marginTop="30px"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="MERGAKALNIS VIEWPOINT" />
 
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/mergakalnioFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/mergakalnioFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/mergakalnioFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="2005 this area has been declared a Protected State Geological Heritage Site. The rocks of the outcrop - moraine pillars, loam and sandstone deposits - appeared during the late ice age. From a geological point of view, the slope is extremely valuable, as it is the result of a rare phenomenon - the displacement and retreat of the glacier. The whole outcrop covers an area of 2.38 ha." />
 
         <ImageView
@@ -99,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -129,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/mergakalnioIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -142,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/mergakalnioIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -151,6 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/mergakalnioIstorija"
+            android:textColor="@color/white"
             android:text="There are three stories about Mergakalnis. Some claim that the slope was named Mergakalnis because it once pushed wicked girls away from it. Another legend tells of a beautiful local gentleman’s daughter, in love with a horse. The rich got angry, so the horseman was sent to recruits and his daughter was locked up. But one night, a girl dressed in white, riding horses, ran straight off the cliff. Since the Moon Trail appears on the Nemunas during the full moon, it can be seen combing its hair and singing. A third legend tells of a queen who ran a carriage from an enemy named Catherine. She chose to fly with the carriage off the cliff instead of surrendering to the persecutors." />
 
         <ImageView
@@ -168,6 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -175,6 +181,7 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="There is a &quot;hamster&quot; type wheel in which it is possible to rotate."
             android:layout_below="@id/textView10"/>
 

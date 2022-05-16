@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:textSize="40dp"
             android:layout_marginTop="30px"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="PAKALNIŠKĖS EDUCATIONAL TRAIL" />
 
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/pakalniskiuFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="Walking along the pakalniškės cognitive path you will find a mound that was poured by ancient Lithuanians. According to the floating legend, the wooden castle of Vaišvydas, the ruler of the Nemunas Land Valley, stood on it, which for many centuries defended and protected this area from enemies. In the Nemunas Valley lived the subjects of Vaišvydas. However, the enemies, with the help of traitors, completely destroyed the castle and it was no longer rebuilt." />
 
         <ImageView
@@ -99,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -129,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -142,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -151,6 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pakalniskiuIstorija"
+            android:textColor="@color/white"
             android:text="The length of the Pakalniškės cognitive trail reaches 3 kilometers, from which you can see the Kaunas Lagoon, pažaislis panorama and Kaunas hydroelectric power plant." />
 
         <ImageView
@@ -168,6 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -175,6 +181,7 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Around the pakalniškės cognitive trail there are a significant number of attractions: Žiegždriai outcrop, swamps, Pažaislis monastery, Kruonis HAE, Laumėnų park and cognitive trail. On the very slope of the hillsides, you will have to come up with entertainment yourself, but if you are a fishing lover, when you land near the water, you will definitely meet fishermen enjoying their catch."
             android:layout_below="@id/textView10"/>
 

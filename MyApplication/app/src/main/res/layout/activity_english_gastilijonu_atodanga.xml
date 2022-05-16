@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:text="GASTILIONAI EXPOSURE"
             android:textSize="40dp"
+            android:textColor="@color/white"
             android:textAlignment="center"
             />
 
@@ -60,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -73,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -83,6 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/gastilionuFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="An outcrop 800 meters long and 30 m high, consisting of the peak of the Gastilioniai peninsula and high slopes stretching in both directions. In the outcrop, a section of the moraine cover can be seen, in which two layers of moraine loam have been deposited by two glaciers, cut through the sand of the lake that was in the middle of the glacial period." />
 
         <ImageView
@@ -100,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -131,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -144,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -154,6 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/gastilionuIstorija"
+            android:textColor="@color/white"
             android:text="Gastilioniai outcrop is a geological natural heritage object declared protected in 2008. The exposure is located in Kaišiadorys district, Rumšiškės eldership, in the territory of Kaišiadorys forest enterprise Rumšiškės forest district, Rumšiškės forest, on the right bank of Kaunas lagoon. The outcrop falls into the territory of Kaunas Lagoon Regional Park. The outcrop on the right bank of the Kaunas Lagoon extends for about 600 m with an almost steep wall up to 20 m high, in which layers of moraine loam laid by two ice ages, separated by layers of sand laid during the interglacial period, are clearly visible." />
 
         <ImageView
@@ -172,12 +177,14 @@
             android:layout_below="@id/imageView3"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Nearby is the ridge of Gastilijonai, pine forest of Rumšiškės."
             android:layout_below="@id/textView10"/>
 

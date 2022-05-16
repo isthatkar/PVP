@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:textSize="40dp"
             android:layout_marginTop="30px"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="RUMŠIŠKIŲ PRIEPLAUKA" />
 
@@ -47,6 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -78,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/prieplaukaIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -91,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/prieplaukaIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -100,6 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/prieplaukaIstorija"
+            android:textColor="@color/white"
             android:text="2017 metais buvo patvirtintas Lietuvos Respublikos planas įrengti Rumšiškių prieplauką." />
 
         <ImageView
@@ -118,12 +122,14 @@
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Yra medinis takelis, kuris nuveda prie Rumšiškių prieplaukos/poilsiavietės. Yra medinis lieptas, nuo kurio galima maudytis, poilsiauti, pažvejoti. Galimas priplaukimas laivu."
             android:layout_below="@id/textView10"/>
 
@@ -133,12 +139,14 @@
             android:layout_height="wrap_content"
             android:text="ARTĖJANTYS RENGINIAI"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textView11"/>
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:text="Renginių nevyksta šiuo metu, bet žmonės atvyksta darytis vestuvių, krikštynų ar kitų progų fotosesijas."
             android:layout_below="@id/textView12"/>

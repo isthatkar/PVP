@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ŽIEGŽDRĖS EDUCATIONAL TRAIL" />
 
         <ImageView
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ziegzdriuFaktai"
+            android:textColor="@color/white"
             android:layout_marginTop="30px"
             android:text="It is the only place in Lithuania where you can find rock icicles formed by dripping water and stalactites of finger thickness. The length of the outcrop reaches as much as 400 m. and the height is 22 m. On the Žiegždriai cognitive trail you will notice the thickest 100-year-old linden in the vicinity of kaunas lagoon, its thickness is 4.3m." />
 
@@ -100,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -130,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -143,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -152,6 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ziegzdriuIstorija"
+            android:textColor="@color/white"
             android:text="The trail combines two state-protected natural heritage objects – kalniškės conglomerate and Žiegždriai outcrop. The length of the trail to one side is 1.6 km. The trail is not circular, so you will have to go back and forth. If you do not want to return on the same route, you can travel by road through the settlement or, in case of favorable weather and hydrological conditions, take the seaside.
 From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pažaislis monastery towers, the outcrop of kalniškės conglomerate (The conglomerate is cement formed from the nature of the Ice Age from lime, clay, gravel and gargždas.) Entertainment for children will be guaranteed when travelling along the Žiegždriai cognitive trail, as puzzles about local plants, birds and other natural resources are installed.
 " />
@@ -170,6 +175,7 @@ From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pa�
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
@@ -179,6 +185,7 @@ From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pa�
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pažaislis monastery towers, the outcrop of kalniškės conglomerate (The conglomerate is cement formed from the nature of the Ice Age from lime, clay, gravel and gargždas.) Entertainment for children will be guaranteed when travelling along the Žiegždriai cognitive trail, as puzzles about local plants, birds and other natural resources are installed." />
 
         <ImageView

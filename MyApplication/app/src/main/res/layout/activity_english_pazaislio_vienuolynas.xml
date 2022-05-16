@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="PAŽAISLIS MONASTERY" />
 
         <ImageView
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -81,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pazaislioFaktai"
+            android:textColor="@color/white"
             android:layout_marginTop="30px"
             android:text="The ensemble is considered one of the best examples of mature baroque in Northern and Eastern Europe. It is one of the two surviving monasteries and church ensembles in Lithuania (the other in Tytuvėnai). The main buildings are grouped symmetrically along the longitudinal composite west-east axis along which the buildings are located (forester, office, monastery, hermitage).
 The most important accent of the ensemble is the church. It is a baroque, Latin cross plan, with a hexagonal dome 53 m high (with lantern and cross). There is a sundial on the south façade. Monastery buildings (together with galleries) 1-2 floors. Their walls are plastered, the edges of the windows and doors are gray sandstone. The main territory of the ensemble is surrounded by a 2.5 m high solid masonry fence covered with tiles. The plan of the complex is reminiscent of the coat of arms of the Camaldolese monks - two pigeons drinking from one cup.
@@ -101,6 +104,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -131,7 +135,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -144,7 +148,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -153,6 +157,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pazaislioIstorija"
+            android:textColor="@color/white"
             android:text="The ensemble of Pažaislis Church and Monastery was built in the 17th-18th centuries. In the foundation of the Grand Chancellor of the Grand Duchy of Lithuania Kristupas Zigmantas Pacas. 1660 he applied to the command of the Camaldolese Order in Rome, promising in writing to finance the construction of a monastery and a church in Lithuania. Soon after receiving the blessing of the highest ecclesiastical leadership, together with the architect and several monks of the Camielian Baldian in Krakow, near Kaunas, they found a suitable place for the planned monastery - Pažaislis. The founder bought this beautiful wooded area from Kaunas Land Judge Samuel Oborskis and named it the Hill of Peace (Mons Pacis)." />
 
         <ImageView
@@ -171,6 +176,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
         <TextView
@@ -178,6 +184,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="The monastery hosts educational programs, expositions and guided tours." />
 
         <TextView
@@ -186,6 +193,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="COMING SOON"
             android:textSize="20dp" />
 
@@ -194,6 +202,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
+            android:textColor="@color/white"
             android:text="Pažaislis music festival, concerts." />
 
         <ImageView

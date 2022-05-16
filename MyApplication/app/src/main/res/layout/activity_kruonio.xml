@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,6 +20,7 @@
             android:layout_height="wrap_content"
             android:textSize="40dp"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="KRUONIO HAE" />
 
@@ -58,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -71,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -81,6 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/kruonioFaktai"
+            android:textColor="@color/white"
             android:text="Šio tipo elektrinės priskiriamos naujos kartos energetiniams objektams. KHAE skirta subalansuoti elektros gamybą ir suvartojimą, taip pat avarijų energetikos sistemoje prevencijai bei jų likvidavimui. Šiuo metu KHAE užtikrina 94 proc. viso būtino avarinio Lietuvos elektros energetikos sistemos rezervo.
 Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas, pradėjo veikti 1998 metais.
 " />
@@ -101,6 +104,7 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             />
 
@@ -131,7 +135,7 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -144,7 +148,7 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -154,6 +158,7 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/kruonioIstorija"
+            android:textColor="@color/white"
             android:text="Vienintelė hidroakumuliacinė elektrinė Baltijos šalyse, veikianti Lietuvos energetinėje sistemoje. Išsidėsčiusi Kaišiadorių rajone, į šiaurę nuo Kruonio miestelio, prie Maisiejūnų kaimo. Vandens vaga iš elektrinės įteka į marias ties Strėvos žiotimis." />
 
         <ImageView
@@ -172,12 +177,14 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Kadangi Kruonio HAE įsikūrusi Kaišiadoryse, galima aplankyti begales įvairių objektų esančių aplinkui: Mergakalnio atodangą, Girelės pažintinį taką, Gravitacinę kalvą, Maisiejūnų piliakalnį, Budelių piliakalnį, Darsūniškio mineralinį šaltinį, Antakalnio daugiakamienę liepą, Laugakalnio akmenį, Varkališkių miško pušį, Lašinių konglomeratų atodangą, Sekionių ąžuolą, Ringailių II akmenį, Karčiupio miško ąžuolą, Kovaičių akmenį."
             android:layout_below="@id/textView10"/>
 
@@ -186,6 +193,7 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ARTĖJANTYS RENGINIAI"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textView11"/>
@@ -194,6 +202,7 @@ Elektrinės statyba prasidėjo 1984 metais, paskutinysis, ketvirtasis agregatas,
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Ekskursijos po Kruonio HAE  įprastai vedamos penktadieniais nuo 12:30, tik šiuo metu jos nėra organizuojamos, tikimasi, kad ekskursijos bus atnaujintos nuo rudenio, jei leis epidemiologinė situacija."
             android:layout_below="@id/textView12"/>
 

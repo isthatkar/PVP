@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="KAUNAS LAGOON REGIONAL PARK" />
 
         <LinearLayout
@@ -50,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai1PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -63,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai1PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -94,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai2PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -107,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai2PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -116,6 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/regioninisFaktai2"
+            android:textColor="@color/white"
             android:layout_marginTop="30px"
             android:text="Kaunas Lagoon Regional Park is characterized by high biological diversity. Here is the only place in our country where a strictly protected species is still found in three habitats - the hairy carnation. Rumšiškės forest pine and Žigla larch are the thickest trees of this species in Lithuania. Here you can see rare species of animals, birds, plants, fungi: large sleeping moths, bile, curly mildew, dark-colored golden beetle, pond mold. After visiting this picturesque part of Lithuania, you will want to return more than once.
 
@@ -138,6 +141,7 @@ Kaunas Lagoon Regional Park is unique in its historical experience and expressiv
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -168,7 +172,7 @@ Kaunas Lagoon Regional Park is unique in its historical experience and expressiv
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -181,7 +185,7 @@ Kaunas Lagoon Regional Park is unique in its historical experience and expressiv
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -191,6 +195,7 @@ Kaunas Lagoon Regional Park is unique in its historical experience and expressiv
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/regioninisIstorija"
+            android:textColor="@color/white"
             android:text="Kaunas Lagoon Regional Park was established by the Supreme Council of the Republic of Lithuania in 1992. September 24 in order to preserve the unique Kaunas Lagoon pond landscape complex, large outcrops, flooded Nemunas estuary, unique Pažaislis monastery architectural complex, stability of Kaunas Lagoon natural ecosystem, biota components, especially valuable Gastilioniai forest with sleeping population and cultural heritage to use. The purpose of the regional park was established by the Government of the Republic of Lithuania in 1999. April 29 by resolution no. 490 &quot;On the Approval of the Regulations for Regional Parks&quot;.
 
 Kaunas Lagoon, which appeared more than 50 years ago, is a part of the Nemunas turned into a huge pond, a unique creation of nature and man, rich in fjords and flooded stream valleys. The lagoon seems to have merged many impressive natural and cultural heritage objects into one chain - these attract the eye of visitors and arouse curiosity.
@@ -202,6 +207,7 @@ Kaunas Lagoon, which appeared more than 50 years ago, is a part of the Nemunas t
             android:layout_height="wrap_content"
             android:layout_below="@id/textView8"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -210,6 +216,7 @@ Kaunas Lagoon, which appeared more than 50 years ago, is a part of the Nemunas t
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="Kaunas Lagoon is one of the most suitable water bodies in Lithuania for those who like sailing and motor boating. It is possible to use the services of Kaunas &quot;Žalgiris&quot; yacht club, recreational sailing yachts and boats are organized here, and sailing is taught. Most of the coasts suitable for rest and swimming are in the lower part of the lagoon - on the Pažaislis peninsula, near Jakštonis, Grabučiškės, Girionis. It is possible to set up a tent or create a campfire in Duobkalnis, Laumėnai, Samylai and Rumšiškės resorts.
 " />
 
@@ -219,6 +226,7 @@ Kaunas Lagoon, which appeared more than 50 years ago, is a part of the Nemunas t
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="UPCOMING EVENTS"
             android:textSize="20dp" />
 
@@ -227,6 +235,7 @@ Kaunas Lagoon, which appeared more than 50 years ago, is a part of the Nemunas t
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
+            android:textColor="@color/white"
             android:text="It is possible to book educational activities and excursions." />
         <Button
             android:id="@+id/button_addPoint4"

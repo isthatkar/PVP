@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,7 +22,8 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:text="SCULPTURE PARKA" />
+            android:textColor="@color/white"
+            android:text="SCULPTURE PARK" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/skulpturuFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="These are the stories of the villages flooded by kaunas lagoon, which are reborn in sculptures. This area is also called Lithuanian Atlantis, because due to the construction of a hydroelectric power plant under water, dozens of villages and almost 700 homesteads were buried under water. A unique park is now being created in this place, where visitors are waiting for surprises." />
 
         <ImageView
@@ -99,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -129,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -142,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -151,6 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/skulpturuIstorija"
+            android:textColor="@color/white"
             android:text="This area is also called Lithuanian Atlantis. 62 years ago, due to the construction of a hydroelectric power plant, 35 villages, in total about 700 homesteads, were flooded with water. All their inhabitants had to move out, drive out the animals and create a new life. mowers, a church bell tower, various animals, plants emerge from the water. All sculptures are carved with gasoline saws." />
 
         <ImageView
@@ -167,6 +172,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
@@ -176,6 +182,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="Nearby Laumėnai Resort, Žiegždriai Geological Trail, Girioniai Resort, Laumėnai Cognitive Trail" />
 
         <TextView
@@ -184,6 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="EVENTS"
             android:textSize="20dp" />
 
@@ -192,6 +200,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
+            android:textColor="@color/white"
             android:text="In 2020, there was an event &quot;getting out of the water&quot;" />
 
         <ImageView

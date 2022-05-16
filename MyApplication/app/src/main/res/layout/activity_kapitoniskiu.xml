@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:textSize="40dp"
             android:layout_marginTop="30px"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="KAPITONIŠKIŲ PAŽINTINIS TAKAS" />
 
@@ -51,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kapitoniskiuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -64,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kapitoniskiuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -74,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/kapitoniskiuFaktai"
+            android:textColor="@color/white"
             android:text="Pažintinis takas prasideda nuo Rumšiškių iki Dovainonių ir siekia apie 7km. Šis takas yra įrengtas Kauno marių tvenkinio pakrantėje." />
 
         <ImageView
@@ -90,6 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView2"/>
@@ -97,6 +101,7 @@
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:text="Keliaudami Kapitoniškių pažintiniu taku apsilankysite ir Mergakalnio apžvalgos aikštelėje"
             android:layout_below="@id/textView10"/>

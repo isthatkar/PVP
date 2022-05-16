@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="LIAUDIES IR BUITIES MUZIEJUS" />
 
         <ImageView
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -81,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:layout_below="@id/rumsiskesFaktai"
             android:text="Lietuvos liaudies buities muziejus – vienas didžiausių pagal užimamą plotą (195 ha) bei nekilnojamų eksponatų skaičių muziejų po atviru dangumi Europoje. Tai vienintelis etnografijos rūšies muziejus Lietuvoje, pristatantis sumažintą visų etnografinių Lietuvos regionų ir miestelio atspindį. Atskiras sektorius skirtas Lietuvos gyventojų tremties ir pasipriešinimo atminimui: pastatyta jurta (žeminukė), tremties vagonas, partizanų slėptuvė (bunkeris), paminklai. Jame lankytojus pasitinka edukatorė – buvusi tremtinė, kurios įtaigus pasakojimas leidžia tarsi juste pajusti visą ištremtų žmonių tragediją. Muziejuje stovintys unikalūs Aristavėlės dvaro rūmai – vertingas baroko laikotarpio medinės architektūros pavyzdys. Lietuvos liaudies buities muziejaus išskirtinumas europiniame kontekste – demonstruojamos žemės įdirbimo sistemos ir gyvenviečių vystymosi raida." />
 
@@ -98,6 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
+            android:textColor="@color/white"
             android:text="ISTORIJA"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
@@ -130,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija1PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -143,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija1PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -174,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija2PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -187,7 +191,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija2PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -196,6 +200,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/rumsiskesIstorija2"
+            android:textColor="@color/white"
             android:text="Muziejaus įkūrimo idėją puoselėjo menotyrininkai Vacys Milius ir Klemensas Čerbulėnas, etnografas Izidorius Butkevičius, architektai Vytautas Landsbergis-Žemkalnis, Juozas Baršauskas. 1965 m. LSSR vyriausybė priėmė nutarimą dėl muziejaus steigimo. Muziejus įkurtas 1966 m. Pievelių kaimo vietoje. Tuomet čia gyveno 18 šeimų. 1966 m. parengtas detalusis planas.
 Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastatų. Lygiagrečiai buvo renkama ir aprašomoji bei ikonografinė medžiaga. Pirmosios ekspedicijos vyko dviračiais, vėliau įsigytas sunkvežimis. Statybos darbus vykdė tuometės Kauno restauracinės dirbtuvės.
 1969 m. jau stovėjo žemaičių XVIII a. svirnas, numas ir t. t., iš viso 8 pastatai. Po metų beveik sukomplektuota dzūkų sodyba, pastatyta Josvainių karčema ir daug kitų. Perkėlus daugiau pastatų reikėjo sustiprinti priešgaisrinę sistemą, todėl buvo įsigyta gaisrinė mašina, o dirbti su ja buvo rengiamos priešgaisrinės pratybos, kuriose dalyvaudavo visi jaunesni muziejaus darbuotojai. Turint savo priešgaisrinę apsaugą, pavyko išvengti didesnių gaisrų, skirtingai nei Estijos ar Latvijos liaudies buities muziejuose.
@@ -216,12 +221,14 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:text="Ekskursijos, edukacijos, pabėgimo kambarys, orientacinio žaidimas, pasivažinėjimas ir jodinėjimas, patalpų nuoma."
             android:layout_below="@id/textView10"/>
@@ -230,6 +237,7 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="ARTĖJANTYS RENGINIAI"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
@@ -239,6 +247,7 @@ Visi bendradarbiai vykdavo į ekspedicijas ieškoti eksponatų, atrinkti pastat�
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Užgavėnių šventės, muzikos festivalis “Granatos”, Velykos, žolinės šventės, muziejų naktis, adventinis miestelis, Oninės ir rugiapjūtė, Joninės"
             android:layout_below="@id/textView12"/>
 

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/newappbackground"
     tools:context=".LithuanianVisitedCounterActivity">
 
     <EditText
@@ -54,7 +55,7 @@
         android:layout_below="@+id/button_reset"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:textStyle="normal|bold"
+        android:textColor="@color/white"
         android:text="Mano taškai:" />
     <TextView
         android:id="@+id/textView_objects"
@@ -63,7 +64,7 @@
         android:layout_below="@+id/textView_points"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:textStyle="normal|bold"
+        android:textColor="@color/white"
         android:text="Mano aplankyti objektai:\n\n" />
 
 

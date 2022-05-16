@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout
@@ -20,6 +21,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30px"
             android:text="YACHT CLUB"
+            android:textColor="@color/white"
             android:textSize="40dp" />
 
         <ImageView
@@ -58,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/jachtklubasFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -71,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/jachtklubasFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -81,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/jachtklubasFaktai"
+            android:textColor="@color/white"
             android:layout_marginTop="30px"
             android:text="The money allocated by the state for the construction of the yacht club was only enough for two of the three stages. There was a shortage of money for the main yacht club corpus. At that time, a quay and a pier were already installed, but there was nowhere to store the ships. Although money was requested for the installation of the corps, everyone assured that there was no money for it. Then the main initiator Viktoras Badganovas found out that it was wanted to build a rowing base in Trakai. Viktor admits that he had to bribe people in Moscow in order to build the yacht club building in Kaunas instead of the base in Trakai.
 " />
@@ -101,6 +104,7 @@
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
             android:text="HISTORY"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
         <LinearLayout
@@ -152,6 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/jachtklubasIstorija"
+            android:textColor="@color/white"
             android:text="Lovers of sails and wind could not sail the Nemunas because it was very shallow. However, when rumors began to spread that a hydroelectric power plant was being built, V. Bagdanov was all ears - after all, it was a great opportunity to sail into wider waters and at the same time have his own port for yachts.
 As students, sailing enthusiasts began to move various sports organizations due to the need for a yacht club in Kaunas. The young people found the daughter of a general, an architect who designed what the yacht club itself could look like. Everything had to be done very quickly, because the project had to be implemented before the Nemunas was dammed. Otherwise, when the water had already spilled, it would have been much more expensive to install such an object.
 " />
@@ -172,6 +177,7 @@ As students, sailing enthusiasts began to move various sports organizations due 
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
         <TextView
@@ -179,6 +185,7 @@ As students, sailing enthusiasts began to move various sports organizations due 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="Marina Taste Gallery” Restaurant. The restaurant's cuisine is European, and the range of menus ensures that everyone will find a dish to their liking.
 
 Boat rental M. Gimbutienės st. 35, Kaunas 52337
@@ -190,6 +197,7 @@ Boat rental M. Gimbutienės st. 35, Kaunas 52337
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="UPCOMING EVENTS"
             android:textSize="20dp" />
 
@@ -197,6 +205,7 @@ Boat rental M. Gimbutienės st. 35, Kaunas 52337
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Concert / festival “lizdo pliažas” takes place in August.
 Jachtklubas OPEN AIR 2022, R. Kalantos gatvė, Kaunas, Lietuva, 2022-07-29 20:30
 "

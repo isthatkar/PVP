@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:textSize="40dp"
             android:layout_marginTop="30px"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="LAKŠTINGALŲ SLĖNIS" />
 
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/lakstingaluFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/lakstingaluFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/lakstingaluFaktai"
+            android:textColor="@color/white"
             android:text="Lakštingalų slėnį ne vienerius metus bandė gaivinti Palemono bendruomenė. Čia vykdavo moksleivių rengiamos šventės „Poezijos pavasarėliai“. 2012 metų vasarą vietoje senų suolų buvo įrengtos spalvotos kėdutės, tačiau dėl pasilinksminti susirenkančio jaunimo, dauguma jų jau nebėra." />
 
         <ImageView
@@ -100,6 +103,7 @@
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             />
 
@@ -131,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/lakstingaluIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -144,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/lakstingaluIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -154,6 +158,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/lakstingaluIstorija"
+            android:textColor="@color/white"
             android:text="Lakštingalų slėnis – tai unikalus gamtos užkaboris Kauno marių regioniniame parke, šalia kurio Palemone 1937 m. įsikūrė viena žymiausių praėjusio amžiaus lietuvių poečių Salomėja Nėris. Jos name jau daugiau nei pusę amžiau veikia memorialinis muziejus.
 O šalia plytintis slėnis, šiuo metu nusidažęs nuostabiomis rudens spalvomis, 1965 m. tapo „Poezijos pavasario“ festivalio įsčiomis. Literatūros šventė kasmet čia vyko net tris dešimtmečius, o jos laurus skynė tokie poezijos korifėjai kaip Paulius Širvys, Antanas Miškinis, Justinas Marcinkevičius, Algimantas Baltakis, Bernardas Brazdžionis ir daug kitų.
 Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliepsnodavo kūrybos laisvės ugnis, pasodintas ąžuoliukas, dabar – jau platus išsikerojęs ąžuolas. Visgi poezijos aukuras nedega jau daugiau kaip 20 metų – 1995 m. šventė perkelta į Maironio lietuvių literatūros muziejų Kauno Senamiestyje, mat publika pabrangus kurui tiesiog nebegalėjo sau leisti atvažiuoti į Palemoną.
@@ -174,6 +179,7 @@ Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliep
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView4"/>
 
@@ -182,6 +188,7 @@ Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliep
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Salomėjos Nėries Memorialinis Muziejus"
+            android:textColor="@color/white"
             android:layout_below="@id/textView10"/>
 
         <TextView
@@ -190,6 +197,7 @@ Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliep
             android:layout_height="wrap_content"
             android:text="ARTĖJANTYS RENGINIAI"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textView11"/>
 
@@ -197,6 +205,7 @@ Per pirmąjį festivalį slėnyje išdygo aukuras, kuriame kasmet būdavo suliep
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Anksčiau vykdavo poezijos vakarai, bet pastaruoju metu renginių nebevyksta."
             android:layout_below="@id/textView12"/>
 
