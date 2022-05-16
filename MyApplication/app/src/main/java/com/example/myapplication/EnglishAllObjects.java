@@ -44,7 +44,7 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
             "Žigla gulf",
             "Skulptūrų park",
             "Žiegždrės path",
-            "Laumėnai tourist trail",
+            "Laumėnai cognitive path",
             "Pakalniškės tourist trail"};
 
 
