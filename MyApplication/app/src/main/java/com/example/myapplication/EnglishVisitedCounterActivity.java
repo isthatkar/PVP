@@ -28,7 +28,6 @@ public class EnglishVisitedCounterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_english_visited_counter);
         getSupportActionBar().hide();
 
-        mEditText = findViewById(R.id.edit_text);
         makeSureNotZero();
         setPoints();
         setObjectData();
