@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-		android:background="@drawable/newwallpaper"
+    android:background="@drawable/newappbackground"
     android:layout_height="match_parent">
 
 
@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         style="@style/Widget.AppCompat.Spinner.DropDown"
         android:layout_height="wrap_content"
-        android:spinnerMode="dropdown" />
+        android:spinnerMode="dropdown"
+        android:textColor="@color/white"/>
 
     <ListView
         android:id="@+id/mobile_list"

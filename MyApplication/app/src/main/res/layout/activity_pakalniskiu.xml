@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="PAKALNIŠKIŲ PAŽINTINIS TAKAS" />
 
         <ImageView
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/pakalniskiuFaktai"
+            android:textColor="@color/white"
             android:text="Vaikščiodami pakalniškių pažintiniu taku rasite piliakalnį kurį supylė senovės lietuviai. Pasak sklandančios legendos ant jo stovėjo Nemuno žemių slėnio valdovo Vaišvydo medinė pilis, ilgus amžius gynusi ir saugojusi šią vietovę nuo priešų. Nemuno slėnyje  gyveno Vaišvydo valdiniai. Tačiau priešai, išdavikų padedami, pilį visiškai sugriovė ir ji nebebuvo atstatyta." />
 
         <ImageView
@@ -99,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -130,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -143,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -152,6 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pakalniskiuIstorija"
+            android:textColor="@color/white"
             android:text="Pakalniškių pažintinio tako ilgis siekia 3 kilometrus, nuo kurio atsiveria vaizdas i Kauno marias, Pažaislio panorama ir Kauno hidroelektrinė." />
 
         <ImageView
@@ -168,6 +173,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView4"/>
@@ -176,6 +182,7 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Aplink pakalniškių pažintinį taką yra nemaža dalis lankytinų objektų: Žiegždrių atodanga, pelkės, Pažaislio vienuolynas, Kruonio HAE, Laumėnų parkas ir pažintinis takas.
 Pačiame pakalniškių pažintiniame take, pramogas teks susigalvoti pačiam, bet jei esate žvejybos mėgėjas, nusileidę prie vandens, tikrai sutiksite žvejų besidžiaugiančiu savo laimikiu."
             android:layout_below="@id/textView10"/>

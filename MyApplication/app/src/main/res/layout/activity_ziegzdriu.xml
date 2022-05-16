@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:textSize="40dp"
             android:layout_marginTop="30px"
             android:textAlignment="center"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:text="ŽIEGŽDRIŲ PAŽINTINIS TAKAS" />
 
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -83,6 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/ziegzdriuFaktai"
+            android:textColor="@color/white"
             android:text="Tai vienintelė vieta Lietuvoje, kur galima rasti varvančio vandens suformuotų uolienų varveklių ir piršto storumo stalaktitų. Atodangos ilgis siekia net 400 m., o aukštis - 22 m. Žiegždrių pažintiniame take pastebėsite ir storiausią Kauno marių apylinkėse šimtametę liepą, jos storis 4,3m." />
 
         <ImageView
@@ -100,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -131,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -144,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -152,6 +156,7 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:layout_below="@id/ziegzdriuIstorija"
             android:text="Takas apjungia du valstybės saugomus gamtos paveldo objektus – Kalniškių konglomerato ir Žiegždrių atodangas. Tako ilgis į vieną pusę – 1,6 km. Takas nėra žiedinis, tad teks keliauti pirmyn atgal. Nenorėdami grįžti tuo pačiu maršrutu, galite keliauti keliu per gyvenvietę arba, kai palankios oro ir hidrologinės sąlygos – bristi pamariu." />
 
@@ -168,6 +173,7 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
@@ -177,6 +183,7 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Iš poilsio aikštelių galima išvysti Vieškūnų piliakalnį, Palemoną, Pažaislio vienuolyno bokštus, Kalniškių konglomerato atodanga (Konglomeratas – tai nuo ledynmečio gamtos suformuotas cementas iš kalkių, molio, žvyro ir gargždo.)
 Pramogos vaikams bus garantuotos keliaujant Žiegždrių pažintiniu taku, nes yra įrengtos dėlionės apie vietos augalus, paukštelius ir kitus gamtos turtus.
 "

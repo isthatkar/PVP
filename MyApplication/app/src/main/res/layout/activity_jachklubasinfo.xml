@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
 <RelativeLayout
@@ -20,6 +21,7 @@
         android:textSize="40dp"
         android:layout_marginTop="30px"
         android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
         android:text="JACHTKLUBAS" />
 
     <ImageView
@@ -58,7 +60,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/jachtklubasFaktaiPlayerPosition"
             android:text="00:00"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
         <SeekBar
             android:layout_width="0dp"
@@ -71,7 +73,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/jachtklubasFaktaiPlayerDuration"
             android:text="00:00"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
@@ -82,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30px"
         android:layout_below="@id/jachtklubasFaktai"
+        android:textColor="@color/white"
         android:text="Statant jacht klubą valstybės skirtų pinigų užteko tik dviems iš trijų etapų. Pritrūko pinigų pagrindiniam jachtklubo korpusui. Tuomet jau buvo įrengta krantinė, molas, bet nebuvo, kur laikyti laivus. Nors ir buvo prašyta skirti pinigų korpuso įrengimui, tačiau visi tikino, kad tam pinigų nėra. Tuomet pagrindinis iniciatorius Viktoras Badganovas sužinojo jog Trakuose norima statyti irklavimo bazę. Viktoras prisipažįsta, kad Maskvoje teko papirkti žmones tam, jog vietoj tos bazės Trakuose, iškiltų jachtklubo korpusas Kaune." />
 
     <ImageView
@@ -99,6 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageView2"
         android:text="ISTORIJA"
+        android:textColor="@color/white"
         android:textSize="20dp"
         android:layout_centerHorizontal="true"
         />
@@ -130,7 +134,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/jachtklubasIstorijaPlayerPosition"
             android:text="00:00"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
         <SeekBar
             android:layout_width="0dp"
@@ -143,7 +147,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/jachtklubasIstorijaPlayerDuration"
             android:text="00:00"
-            android:textColor="@color/black"/>
+            android:textColor="@color/white"/>
 
     </LinearLayout>
 
@@ -152,6 +156,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/jachtklubasIstorija"
+        android:textColor="@color/white"
         android:text="Burių ir vėjo mėgėjai Nemune plaukioti negalėjo, nes jis buvo labai seklus. Tačiau pradėjus sklisti kalboms, jog norima statyti hidroelektrinę, V. Bagdanovas sukluso – juk tai puiki galimybė išplaukti į platesnius vandenis, o kartu ir turėti savo uostą jachtoms.
 Būdami studentai, buriavimo entuziastai pradėjo judinti įvairias sporto organizacijas dėl to, jog Kaunui reikalingas jachtklubas. Jaunuoliai susirado generolo dukrą – architektę, kuri suprojektavo, kaip galėtų atrodyti pats jachtklubas. Viską reikėjo daryti labai greitai, nes projektas turėjo būti įgyvendintas iki tol, kol bus užtvenktas Nemunas. Kitu atveju, kai jau vanduo būtų išsiliejęs, būtų gerokai brangiau kainavę įrengti tokį objektą.
 " />
@@ -171,6 +176,7 @@ Būdami studentai, buriavimo entuziastai pradėjo judinti įvairias sporto organ
         android:layout_height="wrap_content"
         android:text="PRAMOGOS"
         android:textSize="20dp"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/imageView4"/>
 
@@ -178,6 +184,7 @@ Būdami studentai, buriavimo entuziastai pradėjo judinti įvairias sporto organ
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Restoranas „Marina Taste Gallery“. Restorano virtuvė – europietiška, o meniu asortimentas užtikrina, kad patiekalą pagal savo skonį čia ras kiekvienas.
 
 Laivų nuoma M. Gimbutienės g. 35, Kaunas 52337
@@ -190,6 +197,7 @@ Laivų nuoma M. Gimbutienės g. 35, Kaunas 52337
         android:layout_height="wrap_content"
         android:text="ARTĖJANTYS RENGINIAI"
         android:textSize="20dp"
+        android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textView11"/>
 
@@ -197,6 +205,7 @@ Laivų nuoma M. Gimbutienės g. 35, Kaunas 52337
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Rugpjūčio mėnesį vyksta koncertas/festivalis “Lizdo pliažas”.
 Festivalis Jachtklubas OPEN AIR 2022, R. Kalantos gatvė, Kaunas, Lietuva, 2022-07-29 20:3
 "

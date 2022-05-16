@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:textSize="40dp"
             android:layout_marginTop="30px"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="KRUONIS HAE" />
 
         <ImageView
@@ -58,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -71,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -81,6 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/kruonioFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="This type of power plant is attributed to the new generation of energy objects. KHAE is designed to balance electricity production and consumption, as well as the prevention and elimination of accidents in the energy system. Currently, KHAE provides 94% of the total necessary emergency reserve of the Lithuanian electricity system. The construction of the power plant began in 1984, the last, fourth unit, started operating in 1998." />
 
         <ImageView
@@ -98,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -128,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -141,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/kruonioIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -151,6 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/kruonioIstorija"
+            android:textColor="@color/white"
             android:text="It is the only hydro storage power plant in the Baltic States operating in the Lithuanian energy system. Located in Kaišiadorys district, north of kruonis town, near the village of Maisiejūnai. A water furrow from the power plant flows into the lagoon at the mouth of Strėva." />
 
         <ImageView
@@ -168,6 +173,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -176,6 +182,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="Since Kruonis PPP is located in Kaišiadorys, you can visit countless different objects around you: Mergakalnis outcrop, Girelė cognitive trail, Gravitational Hill, Maisiejūnai mound, Budeliai mound, Darsūniškis mineral spring, Antakalnis multi-branch in July, Laugakalnis stone, Varkališkės forest pine, Drip conglomerate outcrop, Sekioniai oak, Ringailiai II stone, Karčiupis forest oak, Kovaičiai stone." />
 
         <TextView
@@ -184,6 +191,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="UPCOMING EVENTS"
             android:textSize="20dp" />
 
@@ -192,6 +200,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
+            android:textColor="@color/white"
             android:text="Tours of Kruonis PPP are usually conducted on Fridays from 12:30, but at the moment they are not organized, it is expected that the tours will be resumed from autumn, if the epidemiological situation allows." />
 
         <ImageView

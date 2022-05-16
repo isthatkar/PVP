@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ŠUNELIŠKIŲ KALNAS" />
 
         <ImageView
@@ -60,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -73,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -83,6 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/suneliskiuFaktai"
+            android:textColor="@color/white"
             android:text="Žmonės pasakoja, kad kadais ant piliakalnio nusižudė vietos dvarininko duktė. Nuo tada čia ėmę vaidentis. Eini naktį, tai čiulba, tai staugia. Bet dažniausia tai vaidenasi visokie šunys, nuo jų toks ir kalno vardas. Už piliakalnio prasideda Lakštingalų slėnis." />
 
         <ImageView
@@ -101,6 +104,7 @@
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             />
 
@@ -132,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -145,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -175,12 +179,14 @@ Vieškūnų piliakalnis datuojamas XIV a. antrąja puse. Piliakalnis buvo įreng
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Netoli yra geležinkelio (Palemono) fortas."
             android:layout_below="@id/textView10"/>
 

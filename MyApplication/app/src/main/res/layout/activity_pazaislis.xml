@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="PAŽAISLIO VIENUOLYNAS" />
 
         <ImageView
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/pazaislioFaktai"
+            android:textColor="@color/white"
             android:text="Ansamblis laikomas vienu geriausių brandžiojo baroko pavyzdžių Šiaurės ir Rytų Europoje. Tai vienas iš dviejų Lietuvoje išlikusių vienuolynų ir bažnyčių ansamblių (kitas Tytuvėnuose). Pagrindiniai pastatai sugrupuoti simetriškai pagal išilginę kompozicinę vakarų-rytų krypties ašį, prie kurios išdėstyti pastatai (foresterija, oficinos, vienuolynas, eremo nameliai).
 Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžiaus plano, turi šešiabriaunį 53 m aukščio kupolą (su žibintu ir kryžiumi). Pietų fasade įrengtas saulės laikrodis. Vienuolyno korpusai (kartu su galerijomis) 1-2 aukštų. Jų sienos tinkuotos, langų ir durų apvadai pilko smiltainio. Pagrindinę ansamblio teritoriją juosia 2,5 m aukščio vientisa mūro tvora, dengta čerpėmis. Komplekso planas primena vienuolių kamaldulių herbą – du balandžius, geriančius iš vienos taurės.
 " />
@@ -101,6 +104,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -132,7 +136,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -145,7 +149,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -154,6 +158,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pazaislioIstorija"
+            android:textColor="@color/white"
             android:text="Pažaislio bažnyčios ir vienuolyno ansamblis pastatytas XVII–XVIII a. funduojant Lietuvos Didžiosios Kunigaikštystės Didžiajam kancleriui Kristupui Zigmantui Pacui. 1660 m. jis kreipėsi į Kamaldulių ordino vyresnybę Romoje, raštu pasižadėdamas finansuoti vienuolyno ir bažnyčios statybą Lietuvoje. Netrukus, gavęs aukščiausiosios bažnytinės vadovybės palaiminimą, kartu su architektu ir keliais Krokuvos Bielianų kamaldulių vienuoliais netoli Kauno surado planuojamam statyti vienuolynui tinkamą vietą – Pažaislį. Šią gražią miškingą vietovę fundatorius nupirko iš Kauno žemės teisėjo Samuelio Oborskio ir pavadino Ramybės (Taikos) kalnu (Mons Pacis)." />
 
         <ImageView
@@ -171,6 +176,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView4"/>
 
@@ -178,6 +184,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Vienuolyne vyksta edukacinės programos, ekspozicijos, vedamos ekskursijos."
             android:layout_below="@id/textView10"/>
 
@@ -187,6 +194,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:layout_height="wrap_content"
             android:text="ARTĖJANTYS RENGINIAI"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textView11"/>
 
@@ -194,6 +202,7 @@ Svarbiausias ansamblio akcentas – bažnyčia. Ji barokinė, lotyniško kryžia
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Pažaislio muzikos festivais, koncertai."
             android:layout_below="@id/textView12"/>
 

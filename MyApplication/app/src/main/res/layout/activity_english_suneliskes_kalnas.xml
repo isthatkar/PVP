@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ŠUNELIŠKĖS MOUNTAIN" />
 
         <ImageView
@@ -60,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -73,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -83,6 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/suneliskiuFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="People say that the daughter of a local landowner once committed suicide on a mound. They have been haunting here ever since. You go at night, it’s chirping, it’s howling. But most often sound is made by all kinds of dogs, hence the name of the mountain. Behind the mound begins the Lakštingalų valley." />
 
         <ImageView
@@ -100,6 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -131,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -144,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/suneliskiuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -153,6 +157,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/suneliskiuIstorija"
+            android:textColor="@color/white"
             android:text="Šuneliškės Hill (Vieškūnai Mound)
 The Vieškūnai mound is also called Šuneliškės Hill, located on a promontory in the Nemunas Valley, now in the southern part of the Kaunas Lagoon, and from the west in the Šuneliškės Ravo stream. It is one of the best preserved Lithuanian mounds, as it was unknown for a long time and was discovered only in 1992.
 
@@ -176,6 +181,7 @@ A settlement at the foot of the foothills was established next to the castle, lo
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -184,6 +190,7 @@ A settlement at the foot of the foothills was established next to the castle, lo
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="The railway (Palemono) fort is nearby." />
 
         <ImageView

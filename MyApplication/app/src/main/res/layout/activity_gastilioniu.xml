@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,6 +21,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30px"
             android:text="GASTILIONIŲ ATODANGA"
+            android:textColor="@color/white"
             android:textSize="40dp"
             android:textAlignment="center"
             />
@@ -60,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -73,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -83,6 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/gastilionuFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="800 metrų ilgio ir 30 m aukščio atodanga, kurią sudaro Gastilionių pusiasalio smaigalys ir į abi puses nusitęsę aukšti šlaitai. Atodangoje galima įžiūrėti moreninės dangos pjūvį, kuriame dviejų ledynų suguldyti du moreninio priemolio sluoksniai, perkirsti tarpledynmetyje tyvuliavusio ežero smėlio." />
 
         <ImageView
@@ -101,6 +104,7 @@
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:layout_centerHorizontal="true"
             />
 
@@ -132,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -145,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/gastilionuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -155,6 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/gastilionuIstorija"
+            android:textColor="@color/white"
             android:text="Gastilionių atodanga – geologinis gamtos paveldo objektas, paskelbtas saugomu 2008 m. Atodanga yra Kaišiadorių rajone, Rumšiškių seniūnijoje, Kaišiadorių miškų urėdijos Rumšiškių girininkijos teritorijoje, Rumšiškių miške, Kauno marių dešiniajame krante. Atodanga patenka į Kauno marių regioninio parko teritoriją. Atodanga dešiniąja Kauno marių pakrante tęsiasi apie 600 m su beveik stačia iki 20 m aukščio siena, kurioje aiškiai matomi dviejų ledynmečių sukloti moreninio priemolio sluoksniai, perskirti tarpledynmečio metu sukloto smėlio sluoksniais." />
 
         <ImageView
@@ -171,6 +176,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
+            android:textColor="@color/white"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView3"/>
@@ -179,6 +185,7 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="Netoliese yra Gastilijonų gūbrys, Rumšiškių miško pušis."
             android:layout_below="@id/textView10"/>
 

@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="LAUMĖNAI EDUCATIONAL TRAIL" />
 
         <ImageView
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -82,6 +84,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/laumenuPazintinisFaktai"
             android:layout_marginTop="30px"
+            android:textColor="@color/white"
             android:text="While travelling along the track, you will have the opportunity to observe the shores being eroded by kaunas lagoon, admire the outcrops and views from them, and if you are lucky , during the summer you will be able to notice rare coastal residents – bile – floating along the coasts. Cave swallows also like to settle in the outcrops – entire apartment buildings are uprooted in the outcrops." />
 
         <ImageView
@@ -100,6 +103,7 @@
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
             android:text="HISTORY"
+            android:textColor="@color/white"
             android:textSize="20dp" />
 
 
@@ -130,7 +134,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -143,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -152,6 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/laumenuPazintinisIstorija"
+            android:textColor="@color/white"
             android:text="Laumėnai cognitive trail is a wild track in the forest. When traveling on this track, you should follow the marking on the trees so as not to get out of the way.
 Along the route, you will also reach Laumėnai Park, which offers a unique view of Kaunas Lagoon.
  The route is most convenient to start travelling from girioniai resort, and at the end of it you will reach the Žiegždriai geological trail. The length of the track to one side is 4.3km.
@@ -173,6 +178,7 @@ Along the route, you will also reach Laumėnai Park, which offers a unique view 
             android:text="ACTIVITIES"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:layout_below="@id/imageView4"/>
 
         <TextView
@@ -180,6 +186,7 @@ Along the route, you will also reach Laumėnai Park, which offers a unique view 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="Laumėnai resort, Žiegždriai geological trail, Girioniai resort" />
         <Button
             android:id="@+id/button_addPoint16"

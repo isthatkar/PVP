@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/newappbackground"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -21,6 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="FOLK AND HOUSEHOLD MUSEUM" />
 
         <ImageView
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -72,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -81,6 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/rumsiskesFaktai"
+            android:textColor="@color/white"
             android:layout_marginTop="30px"
             android:text="The Lithuanian Folk Museum is one of the largest open-air museums in Europe in terms of area (195 ha) and number of real exhibits. It is the only ethnographic museum in Lithuania, presenting a reduced reflection of all ethnographic regions and towns in Lithuania. A separate sector is dedicated to the memory of the deportation and resistance of the Lithuanian population: a yurt (underground), an exile wagon, a partisan hideout (bunker), and monuments were built. In it, visitors are greeted by an educator - a former deportee, whose mesmerizing story allows you to feel the whole tragedy of the deportees. The unique Aristavėlė manor house in the museum is a valuable example of Baroque wooden architecture. The uniqueness of the Lithuanian Folk Museum in the European context is the development of land cultivation systems and settlement development." />
 
@@ -99,6 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -129,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija1PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -142,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija1PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -173,7 +177,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija2PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -186,7 +190,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/rumsiskesIstorija2PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -195,6 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/rumsiskesIstorija2"
+            android:textColor="@color/white"
             android:text="Art researchers Vacys Milius and Klemensas Čerbulėnas, ethnographer Izidorius Butkevičius, architects Vytautas Landsbergis-Žemkalnis, Juozas Baršauskas cherished the idea of ​​establishing the museum. 1965 The government of the LSSR adopted a resolution on the establishment of the museum. The museum was founded in 1966. In the village of Lawns. At that time, 18 families lived here. 1966 a detailed plan has been prepared.
 
 All collaborators went on expeditions to search for exhibits and select buildings. At the same time, descriptive and iconographic material was collected. The first expeditions took place by bicycle, later a truck was purchased. The construction works were carried out by the then Kaunas restoration workshop.
@@ -217,6 +222,7 @@ All collaborators went on expeditions to search for exhibits and select building
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -225,6 +231,7 @@ All collaborators went on expeditions to search for exhibits and select building
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
+            android:textColor="@color/white"
             android:text="Excursions, education, escape room, orienteering game, rides and horseback riding, room rental." />
 
         <TextView
@@ -233,6 +240,7 @@ All collaborators went on expeditions to search for exhibits and select building
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
             android:text="UPCOMING EVENTS"
             android:textSize="20dp" />
 
@@ -241,6 +249,7 @@ All collaborators went on expeditions to search for exhibits and select building
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
+            android:textColor="@color/white"
             android:text="Sunday 27/03 Stork Festival" />
 
         <ImageView
