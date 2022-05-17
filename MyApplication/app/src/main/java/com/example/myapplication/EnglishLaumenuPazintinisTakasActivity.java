@@ -35,9 +35,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class EnglishLaumenuPazintinisTakas extends AppCompatActivity {
-
-
+public class EnglishLaumenuPazintinisTakasActivity extends AppCompatActivity {
 
     TextView playerPositionIstorija,
             playerPositionFaktai,

@@ -321,7 +321,7 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
                         startActivity(intent);
                         break;
                     case "Laumėnai cognitive path":
-                        intent = new Intent(EnglishMapsActivity.this, EnglishLaumenuPazintinisTakas.class);
+                        intent = new Intent(EnglishMapsActivity.this, EnglishLaumenuPazintinisTakasActivity.class);
                         startActivity(intent);
                         break;
                     case "Pakalniškės cognitive path":

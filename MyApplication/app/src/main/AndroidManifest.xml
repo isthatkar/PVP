@@ -28,7 +28,7 @@
             android:name=".EnglishPakalniskiuPazintinisTakas"
             android:exported="false" />
         <activity
-            android:name=".EnglishLaumenuPazintinisTakas"
+            android:name=".EnglishLaumenuPazintinisTakasActivity"
             android:exported="false" />
         <activity
             android:name=".EnglishZiegzdriuTakasEnglish"

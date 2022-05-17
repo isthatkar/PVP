@@ -161,7 +161,8 @@
             android:text="Vieškūnų piliakalnis dar vadinamas Šuneliškių kalnu, įrengtas aukštumos kyšulyje į Nemuno slėnį, dabar iš pietų juosiamame Kauno marių, o iš vakarų – Šuneliškių Ravo upelio. Tai – vienas geriausiai išlikusių Lietuvos piliakalnių, nes ilgą laiką buvo nežinomas ir atrastas tik 1992 metais.
 Vieškūnų piliakalnis datuojamas XIV a. antrąja puse. Piliakalnis buvo įrengtas kaip mūrinę Kauno pilį iš pietryčių pusės dengianti medinė pilaitė. Pilaitė buvo mažiausiai vieną kartą pulta.
 Šalia pilaitės buvo įkurta papėdės gyvenvietė, įrengta ankstesnės akmens amžiaus gyvenvietės vietoje ir gyvavusi tiek pat, kiek ir pats piliakalnis. Medinei pilaitei Vieškūnų piliakalnyje sunykus, gyvenimas vėl persikėlė į Nemuno slėnį. Jame turėjo būti ir to meto kapinynas.
-"/>
+"
+            android:textColor="@color/white"/>
 
         <ImageView
             android:id="@+id/imageView4"
