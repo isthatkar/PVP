@@ -262,7 +262,7 @@ public class LithuanianLaumenuTakasActivity extends AppCompatActivity {
     EditText mEditText;
     int[] intArray;
     Object[] objectArray= new Object[19];
-    int objectNr=16;    //###############################################################   0 tik jacht klubui
+    int objectNr=17;    //###############################################################   0 tik jacht klubui
     int ToObjectDistance=6000; // Distance to object (if this is more than actual distance, button wont show)
     public void showIfUnvisited()
     {
