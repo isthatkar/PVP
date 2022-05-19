@@ -8,18 +8,24 @@
 
     <Button
         android:id="@+id/languageLithuanian"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="250dp"
         android:text="Lietuvių"
+        android:layout_marginBottom="20dp"
+        android:textSize="28dp"
         android:backgroundTint="@color/black"/>
 
     <Button
         android:id="@+id/languageEnglish"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:textSize="28dp"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_below="@+id/languageLithuanian"
         android:layout_centerHorizontal="true"
         android:backgroundTint="@color/black"

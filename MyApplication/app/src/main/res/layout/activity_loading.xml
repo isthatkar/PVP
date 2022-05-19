@@ -13,7 +13,7 @@
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:layout_centerInParent="true"
-        app:srcCompat="@drawable/loadingtext"></ImageView>
+        app:srcCompat="@drawable/logogidas"></ImageView>
 
     <TextView
         android:id="@+id/percentage_text"
@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:text="0 %"
         android:textSize="25dp"
-        android:textColor="@color/quantum_googgreen900"></TextView>
+        android:textColor="@color/quantum_bluegrey500"></TextView>
 
     <ProgressBar
         android:id="@+id/progress_bar"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:progressTint="@color/quantum_googgreen900"
+        android:progressTint="@color/quantum_bluegrey950"
         >
     </ProgressBar>
 </RelativeLayout>

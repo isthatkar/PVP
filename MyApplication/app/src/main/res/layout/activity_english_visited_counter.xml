@@ -30,24 +30,15 @@
         android:onClick="save"
         android:visibility="gone"/>
 
-
-    <Button
-        android:id="@+id/button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_MyFunction"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:onClick="reset"
-        android:text="Delete my visited objects list" />
-
     <TextView
         android:id="@+id/textView_points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_reset"
+        android:layout_below="@+id/button_save"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
         android:textColor="@color/white"
         android:text="My points:"
         />
@@ -58,10 +49,27 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView_points"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
         android:textColor="@color/white"
         android:text="Objects visited by me\n\n"
         />
 
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_MyFunction"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="reset"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="| Delete my visited objects list |" />
+
+
+
+    >
 
 </RelativeLayout>

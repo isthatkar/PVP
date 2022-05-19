@@ -11,10 +11,9 @@
         android:paddingVertical="@dimen/place_autocomplete_button_padding"
         android:maxHeight="70dp"
         android:textSize="25dp"
-        android:layout_marginVertical="@dimen/place_autocomplete_button_padding"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="@color/quantum_bluegrey200"
+        android:background="#55000000"
         />
 </LinearLayout>

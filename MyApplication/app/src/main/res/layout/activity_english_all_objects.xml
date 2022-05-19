@@ -10,16 +10,18 @@
     <Spinner
         android:id="@+id/spinner_ObjectOptions"
         android:layout_width="match_parent"
-        style="@style/Widget.AppCompat.Spinner.DropDown"
         android:layout_height="wrap_content"
-        android:spinnerMode="dropdown" />
+        android:spinnerMode="dropdown"
+        android:minHeight="50dp"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:textColor="#ff0000" />
 
     <ListView
         android:id="@+id/mobile_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/spinner_ObjectOptions"
-        android:layout_marginTop="18dp"
         />
 
 
