@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -28,23 +29,24 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
 
     // Array of strings...
     ListView simpleList;
-    String countryList[] = {"Jachtklubas",
-            "Pažaislio vienuolynas",
-            "Šuneliškių kalnas",
-            "Lakštingalų slėnis",
-            "Kauno marių regioninis parkas",
-            "Meilės įlanka",
-            "Kauno marių apleista stovykla",
-            "Gastilionių atodanga",
-            "Rumšiškių liaudies buities muziejus",
-            "Kapitoniškių pažintinis takas",
-            "Mergakalnio apžvalgos aikštelė",
-            "Kruonio HAE",
-            "Žiglos įlanka",
-            "Skulptūrų parkas",
-            "Žiegždrių takas",
-            "Laumėnų pažintinis takas",
-            "Pakalniškių pažintinis takas"};
+    String countryList[] = {"Jachtklubas",//
+            "Pažaislio vienuolynas",//
+            "Šuneliškių kalnas",//
+            "Lakštingalų slėnis",//
+            "Kauno marių regioninis parkas",//
+            "Gastilionų atodanga",//
+            "Meilės įlanka",//
+            "Kauno marių apleista stovykla",//
+            "Rumšiškių liaudies buities muziejus",//
+            "Rumšiškių prieplauka",//
+            "Kapitoniškių pažintinis takas",//
+            "Kruonio HAE",//
+            "Žiglos įlanka",//
+            "Skulptūrų parkas",//
+            "Žiegždrių takas",//
+            "Laumėnų pažintinis takas",//
+            "Pakalniškių pažintinis takas",
+            "Mergakalnio apžvalgos aikštelė"};
 
 
     @Override
@@ -56,9 +58,6 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
         simpleList.setAdapter(arrayAdapter);
 
 
-
-
-
         //setContentView(R.layout.activity_allobjects);
         Spinner spinner = findViewById(R.id.spinner_ObjectOptions);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -66,6 +65,92 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+
+        simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //Toast.makeText(AllObjectsListActivity.this, "List item was clicked at " + position, Toast.LENGTH_SHORT).show();
+                Intent intent;
+                switch (position){
+                    case 0:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianJachklubasActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianPazaislioActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianSuneliskiuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianLakstingaluActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 4:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianRegioninisActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 5:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianGastilioniuActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 6:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianMeilesActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 7:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianStovyklaActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 8:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianRumsiskiuMuziejusActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 9:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianRumsiskiuPrieplaukaActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 10:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianKapitoniskiuActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 11:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianKruonioActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 12:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianZiglosActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 13:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianSkulpturuActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 14:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianZiegzdriuActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 15:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianLaumenuTakasActivity.class);//
+                        startActivity(intent);
+                        break;
+                    case 16:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianPakalniskiuActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 17:
+                        intent = new Intent(AllObjectsListActivity.this, LithuanianMergakalnioActivity.class);
+                        startActivity(intent);
+                        break;
+
+                }
+            }
+        });
+
+
     }
 
     @Override
