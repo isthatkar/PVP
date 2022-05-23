@@ -69,6 +69,7 @@ public class EnglishVisitedCounterActivity extends AppCompatActivity {
             }
         }
     }
+
     public void setObjectData(){
         objectArray[0]=new Object("Yacht club",54.885412,24.024804);
         objectArray[1]=new Object("Pažaislis monastery",54.876222,24.021416);

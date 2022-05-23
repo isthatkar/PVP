@@ -25,6 +25,7 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
     private static final String FILE_NAME = "example.txt";
     EditText mEditText;
     int[] intArray;
+    int[] isFiltered=new int[19];
     //Object[] objectArray= new Object[19];
 
     // Array of strings...
@@ -51,6 +52,10 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        for(int i=0;i<19;i++)
+        {
+            isFiltered[i]=i+1;
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_allobjects);
         simpleList = (ListView) findViewById(R.id.mobile_list);
@@ -72,7 +77,20 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //Toast.makeText(AllObjectsListActivity.this, "List item was clicked at " + position, Toast.LENGTH_SHORT).show();
                 Intent intent;
-                switch (position){
+                int temp=position;
+                int whichOne=0;
+                int index=0;
+                while (temp+1>0)
+                {
+                    if(isFiltered[index]==0){
+                    }
+                    else{
+                        whichOne=isFiltered[index];
+                        temp--;
+                    }
+                    index++;
+                }
+                switch (whichOne-1){
                     case 0:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianJachklubasActivity.class);
                         startActivity(intent);
@@ -166,6 +184,10 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
     }
 
     public void filter(int flag) {
+        for(int i=0;i<19;i++)
+        {
+            isFiltered[i]=0;
+        }
         List<String> temp= new ArrayList<String>();
         //makeSureNotZero();
         countPoints();
@@ -174,6 +196,7 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
             if(flag==0||getFlag(i)==flag-1)
             {
                 temp.add(countryList[i]);
+                isFiltered[i]=i+1;
             }
         }
 

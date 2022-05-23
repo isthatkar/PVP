@@ -27,7 +27,7 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
     EditText mEditText;
     int[] intArray;
     //Object[] objectArray= new Object[19];
-
+    int[] isFiltered=new int[19];
     // Array of strings...
     ListView simpleList;
     String countryList[] = {"Yacht club",
@@ -35,23 +35,28 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
             "Šuneliškės mountain",//
             "Lakštingalos valley",//
             "Kauno marios regional park",//
-            "Gastilionai exposure",//
             "Love bay",//
             "Kauno marios abandoned camp",//
+            "Gastilionai exposure",//
             "Rumšiškės folk household museum",//
             "Rumšiškės pier",//
             "Kapitoniškės tourist trail",//
+            "Mergakalnis viewpoint",
             "Kruonis hydo electric power plant",//
             "Žigla gulf",//
             "Skulptūrų park",//
             "Žiegždrės path",//
             "Laumėnai cognitive path",
-            "Pakalniškės tourist trail",
-            "Mergakalnis viewpoint"};
+            "Pakalniškės tourist trail"
+            };
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        for(int i=0;i<19;i++)
+        {
+            isFiltered[i]=i+1;
+        }
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_english_all_objects);
         simpleList = (ListView) findViewById(R.id.mobile_list);
@@ -65,12 +70,24 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
-
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             //Toast.makeText(AllObjectsListActivity.this, "List item was clicked at " + position, Toast.LENGTH_SHORT).show();
             Intent intent;
-            switch (position){
+            int temp=position;
+            int whichOne=0;
+            int index=0;
+            while (temp+1>0)
+            {
+                if(isFiltered[index]==0){
+                }
+                else{
+                    whichOne=isFiltered[index];
+                    temp--;
+                }
+                index++;
+            }
+            switch (whichOne-1){
                 case 0:
                     intent = new Intent(EnglishAllObjects.this, EnglishJachklubasActivity.class);//
                     startActivity(intent);
@@ -92,15 +109,15 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
                     startActivity(intent);
                     break;
                 case 5:
-                    intent = new Intent(EnglishAllObjects.this,  EnglishGastilijonuAtodangaActivity.class);//
-                    startActivity(intent);
-                    break;
-                case 6:
                     intent = new Intent(EnglishAllObjects.this,  EnglishMeilesIlankaACtivity.class);//
                     startActivity(intent);
                     break;
-                case 7:
+                case 6:
                     intent = new Intent(EnglishAllObjects.this,  EnglishKaunoMariuApleistaStovyklaActivity.class);//
+                    startActivity(intent);
+                    break;
+                case 7:
+                    intent = new Intent(EnglishAllObjects.this,  EnglishGastilijonuAtodangaActivity.class);//
                     startActivity(intent);
                     break;
                 case 8:
@@ -116,34 +133,33 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
                     startActivity(intent);
                     break;
                 case 11:
-                    intent = new Intent(EnglishAllObjects.this,  EnglishKruonioHAEActivity.class);//
-                    startActivity(intent);
-                    break;
-                case 12:
-                    intent = new Intent(EnglishAllObjects.this,  EnglishZiglosIlankaActivity.class);//
-                    startActivity(intent);
-                    break;
-                case 13:
-                    intent = new Intent(EnglishAllObjects.this,  EnglishSkulturuParkasActivity.class);//
-                    startActivity(intent);
-                    break;
-                case 14:
-                    intent = new Intent(EnglishAllObjects.this,  EnglishZiegzdriuTakasEnglish.class);//
-                    startActivity(intent);
-                    break;
-                case 15:
-                    intent = new Intent(EnglishAllObjects.this,  EnglishLaumenuPazintinisTakasActivity.class);
-                    startActivity(intent);
-                    break;
-                case 16:
-                    intent = new Intent(EnglishAllObjects.this,  EnglishPakalniskiuPazintinisTakas.class);
-                    startActivity(intent);
-                    break;
-                case 17:
                     intent = new Intent(EnglishAllObjects.this,  EnglishMergakalnioApzvalgosAiksteActivity.class);
                     startActivity(intent);
                     break;
-
+                case 12:
+                    intent = new Intent(EnglishAllObjects.this,  EnglishKruonioHAEActivity.class);//
+                    startActivity(intent);
+                    break;
+                case 13:
+                    intent = new Intent(EnglishAllObjects.this,  EnglishZiglosIlankaActivity.class);//
+                    startActivity(intent);
+                    break;
+                case 14:
+                    intent = new Intent(EnglishAllObjects.this,  EnglishSkulturuParkasActivity.class);//
+                    startActivity(intent);
+                    break;
+                case 15:
+                    intent = new Intent(EnglishAllObjects.this,  EnglishZiegzdriuTakasEnglish.class);//
+                    startActivity(intent);
+                    break;
+                case 16:
+                    intent = new Intent(EnglishAllObjects.this,  EnglishLaumenuPazintinisTakasActivity.class);
+                    startActivity(intent);
+                    break;
+                case 17:
+                    intent = new Intent(EnglishAllObjects.this,  EnglishPakalniskiuPazintinisTakas.class);
+                    startActivity(intent);
+                    break;
             }
         }
     });
@@ -162,6 +178,10 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
     }
 
     public void filter(int flag) {
+        for(int i=0;i<19;i++)
+        {
+            isFiltered[i]=0;
+        }
         List<String> temp= new ArrayList<String>();
         //makeSureNotZero();
         countPoints();
@@ -170,6 +190,7 @@ public class EnglishAllObjects extends Activity implements AdapterView.OnItemSel
             if(flag==0||getFlag(i)==flag-1)
             {
                 temp.add(countryList[i]);
+                isFiltered[i]=i+1;
             }
         }
 
