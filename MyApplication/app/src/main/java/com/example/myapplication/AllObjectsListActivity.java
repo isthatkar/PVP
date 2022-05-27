@@ -30,24 +30,26 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
 
     // Array of strings...
     ListView simpleList;
+
     String countryList[] = {"Jachtklubas",//
             "Pažaislio vienuolynas",//
             "Šuneliškių kalnas",//
             "Lakštingalų slėnis",//
             "Kauno marių regioninis parkas",//
-            "Gastilionų atodanga",//
             "Meilės įlanka",//
             "Kauno marių apleista stovykla",//
+            "Gastilionų atodanga",//
             "Rumšiškių liaudies buities muziejus",//
             "Rumšiškių prieplauka",//
             "Kapitoniškių pažintinis takas",//
+            "Mergakalnio apžvalgos aikštelė",
             "Kruonio HAE",//
             "Žiglos įlanka",//
             "Skulptūrų parkas",//
             "Žiegždrių takas",//
             "Laumėnų pažintinis takas",//
-            "Pakalniškių pažintinis takas",
-            "Mergakalnio apžvalgos aikštelė"};
+            "Pakalniškių pažintinis takas"
+            };
 
 
     @Override
@@ -90,6 +92,8 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
                     }
                     index++;
                 }
+
+                
                 switch (whichOne-1){
                     case 0:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianJachklubasActivity.class);
@@ -111,15 +115,15 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
                         intent = new Intent(AllObjectsListActivity.this, LithuanianRegioninisActivity.class);//
                         startActivity(intent);
                         break;
-                    case 5:
+                    case 7:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianGastilioniuActivity.class);//
                         startActivity(intent);
                         break;
-                    case 6:
+                    case 5:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianMeilesActivity.class);//
                         startActivity(intent);
                         break;
-                    case 7:
+                    case 6:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianStovyklaActivity.class);//
                         startActivity(intent);
                         break;
@@ -135,31 +139,31 @@ public class AllObjectsListActivity extends Activity implements AdapterView.OnIt
                         intent = new Intent(AllObjectsListActivity.this, LithuanianKapitoniskiuActivity.class);//
                         startActivity(intent);
                         break;
-                    case 11:
+                    case 12:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianKruonioActivity.class);//
                         startActivity(intent);
                         break;
-                    case 12:
+                    case 13:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianZiglosActivity.class);//
                         startActivity(intent);
                         break;
-                    case 13:
+                    case 14:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianSkulpturuActivity.class);//
                         startActivity(intent);
                         break;
-                    case 14:
+                    case 15:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianZiegzdriuActivity.class);//
                         startActivity(intent);
                         break;
-                    case 15:
+                    case 16:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianLaumenuTakasActivity.class);//
                         startActivity(intent);
                         break;
-                    case 16:
+                    case 17:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianPakalniskiuActivity.class);
                         startActivity(intent);
                         break;
-                    case 17:
+                    case 11:
                         intent = new Intent(AllObjectsListActivity.this, LithuanianMergakalnioActivity.class);
                         startActivity(intent);
                         break;

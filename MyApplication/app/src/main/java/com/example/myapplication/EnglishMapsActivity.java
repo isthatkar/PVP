@@ -5,6 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.BlurMaskFilter;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,8 +30,15 @@ import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class EnglishMapsActivity extends AppCompatActivity implements OnMapReadyCallback {
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
+public class EnglishMapsActivity extends AppCompatActivity implements OnMapReadyCallback {
+    private static final String FILE_NAME = "example.txt";
     private ActivityMapsBinding binding;
     private GoogleMap map;
     Button searchButton;
@@ -33,7 +46,7 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1234;
     private boolean mLocationPermissionsGranted = false;
     LocationPermissions enableLocationPermissions = new LocationPermissions();
-
+    int[] intArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -194,7 +207,38 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
 
         googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.retrostyle));
     }
-
+    public Bitmap setBmp(int flag, Bitmap src) {
+        //makeSureNotZero();
+        countPoints();
+        if(getFlag(flag)==0)
+        {
+            // An added margin to the initial image
+            int margin = 24;
+            int halfMargin = margin / 2;
+            // the glow radius
+            int glowRadius = 20;
+            // the glow color
+            int glowColor = Color.rgb(0, 200, 0);
+            // The original image to use
+            // extract the alpha from the source image
+            Bitmap alpha = src.extractAlpha();
+            // The output bitmap (with the icon + glow)
+            Bitmap bmp = Bitmap.createBitmap(src.getWidth() + margin,
+                    src.getHeight() + margin, Bitmap.Config.ARGB_8888);
+            // The canvas to paint on the image
+            Canvas canvas = new Canvas(bmp);
+            Paint paint = new Paint();
+            paint.setColor(glowColor);
+            // outer glow
+            paint.setMaskFilter(new BlurMaskFilter(glowRadius, BlurMaskFilter.Blur.OUTER));
+            canvas.drawBitmap(alpha, halfMargin, halfMargin, paint);
+            // original icon
+            canvas.drawBitmap(src, halfMargin, halfMargin, null);
+            //((ImageView) findViewById(R.id.bmpImg)).setImageBitmap(bmp);
+            return bmp;
+        }
+        return src;
+    }
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -236,24 +280,24 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
         LatLng laumenuPazintinisTakas = new LatLng(54.863047, 24.043927);
         LatLng pakalniskiuPazintinisTakas = new LatLng(54.855207, 24.017669);
 
-        mMap.addMarker(new MarkerOptions().position(jachtklubas).title("Yach Club").icon(BitmapDescriptorFactory.fromResource(R.drawable.jachtklubasicon)));
-        mMap.addMarker(new MarkerOptions().position(pazaislis).title("Pažaislis monastery").icon(BitmapDescriptorFactory.fromResource(R.drawable.pazaislisicon)));
-        mMap.addMarker(new MarkerOptions().position(suneliskiuKalnas).title("Šuneliškės mountain").icon(BitmapDescriptorFactory.fromResource(R.drawable.suneliskiuicon)));
-        mMap.addMarker(new MarkerOptions().position(lakstingaluSlenis).title("Lakštingalos valley").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(kaunoMariuRegioninisParkas).title("Kauno marios regional park").icon(BitmapDescriptorFactory.fromResource(R.drawable.regioninisicon)));
-        mMap.addMarker(new MarkerOptions().position(meilesIlanka).title("Love bay").icon(BitmapDescriptorFactory.fromResource(R.drawable.loveicon)));
-        mMap.addMarker(new MarkerOptions().position(apleistaStovykla).title("Kauno marios abandoned camp").icon(BitmapDescriptorFactory.fromResource(R.drawable.apleistaicon)));
-        mMap.addMarker(new MarkerOptions().position(gastilioniuAtodanga).title("Gastilionai exposure").icon(BitmapDescriptorFactory.fromResource(R.drawable.suneliskiuicon)));
-        mMap.addMarker(new MarkerOptions().position(rumsiskiuMuziejus).title("Rumšiškės folk household museum").icon(BitmapDescriptorFactory.fromResource(R.drawable.liaudiesicon)));
-        mMap.addMarker(new MarkerOptions().position(rumsiskiuPrieplauka).title("Rumšiškės pier").icon(BitmapDescriptorFactory.fromResource(R.drawable.rumsiskiuicon)));
-        mMap.addMarker(new MarkerOptions().position(kapitoniskiuPazintinisTakas).title("Kapitoniškės cognitive path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(mergakalnis).title("Mergakalnis viewpoint").icon(BitmapDescriptorFactory.fromResource(R.drawable.mergakalnioicon)));
-        mMap.addMarker(new MarkerOptions().position(kruonioHAE).title("Kruonis hydroelectric power plant").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
-        mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žigla bay").icon(BitmapDescriptorFactory.fromResource(R.drawable.kruonioicon)));
-        mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų park").icon(BitmapDescriptorFactory.fromResource(R.drawable.skulpturuicon)));
-        mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrės path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnai cognitive path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
-        mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškės cognitive path").icon(BitmapDescriptorFactory.fromResource(R.drawable.lakstingaluicon)));
+        mMap.addMarker(new MarkerOptions().position(jachtklubas).title("Yach Club").icon(BitmapDescriptorFactory.fromBitmap(setBmp(0, BitmapFactory.decodeResource(getResources(),R.drawable.jachtklubasicon)))));
+        mMap.addMarker(new MarkerOptions().position(pazaislis).title("Pažaislis monastery").icon(BitmapDescriptorFactory.fromBitmap(setBmp(1,BitmapFactory.decodeResource(getResources(),R.drawable.pazaislisicon)))));
+        mMap.addMarker(new MarkerOptions().position(suneliskiuKalnas).title("Šuneliškės mountain").icon(BitmapDescriptorFactory.fromBitmap(setBmp(2,BitmapFactory.decodeResource(getResources(),R.drawable.suneliskiuicon)))));
+        mMap.addMarker(new MarkerOptions().position(lakstingaluSlenis).title("Lakštingalos valley").icon(BitmapDescriptorFactory.fromBitmap(setBmp(3,BitmapFactory.decodeResource(getResources(),R.drawable.lakstingaluicon)))));
+        mMap.addMarker(new MarkerOptions().position(kaunoMariuRegioninisParkas).title("Kauno marios regional park").icon(BitmapDescriptorFactory.fromBitmap(setBmp(4,BitmapFactory.decodeResource(getResources(),R.drawable.regioninisicon)))));
+        mMap.addMarker(new MarkerOptions().position(meilesIlanka).title("Love bay").icon(BitmapDescriptorFactory.fromBitmap(setBmp(5,BitmapFactory.decodeResource(getResources(),R.drawable.loveicon)))));
+        mMap.addMarker(new MarkerOptions().position(apleistaStovykla).title("Kauno marios abandoned camp").icon(BitmapDescriptorFactory.fromBitmap(setBmp(6,BitmapFactory.decodeResource(getResources(),R.drawable.apleistaicon)))));
+        mMap.addMarker(new MarkerOptions().position(gastilioniuAtodanga).title("Gastilionai exposure").icon(BitmapDescriptorFactory.fromBitmap(setBmp(7,BitmapFactory.decodeResource(getResources(),R.drawable.suneliskiuicon)))));
+        mMap.addMarker(new MarkerOptions().position(rumsiskiuMuziejus).title("Rumšiškės folk household museum").icon(BitmapDescriptorFactory.fromBitmap(setBmp(8,BitmapFactory.decodeResource(getResources(),R.drawable.liaudiesicon)))));
+        mMap.addMarker(new MarkerOptions().position(rumsiskiuPrieplauka).title("Rumšiškės pier").icon(BitmapDescriptorFactory.fromBitmap(setBmp(9,BitmapFactory.decodeResource(getResources(),R.drawable.rumsiskiuicon)))));
+        mMap.addMarker(new MarkerOptions().position(kapitoniskiuPazintinisTakas).title("Kapitoniškės cognitive path").icon(BitmapDescriptorFactory.fromBitmap(setBmp(10,BitmapFactory.decodeResource(getResources(),R.drawable.lakstingaluicon)))));
+        mMap.addMarker(new MarkerOptions().position(mergakalnis).title("Mergakalnis viewpoint").icon(BitmapDescriptorFactory.fromBitmap(setBmp(11,BitmapFactory.decodeResource(getResources(),R.drawable.mergakalnioicon)))));
+        mMap.addMarker(new MarkerOptions().position(kruonioHAE).title("Kruonis hydroelectric power plant").icon(BitmapDescriptorFactory.fromBitmap(setBmp(12,BitmapFactory.decodeResource(getResources(),R.drawable.kruonioicon)))));
+        mMap.addMarker(new MarkerOptions().position(zigosIlanka).title("Žigla bay").icon(BitmapDescriptorFactory.fromBitmap(setBmp(13,BitmapFactory.decodeResource(getResources(),R.drawable.kruonioicon)))));
+        mMap.addMarker(new MarkerOptions().position(skulpturuParkas).title("Skulptūrų park").icon(BitmapDescriptorFactory.fromBitmap(setBmp(14,BitmapFactory.decodeResource(getResources(),R.drawable.skulpturuicon)))));
+        mMap.addMarker(new MarkerOptions().position(ziegzdzriuTakas).title("Žiegždrės path").icon(BitmapDescriptorFactory.fromBitmap(setBmp(15,BitmapFactory.decodeResource(getResources(),R.drawable.lakstingaluicon)))));
+        mMap.addMarker(new MarkerOptions().position(laumenuPazintinisTakas).title("Laumėnai cognitive path").icon(BitmapDescriptorFactory.fromBitmap(setBmp(17,BitmapFactory.decodeResource(getResources(),R.drawable.lakstingaluicon)))));
+        mMap.addMarker(new MarkerOptions().position(pakalniskiuPazintinisTakas).title("Pakalniškės cognitive path").icon(BitmapDescriptorFactory.fromBitmap(setBmp(18,BitmapFactory.decodeResource(getResources(),R.drawable.lakstingaluicon)))));
 
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
@@ -339,7 +383,118 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
         });
     }
 
+    public int countPoints(){
+        FileInputStream fis = null;
+        String text3="";
+        StringBuilder sb = new StringBuilder();
+        try {
 
+            File file = new File(getApplicationContext().getFilesDir(),FILE_NAME);
+            if(file.exists())
+            {
+                fis = openFileInput(FILE_NAME);
+                InputStreamReader isr = new InputStreamReader(fis);
+                BufferedReader br = new BufferedReader(isr);
+
+                String text;
+
+                while ((text = br.readLine()) != null)
+                {
+                    sb.append(text).append("\n");
+                }
+                String text2=sb.toString();
+                text2 = text2.replaceAll("\n", "");
+                String[]arrOfStr = text2.split(";", 0);
+                intArray=new int[arrOfStr.length];
+                for(int i=0;i<arrOfStr.length;i++)
+                {
+                    intArray[i]=Integer.parseInt(arrOfStr[i]) ;
+                }
+            }
+            else {
+                intArray=new int[19];
+                for(int i=0;i<intArray.length;i++)
+                {
+                    intArray[i]=0;
+                }
+            }
+
+            for(int i=0;i<intArray.length;i++)
+            {
+                text3+=Integer.toString(intArray[i])+";";
+            }
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        int pointsCounter=0;
+        for(int i=0;i<intArray.length;i++)
+        {
+            pointsCounter+=intArray[i];
+        }
+        return pointsCounter;
+    }
+    public int getFlag(int object) {
+        FileInputStream fis = null;
+        StringBuilder sb = new StringBuilder();
+        try {
+            File file = new File(getApplicationContext().getFilesDir(),FILE_NAME);
+            if(file.exists())
+            {
+                fis = openFileInput(FILE_NAME);
+                InputStreamReader isr = new InputStreamReader(fis);
+                BufferedReader br = new BufferedReader(isr);
+
+                String text;
+
+                while ((text = br.readLine()) != null)
+                {
+                    sb.append(text).append("\n");
+                }
+                String text2=sb.toString();
+                text2 = text2.replaceAll("\n", "");
+                String[]arrOfStr = text2.split(";", 0);
+                intArray=new int[arrOfStr.length];
+                for(int i=0;i<arrOfStr.length;i++)
+                {
+                    intArray[i]=Integer.parseInt(arrOfStr[i]) ;
+                }
+            }
+            else {
+                intArray = new int[19];
+                for (int i = 0; i < intArray.length; i++) {
+                    intArray[i] = 0;
+                }
+            }
+
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return intArray[object];
+    }
 
 
 }
