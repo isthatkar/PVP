@@ -53,7 +53,7 @@ public class EnglishVisitedCounterActivity extends AppCompatActivity {
         {
             objects.setVisibility(View.GONE);
         }
-        objects.setText("My visited objects:\n"+ text);
+        objects.setText("\n"+ text);
 
     }
     public void makeSureNotZero() {
@@ -93,7 +93,7 @@ public class EnglishVisitedCounterActivity extends AppCompatActivity {
     }
     public void setPoints(){
         TextView points = (TextView)  findViewById(R.id.textView_points);
-        points.setText("My Points: "+ Integer.toString(countPoints()));
+        points.setText("You have "+ Integer.toString(countPoints()) + " points");
     }
 
     public int countPoints(){

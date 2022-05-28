@@ -366,7 +366,7 @@ public class LithuanianMapsActivity extends FragmentActivity implements OnMapRea
                 // the glow radius
                 int glowRadius = 20;
                 // the glow color
-                int glowColor = Color.rgb(255, 0, 0);
+                int glowColor = Color.rgb(64, 51, 255);
                 // The original image to use
                 // extract the alpha from the source image
                 Bitmap alpha = src.extractAlpha();

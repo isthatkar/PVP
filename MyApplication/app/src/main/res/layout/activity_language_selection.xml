@@ -3,33 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newappbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/boatwithouttext"
     tools:context=".LanguageSelection">
 
-    <Button
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/languageLithuanian"
+        style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="300dp"
-        android:layout_height="80dp"
-        style="?android:attr/borderlessButtonStyle"
+        android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
-        android:text="Lietuvių"
         android:layout_marginBottom="20dp"
-        android:textSize="28dp"
-        android:backgroundTint="@color/black"/>
+        android:text="Lietuvių"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:backgroundTint="#4033b5" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/languageEnglish"
+        style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="300dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_marginTop="20dp"
-        android:textSize="28dp"
-        style="?android:attr/borderlessButtonStyle"
         android:layout_below="@+id/languageLithuanian"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/black"
-        android:text="English" />
+        android:text="English"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:backgroundTint="#4033b5"/>
 
 
 </RelativeLayout>

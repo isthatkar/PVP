@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newappbackground"
+    android:background="@drawable/manotaskai"
     tools:context=".LithuanianVisitedCounterActivity">
 
     <Button
@@ -37,20 +37,32 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button_save"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="150dp"
         android:textStyle="bold"
         android:textSize="25dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:text="Mano taškai:" />
+
     <TextView
-        android:id="@+id/textView_objects"
+        android:id="@+id/aaa"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:layout_below="@+id/textView_points"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
-        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Mano aplankyti objektai:\n\n" />
+
+    <TextView
+        android:id="@+id/textView_objects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aaa"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/black"
         android:text="Mano aplankyti objektai:\n\n" />
 
     <Button
@@ -64,7 +76,7 @@
         android:layout_marginBottom="18dp"
         android:onClick="reset"
         style="?android:attr/borderlessButtonStyle"
-        android:text="| Ištrinkite sąrašą |" />
+        android:text="Ištrinti taškus" />
 
 
 </RelativeLayout>

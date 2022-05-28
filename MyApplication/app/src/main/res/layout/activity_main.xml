@@ -3,54 +3,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newappbackground"
+    android:background="@drawable/boatwithlttext"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LithuanianMainActivity">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.IconButton"
+        app:icon="@android:drawable/ic_dialog_map"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:backgroundTint="#4033b5"
         android:id="@+id/mapsButton"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:textStyle="bold"
-        android:layout_marginTop="230dp"
-        android:textSize="28dp"
+        android:layout_marginTop="180dp"
         android:text="Žemėlapis" />
 
-    <Button
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.IconButton"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:backgroundTint="#4033b5"
         android:id="@+id/contactButton"
-        android:layout_width="150dp"
-        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="460dp"
-        android:textSize="20dp"
+        android:layout_marginTop="420dp"
+        android:text="Kontaktai"
+        android:textSize="20dp" />
 
-        android:text="Kontaktai" />
-
-    <Button
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.IconButton"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:backgroundTint="#4033b5"
         android:id="@+id/myPointsButton"
-        android:layout_width="150dp"
-        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="390dp"
-        android:textSize="20dp"
-        android:text="Taškai" />
+        android:layout_marginTop="350dp"
+        android:text="Taškai"
+        android:textSize="20dp" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.IconButton"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        app:backgroundTint="#4033b5"
         android:id="@+id/allObjectsButton"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="50dp"
-        android:textSize="20dp"
-
-        style="?android:attr/borderlessButtonStyle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="315dp"
-        android:text="Objektai" />
+        android:layout_marginTop="270dp"
+        android:text="Objektai"
+        android:textSize="20dp" />
 
 </RelativeLayout>

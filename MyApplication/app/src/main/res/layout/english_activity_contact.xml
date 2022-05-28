@@ -6,27 +6,14 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:background="@drawable/aboutuseng"
     android:fillViewport="false">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         tools:context=".EnglishContactActivity">
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30px"
-            android:text="ABOUT US"
-            android:shadowColor="#000000"
-            android:shadowDx="1.5"
-            android:shadowDy="1.3"
-            android:shadowRadius="1.6"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="40dp"></TextView>
+
 
         <TextView
             android:id="@+id/textView2"
@@ -37,13 +24,12 @@
             android:shadowRadius="1.6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView1"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="150dp"
             android:text="„Virtualus Kauno marių gidas“. The app is designed to acquaint you with the sights in the Kaunas Lagoon region
 objects, to provide interesting and up-to-date information about them. Our main goal is to make people spend as much time as possible
 in the nature of Lithuania, and if the flame of Lithuanian love in your hearts goes out, let it ignite again!♥ "
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15dp"></TextView>
 
         <TextView
@@ -58,7 +44,7 @@ in the nature of Lithuania, and if the flame of Lithuanian love in your hearts g
             android:layout_centerHorizontal="true"
             android:text="\n Developers:"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"></TextView>
 
         <TextView
@@ -73,7 +59,7 @@ in the nature of Lithuania, and if the flame of Lithuanian love in your hearts g
             android:layout_centerHorizontal="true"
             android:text=" Rokas Sičiovas \nRugilė Karengaitė \nMarius Jasiūnas \nAistė Rybinaitė"
             android:textAlignment="center"
-            android:textColor="@color/white"></TextView>
+            android:textColor="@color/black"></TextView>
 
         <TextView
             android:id="@+id/textView3"
@@ -86,14 +72,13 @@ in the nature of Lithuania, and if the flame of Lithuanian love in your hearts g
             android:layout_below="@id/textView5"
             android:text="Kaunas University of Technology helped to develop the product. Mentor - doc. Lagzdinytė-Budnikė Ingrida"
             android:textAlignment="center"
-            android:textColor="@color/white"></TextView>
+            android:textColor="@color/black"></TextView>
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="300px"
             android:layout_below="@id/textView3"
             android:layout_alignParentBottom="true"
-            android:layout_marginTop="30dp"
             android:layout_marginBottom="50dp"
             android:padding="0px"
             android:paddingBottom="0px"

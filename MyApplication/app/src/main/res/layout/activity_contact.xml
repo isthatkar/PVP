@@ -6,27 +6,14 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:background="@drawable/apiemuslt"
     android:fillViewport="false">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         tools:context=".LithuanianContactActivity">
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30px"
-            android:text="APIE MUS"
-            android:shadowColor="#000000"
-            android:shadowDx="1.5"
-            android:shadowDy="1.3"
-            android:shadowRadius="1.6"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="40dp"></TextView>
+
 
         <TextView
             android:id="@+id/textView2"
@@ -37,13 +24,12 @@
             android:shadowRadius="1.6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView1"
-            android:layout_marginTop="22dp"
+            android:layout_marginTop="140dp"
             android:text="„Virtualus Kauno marių gidas“. Programėlė skirta supažindinti Jus su Kauno marių regione esančiais lankytinais
 objektais, suteikti įdomios ir naujausios informacijos apie juos. Svarbiausias mūsų tikslas, jog kuo daugiau laiko
 praleistumėte Lietuvos gamtoje, o jei Lietuvos meilės liepsna Jūsų širgyje prigesus, tegul ji vėl užsidega!♥ "
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="15dp"></TextView>
 
         <TextView
@@ -58,7 +44,7 @@ praleistumėte Lietuvos gamtoje, o jei Lietuvos meilės liepsna Jūsų širgyje 
             android:layout_centerHorizontal="true"
             android:text="\n Programėlės kūrėjai:"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"></TextView>
 
         <TextView
@@ -73,7 +59,7 @@ praleistumėte Lietuvos gamtoje, o jei Lietuvos meilės liepsna Jūsų širgyje 
             android:layout_centerHorizontal="true"
             android:text=" Rokas Sičiovas \nRugilė Karengaitė \nMarius Jasiūnas \nAistė Rybinaitė"
             android:textAlignment="center"
-            android:textColor="@color/white"></TextView>
+            android:textColor="@color/black"></TextView>
 
         <TextView
             android:id="@+id/textView3"
@@ -86,9 +72,10 @@ praleistumėte Lietuvos gamtoje, o jei Lietuvos meilės liepsna Jūsų širgyje 
             android:layout_below="@id/textView5"
             android:text="Produktą vystyti padėjo Kauno Technologijos Universitetas. Mentorius - doc. Lagzdinytė-Budnikė Ingrida"
             android:textAlignment="center"
-            android:textColor="@color/white"></TextView>
+            android:textColor="@color/black"></TextView>
 
 p
+
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
