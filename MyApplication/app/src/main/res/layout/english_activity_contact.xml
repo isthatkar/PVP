@@ -5,7 +5,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:paddingTop="150dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
     android:background="@drawable/aboutuseng"
     android:fillViewport="false">
 
@@ -24,7 +26,6 @@
             android:shadowRadius="1.6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
             android:text="„Virtualus Kauno marių gidas“. The app is designed to acquaint you with the sights in the Kaunas Lagoon region
 objects, to provide interesting and up-to-date information about them. Our main goal is to make people spend as much time as possible
 in the nature of Lithuania, and if the flame of Lithuanian love in your hearts goes out, let it ignite again!♥ "
@@ -78,11 +79,22 @@ in the nature of Lithuania, and if the flame of Lithuanian love in your hearts g
             android:layout_width="wrap_content"
             android:layout_height="300px"
             android:layout_below="@id/textView3"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="20dp"
             android:padding="0px"
-            android:paddingBottom="0px"
             app:srcCompat="@drawable/ktu"></ImageView>
+
+        <Button
+            android:id="@+id/button_saltiniai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="See info sources" />
 
     </RelativeLayout>
 </ScrollView>

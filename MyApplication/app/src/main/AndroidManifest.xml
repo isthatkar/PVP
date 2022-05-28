@@ -102,6 +102,12 @@
             android:name=".EnglishMainActivity"
             android:exported="true" />
         <activity
+            android:name=".EnglishSourcesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LithuanianSourcesActivity"
+            android:exported="true" />
+        <activity
             android:name=".LithuanianVisitedCounterActivity"
             android:exported="true" />
         <activity
