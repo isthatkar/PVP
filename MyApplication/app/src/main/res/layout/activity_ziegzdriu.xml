@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,16 +19,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
             android:layout_centerHorizontal="true"
             android:text="ŽIEGŽDRIŲ PAŽINTINIS TAKAS" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -85,13 +86,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/ziegzdriuFaktai"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Tai vienintelė vieta Lietuvoje, kur galima rasti varvančio vandens suformuotų uolienų varveklių ir piršto storumo stalaktitų. Atodangos ilgis siekia net 400 m., o aukštis - 22 m. Žiegždrių pažintiniame take pastebėsite ir storiausią Kauno marių apylinkėse šimtametę liepą, jos storis 4,3m." />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -103,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -135,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -148,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -156,14 +159,16 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:layout_below="@id/ziegzdriuIstorija"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Takas apjungia du valstybės saugomus gamtos paveldo objektus – Kalniškių konglomerato ir Žiegždrių atodangas. Tako ilgis į vieną pusę – 1,6 km. Takas nėra žiedinis, tad teks keliauti pirmyn atgal. Nenorėdami grįžti tuo pačiu maršrutu, galite keliauti keliu per gyvenvietę arba, kai palankios oro ir hidrologinės sąlygos – bristi pamariu." />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -173,7 +178,7 @@
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="PRAMOGOS"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
@@ -183,7 +188,9 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Iš poilsio aikštelių galima išvysti Vieškūnų piliakalnį, Palemoną, Pažaislio vienuolyno bokštus, Kalniškių konglomerato atodanga (Konglomeratas – tai nuo ledynmečio gamtos suformuotas cementas iš kalkių, molio, žvyro ir gargždo.)
 Pramogos vaikams bus garantuotos keliaujant Žiegždrių pažintiniu taku, nes yra įrengtos dėlionės apie vietos augalus, paukštelius ir kitus gamtos turtus.
 "
@@ -191,20 +198,26 @@ Pramogos vaikams bus garantuotos keliaujant Žiegždrių pažintiniu taku, nes y
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView11"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/ziegzdriutakas5" />
 
-        <Button
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint15"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
     </RelativeLayout>

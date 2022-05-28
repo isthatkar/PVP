@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -22,13 +22,14 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="PAKALNIŠKIŲ PAŽINTINIS TAKAS" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="700px"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -84,13 +85,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/pakalniskiuFaktai"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Vaikščiodami pakalniškių pažintiniu taku rasite piliakalnį kurį supylė senovės lietuviai. Pasak sklandančios legendos ant jo stovėjo Nemuno žemių slėnio valdovo Vaišvydo medinė pilis, ilgus amžius gynusi ir saugojusi šią vietovę nuo priešų. Nemuno slėnyje  gyveno Vaišvydo valdiniai. Tačiau priešai, išdavikų padedami, pilį visiškai sugriovė ir ji nebebuvo atstatyta." />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -102,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -134,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -147,7 +150,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -156,13 +159,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pakalniskiuIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Pakalniškių pažintinio tako ilgis siekia 3 kilometrus, nuo kurio atsiveria vaizdas i Kauno marias, Pažaislio panorama ir Kauno hidroelektrinė." />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -173,7 +178,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView4"/>
@@ -182,27 +187,35 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Aplink pakalniškių pažintinį taką yra nemaža dalis lankytinų objektų: Žiegždrių atodanga, pelkės, Pažaislio vienuolynas, Kruonio HAE, Laumėnų parkas ir pažintinis takas.
 Pačiame pakalniškių pažintiniame take, pramogas teks susigalvoti pačiam, bet jei esate žvejybos mėgėjas, nusileidę prie vandens, tikrai sutiksite žvejų besidžiaugiančiu savo laimikiu."
             android:layout_below="@id/textView10"/>
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="600px"
             android:layout_below="@id/textView11"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/pakalniskiupazintinistakas6" />
 
-        <Button
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint18"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
 

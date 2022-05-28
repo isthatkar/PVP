@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/newappbackground"
-    android:padding="10dp"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -22,7 +22,7 @@
             android:layout_marginTop="30px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="KAUNO MARIŲ REGIONINIS PARKAS" />
 
         <LinearLayout
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai1PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai1PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai2PlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -109,7 +109,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisFaktai2PlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -119,13 +119,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/regioninisFaktai2"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Kauno marių regioninis parkas pasižymi didele biologine įvairove. Čia yra vienintelė mūsų krašto vieta, kur trijose augavietėse dar aptinkama griežtai saugoma rūšis – gauruotasis gvazdikas. Rumšiškių miško pušis ir Žiglos maumedis yra storiausi tos rūšies medžiai Lietuvoje. Čia galima išvysti retų rūšių gyvūnų, paukščių, augalų, grybų: didžiųjų miegapelių, tulžių, krokinių minkštenių, niūraspalvių auksavabalių, kūdrinių pelėausių. Apsilankius šioje vaizdingoje Lietuvos dalelėje, norėsis grįžti dar ne kartą. Kauno marių regioninis parkas unikalus savo istorine patirtimi ir išraiškingu kraštovaizdžiu, kurį formuoja marių vandenys su pusamžiais miškais virtusiomis apsauginių želdinių juostomis ir išlikusiais sengirių ploteliais, neįsivaizduojamas be mariose baltuojančių jachtų, puošnių Pažaislio bažnyčios bokštų bei aukštų stačiašlaičių pakrančių. Kauno marių vanduo virš jūros lygio pakilęs 44 metrus, o aukščiausia parko vieta Pastrėvio miške – 93 m virš jūros lygio. Plačiausioje vietoje marios siekia 3,3 km, o siauriausioje – 0,3 km. Giliausia Kauno marių vieta siekia 22 metrus, o bendras pakrančių ilgis (iki Balbieriškio) – 200 km." />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="750px"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -138,7 +140,8 @@
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
             android:textSize="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
             />
 
@@ -169,7 +172,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -182,7 +185,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/regioninisIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -192,7 +195,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/regioninisIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Kauno marių regioninis parkas įsteigtas Lietuvos Respublikos Aukščiausiosios Tarybos 1992 m. rugsėjo 24 d. nutarimu, siekiant išsaugoti unikalų Kauno marių tvenkinio kraštovaizdžio kompleksą, didžiąsias atodangas, užlietas Nemuno intakų žiotis, unikalų Pažaislio vienuolyno architektūrinį kompleksą, Kauno marių gamtinės ekosistemos stabilumą, biotos komponentus, ypač vertingą Gastilionių mišką su miegapelių populiacija bei kultūros paveldo vertybes, jas tvarkyti ir racionaliai naudoti. Regioninio parko paskirtis nustatyta Lietuvos Respublikos Vyriausybės 1999 m. balandžio 29 d. nutarimu Nr. 490 „Dėl regioninių parkų nuostatų patvirtinimo“.
 Daugiau nei prieš 50 metų atsiradusios Kauno marios – didžiuliu tvenkiniu virtusi Nemuno dalis, unikalus gamtos ir žmogaus kūrinys, gausus atodangų ir užtvindytų upelių slėnių – fiordų. Marios tarsi į vieną virtinę suvėrė daugybę įspūdingų gamtos bei kultūros paveldo objektų – šie traukia lankytojų akį ir žadina smalsumą.
 " />
@@ -203,14 +208,16 @@ Daugiau nei prieš 50 metų atsiradusios Kauno marios – didžiuliu tvenkiniu v
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
             android:textSize="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textView8"/>
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:layout_height="wrap_content"
             android:text="Kauno marios – vienas tinkamiausių vandens telkinių Lietuvoje mėgstantiems buriuoti bei plaukioti motorinėmis valtimis. Galima pasinaudoti Kauno „Žalgirio“ jachtų klubo paslaugomis, čia organizuojami pramoginiai plaukiojimai jachtomis, kateriais, mokoma buriuoti. Daugiausia tinkamų poilsiauti bei maudytis pakrančių yra žemutinėje marių dalyje – Pažaislio pusiasalyje, ties Jakštonimis, Grabučiškėmis, Girionimis. Pasistatyti palapinę ar susikurti laužą galima Duobkalnio, Laumėnų, Samylų, Rumšiškių poilsiavietėse."
             android:layout_below="@id/textView10"/>
@@ -221,7 +228,7 @@ Daugiau nei prieš 50 metų atsiradusios Kauno marios – didžiuliu tvenkiniu v
             android:layout_height="wrap_content"
             android:text="ARTĖJANTYS RENGINIAI"
             android:textSize="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textView11"/>
 
@@ -229,16 +236,24 @@ Daugiau nei prieš 50 metų atsiradusios Kauno marios – didžiuliu tvenkiniu v
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Šiuo metu renginių nevyksta, bet vyksta edukacijos ir ekskursijos."
             android:layout_below="@id/textView12"/>
-        <Button
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint4"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView13"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
     </RelativeLayout>

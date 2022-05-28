@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,10 +19,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
             android:text="LAUMĖNŲ PAŽINTINIS TAKAS" />
 
         <ImageView
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -84,7 +85,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30px"
             android:layout_below="@id/laumenuPazintinisFaktai"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Keliaudami trasa turėsite galimybę stebėti Kauno marių ardomas pakrantes, grožėsitės atodangomis ir vaizdais nuo jų, o jei pasiseks – vasaros metu galėsite pastebėti palei pakrantes zujančius retus pakrančių gyventojus – tulžius. Taip pat atodangose įsikurti mėgsta urvinės kregždės – atodangose jų išrausti ištisi daugiabučiai." />
 
         <ImageView
@@ -102,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:text="ISTORIJA"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -135,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -148,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/laumenuPazintinisIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -157,7 +160,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/laumenuPazintinisIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Laumėnų pažintinis takas, tai laukinė trasa mišku. Keliaudami šia trasa turėtumėte vadovautis ženklinimu ant medžių, kad neišklysti iš kelio.
 Keliaudami trasa, taip pat prieisite ir “Laumėnų parką”, nuo kurio atsiveria nepakartojamas vaizdas į Kauno marias..
 Trasa patogiausia pradėti keliauti nuo Girionių poilsiavietės, o jos pabaigoje prieisite Žiegždrių geologinį taką. Trasos ilgis į vieną pusę sudaro 4,3km.
@@ -177,7 +182,7 @@ Trasa patogiausia pradėti keliauti nuo Girionių poilsiavietės, o jos pabaigoj
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/imageView4"/>
@@ -186,16 +191,24 @@ Trasa patogiausia pradėti keliauti nuo Girionių poilsiavietės, o jos pabaigoj
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Laumėnų poilsiavietė, Žiegždrių geologinis takas, Girionių poilsiavietė"
             android:layout_below="@id/textView10"/>
-        <Button
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint16"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView11"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
     </RelativeLayout>

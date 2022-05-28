@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,37 +19,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:text="RUMŠIŠKIŲ PRIEPLAUKA" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:layout_marginTop="15dp"
             android:layout_below="@id/textView6"
             android:padding="5px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/rumsiskiuprieplauka2" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
-            android:layout_below="@id/imageView3"
-            android:padding="5px"
-            android:paddingBottom="0px"
-            app:srcCompat="@drawable/rumsiskiuprieplauka" />
-
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView2"
+            android:layout_below="@id/imageView3"
             android:text="ISTORIJA"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
             android:textSize="20dp"
             android:layout_centerHorizontal="true"
             />
@@ -81,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/prieplaukaIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -94,7 +87,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/prieplaukaIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -103,13 +96,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/prieplaukaIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="2017 metais buvo patvirtintas Lietuvos Respublikos planas įrengti Rumšiškių prieplauką." />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -121,15 +116,18 @@
             android:layout_height="wrap_content"
             android:text="PRAMOGOS"
             android:textSize="20dp"
+            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_below="@id/imageView4"/>
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Yra medinis takelis, kuris nuveda prie Rumšiškių prieplaukos/poilsiavietės. Yra medinis lieptas, nuo kurio galima maudytis, poilsiauti, pažvejoti. Galimas priplaukimas laivu."
             android:layout_below="@id/textView10"/>
 
@@ -139,34 +137,42 @@
             android:layout_height="wrap_content"
             android:text="ARTĖJANTYS RENGINIAI"
             android:textSize="20dp"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/textView11"/>
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:layout_height="wrap_content"
             android:text="Renginių nevyksta šiuo metu, bet žmonės atvyksta darytis vestuvių, krikštynų ar kitų progų fotosesijas."
             android:layout_below="@id/textView12"/>
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
             android:layout_below="@id/textView13"
             android:padding="0px"
             android:paddingBottom="0px"
+            android:layout_marginBottom="10dp"
             app:srcCompat="@drawable/rumsiskiuprieplauka4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint9"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="Esu objekto teritorijoje!"
             android:visibility="gone" />
     </RelativeLayout>
