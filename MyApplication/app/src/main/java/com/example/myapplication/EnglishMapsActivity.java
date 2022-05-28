@@ -206,6 +206,8 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
         enableLocationPermissions.enableLocation(map,this);
 
         googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.retrostyle));
+        float zoomLevel = 10.7f; //This goes up to 21
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(54.858654, 24.114648), zoomLevel));
     }
     public Bitmap setBmp(int flag, Bitmap src) {
         //makeSureNotZero();
