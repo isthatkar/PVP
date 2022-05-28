@@ -210,7 +210,7 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
     public Bitmap setBmp(int flag, Bitmap src) {
         //makeSureNotZero();
         countPoints();
-        if(getFlag(flag)==0)
+        if(getFlag(flag)==1)
         {
             // An added margin to the initial image
             int margin = 24;
@@ -218,7 +218,7 @@ public class EnglishMapsActivity extends AppCompatActivity implements OnMapReady
             // the glow radius
             int glowRadius = 20;
             // the glow color
-            int glowColor = Color.rgb(0, 200, 0);
+            int glowColor = Color.rgb(255, 0, 0);
             // The original image to use
             // extract the alpha from the source image
             Bitmap alpha = src.extractAlpha();
