@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,37 +19,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
             android:text="RUMŠIŠKĖS PORT" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
             android:layout_below="@id/textView6"
             android:padding="5px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/rumsiskiuprieplauka2" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
-            android:layout_below="@id/imageView3"
-            android:padding="5px"
-            android:paddingBottom="0px"
-            app:srcCompat="@drawable/rumsiskiuprieplauka" />
-
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView2"
+            android:layout_below="@id/imageView3"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -80,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/prieplaukaIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -93,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/prieplaukaIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -102,13 +94,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/prieplaukaIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="In 2017, the plan of the Republic of Lithuania to install the Rumšiškės pier was approved." />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -120,7 +114,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -129,7 +123,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="There is a wooden track that leads to the Rumšiškės pier/resort. There is a wooden linden from which you can swim, rest, fish. Possibly by boat." />
 
         <TextView
@@ -139,7 +135,7 @@
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
             android:text="UPCOMING EVENTS"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
         <TextView
@@ -147,25 +143,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="There are no events at the moment, but people come to do weddings, christenings or other photo shoots." />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView13"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/rumsiskiuprieplauka4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint9"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>

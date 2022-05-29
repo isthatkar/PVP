@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,16 +19,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
             android:text="SCULPTURE PARK" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -84,13 +85,15 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/skulpturuFaktai"
             android:layout_marginTop="30px"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="These are the stories of the villages flooded by kaunas lagoon, which are reborn in sculptures. This area is also called Lithuanian Atlantis, because due to the construction of a hydroelectric power plant under water, dozens of villages and almost 700 homesteads were buried under water. A unique park is now being created in this place, where visitors are waiting for surprises." />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -102,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -133,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -146,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/skulpturuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -155,13 +158,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/skulpturuIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="This area is also called Lithuanian Atlantis. 62 years ago, due to the construction of a hydroelectric power plant, 35 villages, in total about 700 homesteads, were flooded with water. All their inhabitants had to move out, drive out the animals and create a new life. mowers, a church bell tower, various animals, plants emerge from the water. All sculptures are carved with gasoline saws." />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -172,7 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
@@ -182,7 +187,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Nearby Laumėnai Resort, Žiegždriai Geological Trail, Girioniai Resort, Laumėnai Cognitive Trail" />
 
         <TextView
@@ -191,7 +198,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="EVENTS"
             android:textSize="20dp" />
 
@@ -200,26 +207,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="In 2020, there was an event &quot;getting out of the water&quot;" />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView13"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/skulpturuparkas6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint14"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
-            android:text="I am near the objet!"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>
 </ScrollView>

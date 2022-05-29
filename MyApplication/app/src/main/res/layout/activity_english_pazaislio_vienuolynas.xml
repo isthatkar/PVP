@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,16 +19,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp"
             android:text="PAŽAISLIS MONASTERY" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -83,7 +84,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pazaislioFaktai"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:layout_marginTop="30px"
             android:text="The ensemble is considered one of the best examples of mature baroque in Northern and Eastern Europe. It is one of the two surviving monasteries and church ensembles in Lithuania (the other in Tytuvėnai). The main buildings are grouped symmetrically along the longitudinal composite west-east axis along which the buildings are located (forester, office, monastery, hermitage).
 The most important accent of the ensemble is the church. It is a baroque, Latin cross plan, with a hexagonal dome 53 m high (with lantern and cross). There is a sundial on the south façade. Monastery buildings (together with galleries) 1-2 floors. Their walls are plastered, the edges of the windows and doors are gray sandstone. The main territory of the ensemble is surrounded by a 2.5 m high solid masonry fence covered with tiles. The plan of the complex is reminiscent of the coat of arms of the Camaldolese monks - two pigeons drinking from one cup.
@@ -91,8 +94,8 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -104,7 +107,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -135,7 +138,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -148,7 +151,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
                 android:layout_height="wrap_content"
                 android:id="@+id/pazaislioIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -157,13 +160,15 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pazaislioIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="The ensemble of Pažaislis Church and Monastery was built in the 17th-18th centuries. In the foundation of the Grand Chancellor of the Grand Duchy of Lithuania Kristupas Zigmantas Pacas. 1660 he applied to the command of the Camaldolese Order in Rome, promising in writing to finance the construction of a monastery and a church in Lithuania. Soon after receiving the blessing of the highest ecclesiastical leadership, together with the architect and several monks of the Camielian Baldian in Krakow, near Kaunas, they found a suitable place for the planned monastery - Pažaislis. The founder bought this beautiful wooded area from Kaunas Land Judge Samuel Oborskis and named it the Hill of Peace (Mons Pacis)." />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -176,7 +181,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
         <TextView
@@ -184,7 +189,9 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="The monastery hosts educational programs, expositions and guided tours." />
 
         <TextView
@@ -193,7 +200,7 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_height="wrap_content"
             android:layout_below="@id/textView11"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="COMING SOON"
             android:textSize="20dp" />
 
@@ -202,26 +209,35 @@ The most important accent of the ensemble is the church. It is a baroque, Latin 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView12"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Pažaislis music festival, concerts." />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView13"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/pazaisliovienuolynas6" />
 
-        <Button
+
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint1"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
-            android:text="I am near object!"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="I am near the object!"
             android:visibility="gone" />
 
     </RelativeLayout>

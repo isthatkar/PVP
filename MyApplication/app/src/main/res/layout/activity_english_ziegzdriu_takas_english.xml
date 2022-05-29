@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,16 +19,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="15dp"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="ŽIEGŽDRĖS EDUCATIONAL TRAIL" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -84,14 +85,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ziegzdriuFaktai"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:layout_marginTop="30px"
             android:text="It is the only place in Lithuania where you can find rock icicles formed by dripping water and stalactites of finger thickness. The length of the outcrop reaches as much as 400 m. and the height is 22 m. On the Žiegždriai cognitive trail you will notice the thickest 100-year-old linden in the vicinity of kaunas lagoon, its thickness is 4.3m." />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -103,7 +106,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -134,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -147,7 +150,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/ziegzdriuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -156,15 +159,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ziegzdriuIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="The trail combines two state-protected natural heritage objects – kalniškės conglomerate and Žiegždriai outcrop. The length of the trail to one side is 1.6 km. The trail is not circular, so you will have to go back and forth. If you do not want to return on the same route, you can travel by road through the settlement or, in case of favorable weather and hydrological conditions, take the seaside.
 From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pažaislis monastery towers, the outcrop of kalniškės conglomerate (The conglomerate is cement formed from the nature of the Ice Age from lime, clay, gravel and gargždas.) Entertainment for children will be guaranteed when travelling along the Žiegždriai cognitive trail, as puzzles about local plants, birds and other natural resources are installed.
 " />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -175,7 +180,7 @@ From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pa�
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
@@ -185,25 +190,32 @@ From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pa�
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="From the recreation grounds you can see the Mound of Vieškūnai, Palemonas, pažaislis monastery towers, the outcrop of kalniškės conglomerate (The conglomerate is cement formed from the nature of the Ice Age from lime, clay, gravel and gargždas.) Entertainment for children will be guaranteed when travelling along the Žiegždriai cognitive trail, as puzzles about local plants, birds and other natural resources are installed." />
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
             android:layout_below="@id/textView11"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/ziegzdriutakas5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint15"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>
