@@ -30,11 +30,11 @@
         app:backgroundTint="#4033b5"
         android:id="@+id/contactButton"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="420dp"
-        android:text="Kontaktai"
+        android:text="Apie"
         android:textSize="20dp" />
 
     <com.google.android.material.button.MaterialButton
@@ -44,7 +44,7 @@
         app:backgroundTint="#4033b5"
         android:id="@+id/myPointsButton"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="350dp"
@@ -58,7 +58,7 @@
         app:backgroundTint="#4033b5"
         android:id="@+id/allObjectsButton"
         android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="270dp"

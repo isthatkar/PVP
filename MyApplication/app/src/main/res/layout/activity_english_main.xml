@@ -35,7 +35,7 @@
         android:layout_marginTop="420dp"
         android:textSize="20dp"
 
-        android:text="Contacts" />
+        android:text="About" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.Material3.Button.IconButton"

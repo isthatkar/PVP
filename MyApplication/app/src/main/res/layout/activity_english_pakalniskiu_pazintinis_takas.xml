@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,16 +19,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="15dp"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:layout_centerHorizontal="true"
             android:text="PAKALNIŠKĖS EDUCATIONAL TRAIL" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -84,13 +85,15 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/pakalniskiuFaktai"
             android:layout_marginTop="30px"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Walking along the pakalniškės cognitive path you will find a mound that was poured by ancient Lithuanians. According to the floating legend, the wooden castle of Vaišvydas, the ruler of the Nemunas Land Valley, stood on it, which for many centuries defended and protected this area from enemies. In the Nemunas Valley lived the subjects of Vaišvydas. However, the enemies, with the help of traitors, completely destroyed the castle and it was no longer rebuilt." />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -102,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -133,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -146,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/pakalniskiuIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -155,13 +158,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/pakalniskiuIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="The length of the Pakalniškės cognitive trail reaches 3 kilometers, from which you can see the Kaunas Lagoon, pažaislis panorama and Kaunas hydroelectric power plant." />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView8"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -173,7 +178,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView4"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="ACTIVITIES"
             android:textSize="20dp" />
 
@@ -181,26 +186,33 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="Around the pakalniškės cognitive trail there are a significant number of attractions: Žiegždriai outcrop, swamps, Pažaislis monastery, Kruonis HAE, Laumėnų park and cognitive trail. On the very slope of the hillsides, you will have to come up with entertainment yourself, but if you are a fishing lover, when you land near the water, you will definitely meet fishermen enjoying their catch."
             android:layout_below="@id/textView10"/>
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView11"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/pakalniskiupazintinistakas6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint18"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView5"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="I am near the object!"
             android:visibility="gone" />
 

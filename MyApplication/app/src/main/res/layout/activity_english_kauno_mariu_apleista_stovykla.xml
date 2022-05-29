@@ -3,8 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/newappbackground"
+    android:padding="0dp"
+    android:background="#C5E3F6"
     android:fillViewport="false">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,17 +18,18 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            android:layout_marginTop="30px"
+            android:textSize="30dp"
+            android:layout_marginTop="50px"
             android:textAlignment="center"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:paddingBottom="15dp"
             android:text="ABANDONED CAMP" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView6"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -61,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/stvoyklaFaktaiPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -74,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/stvoyklaFaktaiPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -83,14 +84,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/stvoyklaFaktai"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:layout_marginTop="30px"
             android:text="The best time of year to visit would be in the winter. Summer is green everywhere, it’s hard to find a way inside the cottages, and the smaller cottages are getting hard to spot from. Everything is surrounded by trees and shrubs. Be that as it may, the camp visited during the summer, surrounded by greenery, looks like a small town left to its fate after a good summer rain." />
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_below="@id/textView7"
             android:padding="0px"
             android:paddingBottom="0px"
@@ -102,7 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageView2"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:text="HISTORY"
             android:textSize="20dp" />
 
@@ -133,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/stvoyklaIstorijaPlayerPosition"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
             <SeekBar
                 android:layout_width="0dp"
@@ -146,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/stvoyklaIstorijaPlayerDuration"
                 android:text="00:00"
-                android:textColor="@color/white"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
 
@@ -155,7 +158,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/stvoyklaIstorija"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="The pioneer camp, which operated in an impressive place near Kaunas Lagoon, is a terrible place today. So far, no single host has appeared here. The state used to sell the plot very cheaply, and in 2017. in court it was proved that the sale was void - you had to return the money for the plot and pay another 150 thousand. compensation. The buildings here are run by entrepreneurs - they would like to adapt them for recreation, but without land - they can't.
 
 The owners of the camp changed more than once, getting involved in court marathons where the interests of the state and business intersected. The state sold the land to the owners of buildings for 26 thousand. EUR, later recovered the land and paid another 150 thousand euros. There were visions that a complex of recreational buildings could emerge here - maybe a residential house, maybe a sanatorium, maybe a water transport tourism center.
@@ -168,7 +173,7 @@ The owners of the camp changed more than once, getting involved in court maratho
             android:layout_below="@id/textView8"
             android:layout_centerHorizontal="true"
             android:text="ACTIVITIES"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp" />
 
         <TextView
@@ -176,25 +181,32 @@ The owners of the camp changed more than once, getting involved in court maratho
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView10"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:textSize="15dp"
             android:text="The beach of Kaunas Lagoon is nearby" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="600px"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
             android:layout_below="@id/textView11"
             android:padding="0px"
             android:paddingBottom="0px"
             app:srcCompat="@drawable/apleistastovyklac" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Material3.Button.TextButton"
+            android:textColor="@color/white"
+            app:backgroundTint="#3367b5"
             android:id="@+id/button_addPoint6"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:textSize="20dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView4"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
             android:text="I am near the object!"
             android:visibility="gone" />
     </RelativeLayout>

@@ -12,8 +12,8 @@
         android:maxHeight="70dp"
         android:textSize="25dp"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="bold"
-        android:background="#55000000"
+        android:background="#553367b5"
         />
 </LinearLayout>
