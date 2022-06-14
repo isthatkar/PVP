@@ -20,7 +20,7 @@
         android:text="Lietuvių"
         android:textColor="@color/white"
         android:textSize="25dp"
-        app:backgroundTint="#4033b5" />
+        app:backgroundTint="#3264B1" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/languageEnglish"
@@ -33,7 +33,7 @@
         android:text="English"
         android:textColor="@color/white"
         android:textSize="25dp"
-        app:backgroundTint="#4033b5"/>
+        app:backgroundTint="#3264B1"/>
 
 
 </RelativeLayout>

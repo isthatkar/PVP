@@ -212,7 +212,7 @@ A settlement at the foot of the foothills was established next to the castle, lo
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.Material3.Button.TextButton"
             android:textColor="@color/white"
-            app:backgroundTint="#3367b5"
+            app:backgroundTint="#3264B1"
             android:id="@+id/button_addPoint2"
             android:layout_width="200dp"
             android:textSize="20dp"

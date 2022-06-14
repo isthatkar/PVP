@@ -17,70 +17,70 @@
         android:theme="@style/Theme.MyApplication">
         <activity
             android:name=".EnglishRumsiskiuMuziejusActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishJachklubasActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishMergakalnioApzvalgosAiksteActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishPakalniskiuPazintinisTakas"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishLaumenuPazintinisTakasActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishZiegzdriuTakasEnglish"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishSkulturuParkasActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishZiglosIlankaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishKruonioHAEActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishKapitoniskiuPazintinisTakasEnglish"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishRumsiskiuPrieplaukaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LithuanianRumsiskiuMuziejusActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishKaunoMariuApleistaStovyklaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishMeilesIlankaACtivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishGastilijonuAtodangaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishKaunoMariuRegioninisParkasACtivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishLakstingaluSlenisActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishSuneliskesKalnasActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishPazaislioVienuolynas"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishMapsActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishVisitedCounterActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".EnglishAllObjects"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LanguageSelection"
             android:exported="true" />
