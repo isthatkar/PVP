@@ -202,7 +202,7 @@ Ant kranto įrengtas pažintinis stendas, stovi du stalai, suolai, tad vieta pui
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.Material3.Button.TextButton"
             android:textColor="@color/white"
-            app:backgroundTint="#3367b5"
+            app:backgroundTint="#3264B1"
             android:id="@+id/button_addPoint5"
             android:layout_width="200dp"
             android:textSize="20dp"

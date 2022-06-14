@@ -231,7 +231,7 @@ Jachtklubas OPEN AIR 2022, R. Kalantos gatvė, Kaunas, Lietuva, 2022-07-29 20:30
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.Material3.Button.TextButton"
             android:textColor="@color/white"
-            app:backgroundTint="#3367b5"
+            app:backgroundTint="#3264B1"
             android:id="@+id/button_addPoint0"
             android:layout_width="200dp"
             android:textSize="20dp"
