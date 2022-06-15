@@ -9,7 +9,7 @@
     android:paddingRight="10dp"
     android:paddingLeft="10dp"
     android:background="@drawable/aboutuseng"
-    android:fillViewport="false">
+    android:fillViewport="true">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -86,14 +86,12 @@ in the nature of Lithuania, and if the flame of Lithuanian love in your hearts g
 
         <Button
             android:id="@+id/button_saltiniai"
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView1"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
             android:layout_marginBottom="20dp"
-            style="?android:attr/borderlessButtonStyle"
             android:text="See info sources" />
 
     </RelativeLayout>
