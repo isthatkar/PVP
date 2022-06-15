@@ -19,10 +19,107 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:lineHeight="23dp"
+            android:id="@+id/textView1"
             android:padding="15dp"
             android:textStyle="bold"
-            android:text="1. saltinis \n 2.saltinis \n ir taip toliau 1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau1. saltinis \n 2.saltinis \n ir taip toliau"
+            android:text="Photo sources"
             android:textSize="15dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView1"
+            android:autoLink="web"
+            android:lineHeight="23dp"
+            android:padding="15dp"
+            android:text="1. https://apleistosvietos.lt/apleista-stovykla-kauno-marios/ \n
+2. https://www.lrytas.lt/bustas/nekilnojamasis-turtas/2020/02/12/news/lyg-uzkeikta-vieta-nuostabioje-kauno-mariu-pakranteje-niekas-nesikuria-trobesiai-ten-puva-13560796 \n
+3. https://www.15min.lt/verslas/naujiena/finansai/cernobylio-verti-vaizdai-prie-kauno-mariu-valstybes-ir-verslo-partneryste-kainavo-150-tukst-euru-662-1215744 \n
+4. https://www.pamatyklietuvoje.lt/details/gastilioniu-atodanga/406 \n
+5. https://turizmas.kaisiadorys.lt/ka-veikti/gastilioniu-atodanga/ \n
+6. https://www.delfi.lt/sportas/kitos-sporto-sakos/kauno-buriuotoju-laukia-permainos-ruosiasi-statyti-nauja-baze.d?id=74544588 \n
+7. https://klaipeda.diena.lt/skelbimai/laisvalaikis/paslaugos/akcija-kauno-zalgirio-jachtklube-44652 \n
+8. https://turizmas.kaisiadorys.lt/ka-veikti/kapitoniskiu-pazintinis-takas/ \n
+9. https://www.checkinlithuania.com/pesciuju-takai/laumenu-pazintinis-takas/ \n
+10. https://www.pamatyklietuvoje.lt/details/laumenu-pazintinis-takas/4355 \n
+11. https://www.dovanusala.lt/lt/2567-nepamirstama-kelione-laivu-i-meiles-ilanka-kaune.html \n
+12. https://kaunas.kasvyksta.lt/2016/07/05/miestas/i-meiles-ilanka-traukia-ne-tik-isimylejeliai/ \n
+13. https://kaunas.kasvyksta.lt/2017/08/27/foto/savaitgalio-keliones-isimylejeliu-pamegtas-legendomis-apipintas-mergakalnis/ \n
+14. https://turizmas.kaisiadorys.lt/ka-veikti/mergakalnio-atodanga/ \n
+15. https://www.pamatyklietuvoje.lt/details/mergakalnio-apzvalgos-aikstele/4184 \n
+16. https://visit.kaunas.lt/lt/aplankykite/lankytinos-vietos/pazintiniai-takai/pakalniskiu-pazintinis-takas/ \n
+17. https://www.delfi.lt/keliones/po-lietuva/pakaunes-krasto-gamtos-lobiai-netoli-vienas-kito-prie-mariu-stuksantis-piliakalnis-ir-reto-grozio-pazintinis-takas.d?id=84360139 \n
+18. https://nesedeknamuose.lt/pazintiniai-takai/pakalniskiu-pazintinis-takas/ \n
+19. https://www.15min.lt/pasaulis-kiseneje/naujiena/per-lietuva/nuostabiu-vaizdu-marsrutas-kalvu-pasiutpolke-kauno-mariu-pakranteje-642-1487410 \n
+20. https://www.delfi.lt/kultura/naujienos/kokia-zinia-perduoda-pazaislio-vienuolyno-paveikslai-ir-freskos.d?id=77144103 \n
+21. https://renginiai.kasvyksta.lt/86/kaunas/pazaislio-vienuolynas?fb_comment_id=472415802847490_891375224284877 \n
+22. https://www.aplinkmarias.lt/lankytinos-vietos/sakralinis-muziejus-pazaislio-vienuolyno-ansamblyje/ \n
+23. https://lt.wikipedia.org/wiki/Lietuvos_liaudies_buities_muziejus \n
+24. https://pamatyklietuvoje.lt/details/lietuvos-liaudies-buities-muziejus/408 \n
+25. https://www.prieezero.lt/lt/pramoga/rumsiskiu-liaudies-muziejus-1784/ \n
+26. https://www.lrt.lt/naujienos/kultura/12/221163/pernai-deges-rumsiskiu-liaudies-muziejus-vel-ruosiasi-granatos-live-festivaliui \n
+27. https://www.aplinkmarias.lt/lankytinos-vietos/lietuvos-liaudies-buities-muziejus-rumsiskese/ \n
+28. https://www.1551.lt/lietuvos-liaudies-buities-muziejus-20524/ \n
+29. https://turizmas.kaisiadorys.lt/assets/uploads/2019/09/Rum%C5%A1i%C5%A1ki%C5%B3-val%C4%8Di%C5%B3-nusileidimo-vieta-Viktorija-Kanapinskait%C4%97.jpg \n
+30. https://turizmas.kaisiadorys.lt/ka-veikti/rumsiskiu-prieplauka-ir-valciu-nusileidimo-vieta/ \n
+31. https://www.15min.lt/kultura/naujiena/kaunas-2022/kauno-mariose-ispudingo-dydzio-skulpturos-kviecia-prisiminti-uzlietu-kaimu-istorijas-1102-1366444 \n
+32. https://www.lrytas.lt/kultura/daile/2020/08/29/news/skulpturos-ant-vandens-ragins-prisiminti-kauno-mariu-uzlietu-kaimu-istorijas-16147656 \n
+33. https://www.pamatyklietuvoje.lt/details/vieskunu-piliakalnis/430 \n
+34. https://www.efoto.lt/node/1251245 \n
+35. https://www.efoto.lt/node/806211 \n
+36. https://nesedeknamuose.lt/pazintiniai-takai/ziegzdriu-geologinis-takas/ \n
+37. https://www.pamatyklietuvoje.lt/details/ziegzdriu-geologinis-takas/4356 \n
+38. https://www.15min.lt/galerija/ziegzdriu-geologinis-takas-153266#galerija/153266/3974692 \n
+"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineHeight="23dp"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/textView2"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:text="Information sources"
+            android:textSize="15dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lineHeight="23dp"
+            android:padding="15dp"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView3"
+            android:textSize="15dp"
+            android:autoLink="web"
+            android:text="1.	https://montepacis.lt/apie-mus/apie/istorija \n
+2.	https://kaunas.kasvyksta.lt/2016/03/23/foto/jachtklubo-ikurimo-istorija-lydi-paskutines-minutes-kuriozai/\n
+3.	https://lt.wikipedia.org/wiki/Pa%C5%BEaislio_vienuolynas \n
+4.	https://www.turistopasaulis.lt/vieskunu-piliakalnis-suneliskiu-kalnas/#.YpUUUu5BxPY \n
+5.	https://www.facebook.com/patssaugidas/photos/a.1635632043400572/1668389270124849/?type=3 \n
+6.	https://kaunas.kasvyksta.lt/2018/10/21/foto/salia-kauno-mariu-gamtos-kampelis-kuriame-lankesi-ne-kiekvienas-foto/ \n
+7.	https://kaunomarios.lt/apie-parka,p35 \n
+8.	https://kaunas.kasvyksta.lt/2016/07/05/miestas/i-meiles-ilanka-traukia-ne-tik-isimylejeliai/ \n
+9.	https://apleistosvietos.lt/apleista-stovykla-kauno-marios/ \n
+10.	https://www.pamatyklietuvoje.lt/details/gastilioniu-atodanga/406 \n
+11.	https://www.llbm.lt/muziejus/muziejaus-istorija/ \n
+12.	https://www.turistopasaulis.lt/mergakalnio-atodanga-ir-apzvalgos-aikstele/#.YpUViO5BxPY \n
+13.	https://www.aplinkmarias.lt/lankytinos-vietos/mergakalnio-atodanga/ \n
+14.	https://www.kaunomarios.lt/ziegzdriu-geologinis-takas,p63 \n
+15.	https://www.kaunorajonas.lt/lankytinos-vietos/pakalniskiu-piliakalnis-su-priespiliu/ \n
+16.	https://kaunas.kasvyksta.lt/2018/08/05/foto/laumenu-takas-atsidursite-lyg-misko-pasakoje/ \n
+17.	https://www.tv3.lt/naujiena/video/kauno-rajone-kuria-unikalu-parka-neturi-analogu-europoje-n1111123 \n
+18.	https://ignitisgamyba.lt/veikla/elektros-energijos-gamyba/kruonio-hidroakumuliacine-elektrine-khae/136 \n
+19.	https://lt.wikipedia.org/wiki/Kruonio_hidroakumuliacin%C4%97_elektrin%C4%97 \n
+20.	https://kaunomarios.lt/isskirtine-verte,p34 \n
+21.	https://turizmas.kaisiadorys.lt/siulomi-marsrutai/kapitoniskiu-pazintinis-takas/ \n
+" >
 
         </TextView>
 
